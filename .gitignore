@@ -1,0 +1,8 @@
+# Cursor configuration files - nie są częścią dokumentacji GitBook
+.cursor/
+
+# macOS
+.DS_Store
+
+# Stare katalogi uploads - obrazy są już w .gitbook/assets/
+uploads/
