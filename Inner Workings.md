@@ -17,8 +17,11 @@
 * **Electrical network calculations**: how circuits and phases influence computed flows.
 * **Self-use calculation**: how local production consumption is estimated.
 * **Savings calculation**: how tariffs and measured flows become savings numbers.
+* **Storage control**: how the Unwaste Robot manages battery charging and discharging.
+* **Price-based device control**: how Off / Eco / Comfort / Boost modes are chosen from tariffs.
+* **Surplus mode**: how export and import measurements trigger Surplus mode on devices.
 * **What the Unwaste Robot does not know**: explicit limits and assumptions.
 
 **Notes / Important**
 
-* Important: These calculations depend on sensor availability and installation topology. Incorrect meter placement or missing measurements can produce misleading results.This section explains how Unwaste derives energy flows, self-use, and savings from raw readings.\nIt is intended for users who want deeper understanding or need to validate results.
+* These calculations depend on sensor availability and installation topology. Incorrect meter placement or missing measurements can produce misleading results.

@@ -28,8 +28,8 @@ Mode, as usual, takes one of these values:
 
 Mode source can take one of these values:
 
-* **Tariff** — the mode was determined from electricity prices (default price-based control)
-* **Surplus** — Surplus mode was applied because [Surplus mode](../Configuration/Connection.md#surplus-mode) is enabled and export/import conditions were met
+* **Tariff** — the mode was determined from electricity prices (default price-based control). When the active mode is Boost, price-based control took precedence over Surplus even if export conditions were also met.
+* **Surplus** — Surplus mode was applied because [Surplus mode](../Configuration/Connection.md#surplus-mode) is enabled, export/import conditions were met, and the price-based mode was not Boost
 * **Schedule** — a schedule determined this mode
 * **Override** — an override forced this mode
 

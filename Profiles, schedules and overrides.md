@@ -43,9 +43,9 @@ These methods are not exclusive - you can use both schedule and override in the 
 
 * Overrides have the highest priority. if there is an override active, it takes priority above any other option. If many override rules are active, the last one takes priority.
 * Schedules are second on the priority list. If there is a schedule set for a device, and any rule matches current time, it is used. If many rules match, the last one is used.
-* Default operation mode — the mode automatically determined by the Unwaste Robot based on electricity prices. It is lowest on the priority list, and used only when there is no active override or schedule.
+* Default operation mode — the mode automatically determined by the Unwaste Robot based on electricity prices, and optionally **Surplus** when Surplus mode is enabled on the connection and export/import conditions are met. It is lowest on the priority list, and used only when there is no active override or schedule.
 
-So, making it a short rule of thumb: \nOverrides > Schedules > Default (price based)
+So, making it a short rule of thumb: \nOverrides > Schedules > Default (price + surplus)
 
 ## Timing behavior
 

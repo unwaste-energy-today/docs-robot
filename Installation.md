@@ -13,7 +13,7 @@ Unwaste OS and other deployment options are not covered here.
 * Minimum 2 GB RAM recommended
 * Network connectivity
 
-See [Getting started](Getting%20started.md) for detailed hardware and software requirements.
+See [Hardware requirements](Appendices/Hardware%20requirements.md) for details.
 
 
 ---

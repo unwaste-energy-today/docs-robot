@@ -73,8 +73,12 @@ Without these, the connection configuration cannot be validated while Surplus mo
 
 ### Behaviour
 
-* Surplus is applied automatically based on grid import/export measurements and electricity prices — it is **not** available in schedules or overrides.
+* Surplus is applied automatically based on **grid import and export measurements** on the main circuit and the thresholds you configure. It does **not** depend on electricity prices.
+* Price-based control runs **in parallel**. When both surplus conditions and a **Boost** price period apply, **Boost** is used instead of Surplus.
+* Surplus is **not** available in schedules or overrides.
 * When Surplus mode is active on a device, the dashboard may show **Surplus** as the mode source (see [Determining what controls a device](../Profiles,%20schedules%20and%20overrides/Determining%20what%20controls%20a%20device.md)).
+
+For how the system decides when to enter and leave Surplus mode, see [Surplus mode](../Inner%20Workings/Surplus%20mode.md).
 
 Surplus mode is optional. Use it when you have on-site PV generation and controllable loads that can use excess production.
 

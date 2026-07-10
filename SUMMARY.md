@@ -67,6 +67,8 @@
   * [Savings calculation](Inner%20Workings/Savings%20calculation.md)
   * [Self-use calculation](Inner%20Workings/Self-use%20calculation.md)
   * [Storage control](Inner%20Workings/Storage%20control.md)
+  * [Price-based device control](Inner%20Workings/Price-based%20device%20control.md)
+  * [Surplus mode](Inner%20Workings/Surplus%20mode.md)
   * [Time model and data storage](Inner%20Workings/Time%20model%20and%20data%20storage.md)
   * [What the Unwaste Robot does not know](Inner%20Workings/What%20the%20Unwaste%20Robot%20does%20not%20know.md)
 

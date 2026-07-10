@@ -47,7 +47,7 @@ System alerts (for example missing dynamic prices) are shown separately from mon
 
 * **Freeze alert** — Temperature less than 5 °C with message "Freeze alert!"
 * **Low voltage** — Voltage L1 less than 207 V with message "Voltage too low!"
-* **High voltage** — Voltage L1 less than 253 V (condition and threshold as appropriate for your installation)
+* **High voltage** — Voltage L1 greater than 253 V with message "Voltage too high!"
 
 
 ---

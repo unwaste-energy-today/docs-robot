@@ -14,7 +14,7 @@ For example, these are valid rules:
 
 Schedules override default, price-based behavior for their active time ranges.
 
-Overrides > Schedules > Default (price based)
+Overrides > Schedules > Default (price + surplus)
 
 ## Important notes
 
@@ -83,6 +83,7 @@ Each rule consists of:
 * entering 00:00 as Start Time means midnight STARTING this day
 * entering 00:00 as End Time means midnight ENDING this day
 * if both Start Time and End Time are 00:00, it means "all day"
+* schedules match by **day of week and time only** — they do **not** support public holidays or one-off calendar dates; a rule for "Monday–Friday" applies on every Monday through Friday, including holidays that fall on those weekdays
 
 ## Rules precedence
 
