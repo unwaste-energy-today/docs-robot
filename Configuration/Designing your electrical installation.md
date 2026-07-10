@@ -152,6 +152,7 @@ This is where you define:
 
 * tariffs,
 * forecasts,
+* optional **Surplus mode** (for PV installations),
 * and other connection-level settings.
 
 These settings apply to the entire installation connected to this grid connection.
@@ -165,13 +166,16 @@ These settings apply to the entire installation connected to this grid connectio
 
 After saving the connection, you return to the Design dashboard.
 
- ![](../.gitbook/assets/Configuration_dddea6f2-dd28-47e0-a32f-905439c135d5_Screenshot_Design_dashboard.png " =1590x176")The connection now appears as an entry.
+ ![](../.gitbook/assets/2026-07-10_Design_dashboard.png " =821x200")
+
+The connection now appears as an entry.
 
 
 Visible actions:
 
-* **Configuration (gear icon)**\nShortcut for editing connection parameters (for example tariffs) without entering the installation graph.
-* **Design**\nOpens the installation graph for this connection.
+* **Configuration (gear icon)** — Shortcut for editing connection parameters (for example tariffs) without entering the installation graph.
+* **Monitoring alerts** — List of all monitoring alerts defined for this connection (Element, Reading, link to details). See [Monitoring alerts](Monitoring%20alerts.md).
+* **Design** — Opens the installation graph for this connection.
 
 Click **Design** to continue.
 
@@ -182,7 +186,7 @@ Click **Design** to continue.
 
 The installation graph opens.
 
- ![](../.gitbook/assets/Configuration_704272d9-4c91-45a8-9a35-e892b4d77f03_Screenshot_Graph_initial.png " =500x185")
+ ![](../.gitbook/assets/2026-07-10_Design_view_initial.png " =500x185")
 
 The graph initially contains:
 
@@ -219,10 +223,11 @@ Only devices expose scheduling, because only devices can be managed directly by 
 
 Circuits display a **plus (+) icon**.
 
- ![](../.gitbook/assets/Configuration_85a33b11-4d41-4950-a096-9773458e3ffa_Screenshot_graph_adding_type.png " =1590x679")
+ ![](../.gitbook/assets/2026-07-10_Configuration_adding_new_node.png " =821x300")
+
+ ![](../.gitbook/assets/2026-07-10_Configuration_adding_new_device_select_type.png " =821x400")
 
 
-\
 Clicking it opens a selector that allows you to add:
 
 * a sub-circuit

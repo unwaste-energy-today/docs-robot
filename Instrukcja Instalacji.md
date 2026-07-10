@@ -1,46 +1,52 @@
 # Instrukcja Instalacji
 
-wchodzimy w HA w settings → addons
-
- ![](../.gitbook/assets/Installation_a129f186-f1dd-47ae-8e84-a75cd2758cf9_image.png " =1919x889")
+Polska wersja instrukcji instalacji addonu Unwaste w Home Assistant. Angielski odpowiednik: [Local installation](Installation/Local%20installation.md).
 
 
-klikamy "addon store"
+---
 
- ![](../.gitbook/assets/Installation_a129f186-f1dd-47ae-8e84-a75cd2758cf9_image.png " =1668x887")
+## Dodanie repozytorium Unwaste
 
+1. Wejdź w Home Assistant → **Settings** → **Add-ons** → **Add-on Store**.
+2. W lewym górnym rogu otwórz menu → **Repositories**.
+3. Wprowadź adres repozytorium i kliknij **Add**:
 
-w lewym górnym rogu klikamy menu a w nim Repositories
+**https://gitlab.com/unwaste/public/unwaste-haos-repository-production**
 
- ![](../.gitbook/assets/Installation_a129f186-f1dd-47ae-8e84-a75cd2758cf9_image.png " =1658x148")
-
-
-W oknie które się otworzy wprowadzamy link do repozytorium Unwaste i klikamy add\n<https://gitlab.com/unwaste/public/unwaste-haos-repository-develop>
-
-
- ![](../.gitbook/assets/Installation_a129f186-f1dd-47ae-8e84-a75cd2758cf9_image.png " =508x394")
-
-po dodaniu repozytorium zamykamy to okno, i z tego samego menu co wcześniej, wybieramy "check for updates"
-
- ![](../.gitbook/assets/Installation_a129f186-f1dd-47ae-8e84-a75cd2758cf9_image.png " =1658x148")
-
-Następnie ODŚWIEŻAMY STRONĘ (ważny krok - bo Home Assistant nie robi tego automatycznie i bez odświeżenia strony addon nie pokaże się na liście)
+4. Zamknij okno. Z tego samego menu wybierz **Check for updates**.
+5. **Odśwież stronę przeglądarki** — bez tego addon Unwaste może nie pojawić się na liście.
 
 
-szukamy na liście addonu Unwaste
+---
 
- ![](../.gitbook/assets/Installation_a129f186-f1dd-47ae-8e84-a75cd2758cf9_image.png " =446x146")
+## Instalacja addonu
 
-wchodzimy w niego i instalujemy tak jak każdy inny addon
-
-
-Po zainstalowaniu konfigurujemy go; możemy wprowadzić adres zewnętrznej bazy danych jeśli chcemy, a jeśli nie chcemy to musimy wprowadzić spacje w pola, bo na razie nie udało się zrobić żeby pola były całkowicie opcjonalne
-
-Po skonfigurowaniu zaznaczamy jeszcze te opcje:
-
- ![](../.gitbook/assets/Installation_a129f186-f1dd-47ae-8e84-a75cd2758cf9_image.png " =555x349")
-
-i możemy uruchomić addon.
+1. Znajdź **Unwaste** na liście addonów.
+2. Kliknij **Install** i poczekaj na zakończenie instalacji.
 
 
-\
+---
+
+## Konfiguracja addonu
+
+Na karcie **Configuration**:
+
+* **Use external database** — wyłączone = wbudowana baza (domyślnie).
+* Gdy **Use external database** jest włączone, uzupełnij adres serwera, port, użytkownika, hasło, nazwę bazy i SSL.
+
+Gdy **Use external database** jest wyłączone, pola połączenia z bazą zostaw puste.
+
+Szczegóły: [Robot settings](../Configuration/Robot%20settings.md).
+
+
+---
+
+## Uruchomienie
+
+Na karcie **Info** włącz:
+
+* **Start on boot**
+* **Watchdog** (zalecane)
+* **Show in sidebar** (zalecane)
+
+Kliknij **Start**. Otwórz panel Unwaste z paska bocznego i przejdź do [Initial configuration](Initial%20configuration.md).

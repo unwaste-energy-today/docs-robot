@@ -13,14 +13,21 @@ Both standalone storage systems and storages integrated with hybrid inverters ar
 
 # Configuration
 
-Configuring an energy storage can be relatively complex. This advanced configuration is intended mainly for devices that are **not** present in the database of compatible devices.
+Configuring an energy storage requires mapping Home Assistant sensors to capacity, energy counters, and optional control entities. The form is the same for all supported battery types.
+
+
+---
+
+## Name and Description
+
+**Name** is required. **Description** is optional.
 
 
 ---
 
 ## Capacity Total
 
-**Mandatory.**\nDefines the total capacity of the energy storage.
+**Mandatory.** Defines the total capacity of the energy storage.
 
 Available options:
 
@@ -32,7 +39,7 @@ Available options:
 
 ## Capacity Reserved
 
-**Mandatory.**\nDefines the portion of capacity that must always remain unused to protect the storage from degradation (see *Storage energy levels* in Notes).
+**Mandatory.** Defines the portion of capacity that must always remain unused to protect the storage from degradation (see *Storage energy levels* in Notes).
 
 Available options:
 
@@ -48,7 +55,7 @@ Available options:
 
 ## Energy Stored
 
-**Mandatory.**\nDefines one or three Home Assistant entities (depending on storage type) used to read how much energy has been stored.
+**Mandatory.** Defines one or three Home Assistant entities (depending on storage type) used to read how much energy has been stored.
 
 For a three-phase storage, you can provide:
 
@@ -57,16 +64,18 @@ For a three-phase storage, you can provide:
 
 For a single-phase storage in a three-phase installation, only one field is used. It should correspond to the phase of the circuit the storage is connected to.
 
-It is not the same as charge level.\nEnergy stored represents the total amount of energy charged into the storage over a longer period of time (across multiple charging cycles).
+It is not the same as charge level. Energy stored represents the total amount of energy charged into the storage over a longer period of time (across multiple charging cycles).
 
 Charge level is current value of energy stored in storage.
+
+Each reading block has a **Monitoring alerts** button. See [Monitoring alerts](Monitoring%20alerts.md).
 
 
 ---
 
 ## Energy Retrieved
 
-**Mandatory.**\nDefines one or three Home Assistant entities (depending on storage type) used to read how much energy has been retrieved from the storage.
+**Mandatory.** Defines one or three Home Assistant entities (depending on storage type) used to read how much energy has been retrieved from the storage.
 
 For a three-phase storage, you can provide:
 
@@ -82,7 +91,7 @@ Energy retrieved represents the total amount of energy retrieved from the storag
 
 ## Power Charge
 
-**Optional.**\nDefines one to three entities used to read the current charging power.
+**Optional.** Defines one to three entities used to read the current charging power.
 
 For a three-phase storage, you can provide:
 
@@ -96,7 +105,7 @@ For a single-phase storage in a three-phase installation, only one field is used
 
 ## Power Discharge
 
-**Optional.**\nDefines one to three entities used to read the current discharging power.
+**Optional.** Defines one to three entities used to read the current discharging power.
 
 For a three-phase storage, you can provide:
 
@@ -120,7 +129,7 @@ The charge level can be provided as:
 
 See *Storage energy levels* in Notes for details.
 
-Charge level is optional, but it is needed to properly control a storage (as without it the energy in a storage cannot be accounted for in algorithms).
+Charge level is optional, but it is needed to properly control a storage when the Unwaste Robot manages charging from the grid.
 
 It is not always equal to total energy stored minus total energy retrieved, as all storages experience some energy loss.
 
@@ -136,11 +145,11 @@ It is not always equal to total energy stored minus total energy retrieved, as a
 
 To allow the Unwaste Robot to control a storage, control must first be enabled.
 
-Without enabled control, device is only monitored and it would remain in "Unmanaged" mode.
+Without enabled control, the storage is only monitored and it would remain in "Unmanaged" mode.
 
 Next, you need to select type of control:
 
-* "None" - no control available. It is like a disabled control, but not the same. 
+* "None" - no control available. It is like a disabled control, but not the same.
 * "State" - storage is controlled via setting states for each mode. Control entities must be selected, and finally values must be defined for each entity and for each supported control mode (or disabled for specific modes if required).
 
 The selected control type determines whether the **States Map** section is available for configuration.
@@ -148,7 +157,7 @@ The selected control type determines whether the **States Map** section is avail
 
 Note: "None" and "Disabled" are separate concepts and serve different purposes.
 
-"None" tells us that there is no control available at all, which is useful, as empty "State" form would complain for missing values.
+"None" means that there is no control available at all.
 
 "Disabled" allows to temporarily disable control, without losing all the configuration stored in "State" form.
 
@@ -159,7 +168,7 @@ Note: "None" and "Disabled" are separate concepts and serve different purposes.
 
 The first step is selecting which Home Assistant entities are used to control the storage.
 
-Two types of control entities are supported:
+Supported control entity types include **Switch**, **Select**, and **Number** entities.
 
 
 ---
@@ -184,13 +193,13 @@ A storage can operate in one of the following modes:
 
 * **Disabled mode** – the storage is temporarily disabled by user or the Unwaste Robot
 * **Unmanaged mode** – the storage is not controlled by the Unwaste Robot
-* **Default mode** – the storage follows its internal logic - used when device is managed, but there is no need for any action.
+* **Default mode** – the storage follows its internal logic - used when the storage is managed, but there is no need for any action.
 * **Force charge** – the storage is instructed to charge from the grid
-* **Force discharge** – the storage is instructed to discharge to the grid (not yet used)
-* **Lock discharge** – the storage is told to not discharge (not yet used)
-* **Lock both** – the storage is told to not charge or discharge (not yet used)
+* **Force discharge** – the storage is instructed to discharge to the grid
+* **Lock discharge** – the storage is told to not discharge
+* **Lock both** – the storage is told to not charge or discharge
 
-The three modes marked as "not yet used" are not used in current model of storage control, but these will be implemented in the future, and exist in configuration so users wouldn't be forced to fill in the gaps in the future.
+Enable only the modes your storage hardware supports. For modes you do not use, leave them disabled in the States Map.
 
 
 ---
@@ -207,6 +216,13 @@ For each mode:
 Note: Each state must have at least one entity enabled.
 
 Note 2: (important) If a storage doesn't support selected mode, it applies **Default mode** instead.
+
+
+---
+
+## Optional Monitoring
+
+Optional voltage, current, power, and additional sensors are configured in the **Optional monitoring** section. See [Optional monitoring](Optional%20monitoring.md) and [Additional readings](Additional%20readings.md).
 
 
 ---
@@ -228,13 +244,13 @@ Based on these values, the system distinguishes:
 * **energy in storage** – the raw reported energy value
 * **available energy in storage** – energy in storage minus reserved capacity
 
-Important:\nIf a storage device already subtracts the reserved capacity internally, configure the total capacity accordingly and set reserved capacity to zero.
+Important: If a storage device already subtracts the reserved capacity internally, configure the total capacity accordingly and set reserved capacity to zero.
 
 ## Power flow
 
 ### Typical case
 
-Separate power charge and power discharge parameters are the most common way in storages to determine total power flow, as these are intuitive to configure and unambiguous. We calculate the difference between them to present total power flow of a storage on a graph.
+Separate power charge and power discharge parameters are the most common way in storages to determine total power flow, as these are intuitive to configure and unambiguous. The system uses the difference between them to present total power flow of a storage on a graph.
 
 ### Ambiguous devices
 
@@ -244,9 +260,11 @@ In such cases, total power flow should be entered into one of these fields (leav
 
 Single phase readings for these parameters shouldn't be mixed with three phase readings.
 
-# Screenshot
+# Screenshot (main form)
 
- ![](../.gitbook/assets/Configuration_d3f48b50-d41b-419d-bdd0-51e233f8b193_Screenshot_Storage.png " =787x2159")
+ ![](../.gitbook/assets/2026-07-10_Configuration_storage.png " =821x800")
 
+# Screenshot (control / States Map)
 
-\
+ ![](../.gitbook/assets/2026-07-10_Configuration_storage_control.png " =770x900")
+

@@ -6,7 +6,26 @@ Graphs are opened using the **Statistics** button available on most components.
 
  ![](../.gitbook/assets/System Operation_bd89b27c-16e5-4ba4-ab56-8e8d444c417e_Screenshot_stats_button.png " =200x195")
 
-**Important:**\nStatistics are available for all components except **connections**, because a connection does not have its own direct readings. Readings are taken from the **main circuit**.
+**Important:** Statistics are available for all components except **connections**, because a connection does not have its own direct readings. Readings are taken from the **main circuit**.
+
+
+---
+
+### Detailed view
+
+The **Detailed view** lets you choose which data series to display as graphs.
+
+ ![](../.gitbook/assets/2026-07-10_Operation_graphs_initial.png " =821x200")
+
+Use the **Today** and **Historical** tabs to switch time range.
+
+In the **Select data** field, pick one or more metrics. Available options depend on what readings are configured for that element (including [Optional monitoring](../Configuration/Optional%20monitoring.md) and [Additional readings](../Configuration/Additional%20readings.md)).
+
+ ![](../.gitbook/assets/2026-07-10_Operation_graphs_selection.png " =821x400")
+
+Examples include total energy production, energy usage, average voltage on a phase, and other aggregated series.
+
+ ![](../.gitbook/assets/2026-07-10_Operation_graphs_viewing.png " =821x600")
 
 
 ---
@@ -15,7 +34,7 @@ Graphs are opened using the **Statistics** button available on most components.
 
 The set of available graphs depends on:
 
-* the type of object (device vs storage vs inverter),
+* the type of object (device vs storage vs inverter vs circuit),
 * and the readings configured for that object.
 
 In general:
@@ -28,11 +47,6 @@ In general:
 
 ### Today and Historical graphs
 
- ![](../.gitbook/assets/System Operation_6c81c0fe-6889-460c-bc71-655b355dd691_Screenshot_energy_graphs_today.png " =1055x634")
-
- ![](../.gitbook/assets/System Operation_42396447-c7ec-4951-846d-5318dfd1de18_Screenshot_energy_graphs_historical.png " =1056x634")
-
-
 For Energy Usage and Power Flow statistics:
 
 * "Today" uses 15-minute aggregated periods.
@@ -40,7 +54,7 @@ For Energy Usage and Power Flow statistics:
 * If the system was STOPPED for part of a day, those periods appear as **zero** values to keep the timeline continuous.
 
 
-**Note:** STOPPED periods appear as zeros in "Today" and "Historical" graphs to keep the timeline continuous. This does not mean "zero consumption", it means the system was not collecting data.\nSee **System operation → Starting and stopping the Unwaste Robot**.
+**Note:** STOPPED periods appear as zeros in "Today" and "Historical" graphs to keep the timeline continuous. This does not mean "zero consumption", it means the system was not collecting data. See **System operation → Starting and stopping the Unwaste Robot**.
 
 
 ---

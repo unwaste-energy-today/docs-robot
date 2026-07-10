@@ -33,7 +33,7 @@ Per connection, the Dashboard shows:
 * **Self Sufficiency (%)**\nHow much of the consumed energy was covered by local production (directly or indirectly).\nThis uses standard industry definitions. For precise computation, see *Inner workings → Self-use calculation*.
 * **Self Use (%)**\nHow much of produced energy was used locally instead of being exported.\nThis uses standard industry definitions. For precise computation, see *Inner workings → Self-use calculation*.
 * **Energy Price (currency)**\nThe **current tariff price** for the connection.\nThe displayed currency symbol is taken from connection configuration.\n**Important:** The system does not perform currency conversion. Having tariffs in different currencies is not supported.
-* **Unwasted (currency)**\nTotal monetary value of savings attributed to the Unwaste Robot.\nSee *Inner workings → Savings calculation*.
+* **Unwasted (currency)** — Total monetary value of savings attributed to the Unwaste Robot. See *Inner workings → Savings calculation*.
 
 ### Alerts
 
@@ -43,6 +43,16 @@ The Dashboard includes an **Alerts panel** for abnormal situations that the user
 
  ![](../.gitbook/assets/System Operation_ca4ef992-87b5-4061-8c98-9dbabe5e2371_Screenshot_Alert.png " =2028x240")
 
+
+---
+
+### Monitoring alerts
+
+Separate from system **Alerts**, the Dashboard also shows **Monitoring Alerts** — user-configured threshold conditions on readings (for example low voltage or high temperature).
+
+Monitoring alerts are defined in configuration. See [Monitoring alerts](../Configuration/Monitoring%20alerts.md).
+
+In Design mode, all defined monitoring alerts for a connection can be reviewed from the connection tile (**MONITORING ALERTS**).
 
 
 ---

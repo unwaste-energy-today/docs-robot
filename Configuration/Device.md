@@ -41,18 +41,21 @@ Controlling such devices may lead to situations where the device is unavailable 
 
 Unwaste EMS supports multiple device types. Some types belong to a dedicated **heating subtype**, which has additional configuration options.
 
-Common device types include:
+When adding a device to the installation graph, you can choose:
 
-* Electric Vehicle chargers
-* Air conditioning units
-* Heat pumps (heating subtype)
-* Other electric heating devices (heating subtype)
-* Domestic hot water (DHW) heaters (heating subtype)
-* Fridges and freezers
-* Dishwashers, washing machines, clothes dryers
-* Other devices (configured as **Generic device**)
+* **Generic**
+* **EV Charger**
+* **Air Conditioner**
+* **Fridge**
+* **Freezer**
+* **Dish Washer**
+* **Wash Machine**
+* **Cloth Dryer**
+* **Heat Pump** (heating subtype)
+* **Heating** (heating subtype — other electric heating)
+* **DHW Heater** (heating subtype)
 
-All devices share the same control logic. Differences between types relate mainly to available readings and additional configuration sections, and in the future, may include possible additional logic for each type.
+All devices share the same control logic. Differences between types relate mainly to available readings and additional configuration sections.
 
 Choosing an incorrect device type does not damage the system, but may limit optimization or disable subtype-specific features.
 
@@ -66,3 +69,9 @@ Especially, monitoring and control of the devices are independent of each other.
 * you can configure only control, and leave all optional entries blank - the device will be controlled normally but not monitored,
 * you can configure only monitoring options (all or some), but not control - the Unwaste Robot will monitor configured parameters on the device, but will not control it
 * you can configure both of these - and it will be both controlled and monitored
+
+Optional monitoring and additional readings are described in [Optional monitoring](Optional%20monitoring.md) and [Additional readings](Additional%20readings.md).
+
+## Screenshot (device type selection)
+
+ ![](../.gitbook/assets/2026-07-10_Configuration_adding_new_device_select_type.png " =821x400")

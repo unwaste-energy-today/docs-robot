@@ -116,7 +116,7 @@ The resulting mode is then applied to the device.
 
 A control signal sent by the Unwaste Robot, one of:
 
-[→ "Unmanaged" mode ](#h-unmanaged-mode-devices-and-storages)\n[→ "Off" mode ](#h-off-mode-devices)\n[→ "Eco" mode ](#h-eco-mode-devices)\n[→ "Comfort" mode ](#h-comfort-mode-devices)\n[→ "Boost" mode](#h-boost-mode-devices)
+[→ "Unmanaged" mode ](#h-unmanaged-mode-devices-and-storages)\n[→ "Off" mode ](#h-off-mode-devices)\n[→ "Eco" mode ](#h-eco-mode-devices)\n[→ "Comfort" mode ](#h-comfort-mode-devices)\n[→ "Surplus" mode](#h-surplus-mode-devices)\n[→ "Boost" mode](#h-boost-mode-devices)
 
 Devices interpret these signals according to their capabilities and configuration.
 
@@ -128,6 +128,28 @@ Important notes:
 * "Comfort" and "Boost" → ON
 
 **Note 2.** These modes are signals sent to devices. Each device ultimately decides whether and how to respond.
+
+
+---
+
+## "Surplus" mode (devices)
+
+One of [→ Device operating modes](#h-device-operating-mode)
+
+In this mode, the device is encouraged to use more energy to absorb local photovoltaic surplus. It applies when [Surplus mode](#h-surplus-mode) is enabled on the connection and export/import thresholds indicate surplus conditions.
+
+Surplus is between Comfort and Boost in typical energy use. It is not available in schedules or overrides.
+
+
+---
+
+## Surplus mode (connection)
+
+A connection-level setting that enables the Unwaste Robot to request **Surplus** operating mode on managed devices when the installation is exporting surplus energy to the grid.
+
+Requires main circuit energy import and return readings, Surplus thresholds on the connection, and Surplus entries in each managed device's States Map.
+
+See [Connection](../Configuration/Connection.md#surplus-mode).
 
 
 ---
@@ -394,7 +416,7 @@ If `RUs > (RPr + EAv)` and energy is cheap, "Force charge" mode is activated.
 
 Possible storage states:
 
-[→ "Unmanaged" mode ](#h-unmanaged-mode-devices-and-storages)\n[→ "Default mode" ](#h-default-mode-storages)\n[→ "Force charge"](#h-force-charge-mode-storages)
+[→ "Unmanaged" mode ](#h-unmanaged-mode-devices-and-storages)\n[→ "Default mode" ](#h-default-mode-storages)\n[→ "Force charge"](#h-force-charge-mode-storages)\n[→ "Force discharge"](#h-force-charge-mode-storages)\n[→ "Lock discharge"](#h-force-charge-mode-storages)\n[→ "Lock both"](#h-force-charge-mode-storages)
 
 More modes may be added in the future.
 

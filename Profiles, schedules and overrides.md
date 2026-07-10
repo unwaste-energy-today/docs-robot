@@ -8,7 +8,7 @@ Price-based control is the **default control mechanism** used by the Unwaste Rob
 
 Every device that is set to **managed** is automatically controlled based on energy prices. The Unwaste Robot continuously evaluates whether energy is cheap or expensive and sends corresponding control signals to managed devices.
 
-This default behavior applies to **all managed devices** unless it is modified by additional mechanisms described later in this article, such as profiles, schedules, or overrides.
+This default behavior applies to **all managed devices** unless it is modified by additional mechanisms described later in this article, such as profiles, schedules, overrides, or **Surplus mode** on the connection (for PV surplus — see [Connection](../Configuration/Connection.md#surplus-mode)).
 
 **Example**
 

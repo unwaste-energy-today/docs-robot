@@ -91,3 +91,10 @@ If:
 * no production is expected,
 
 the Unwaste Robot may enable **Force Charge** to prepare for next-day consumption.
+
+
+---
+
+## Surplus mode for devices (separate topic)
+
+**Device Surplus mode** (when enabled on the connection) increases load during PV export. It is unrelated to storage Force Charge and is described in [Connection](../Configuration/Connection.md#surplus-mode) and [Device control](../Configuration/Device/Device%20control.md).

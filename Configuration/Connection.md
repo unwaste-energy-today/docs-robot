@@ -16,22 +16,25 @@ This section defines the technical and pricing parameters of your grid connectio
 
 ---
 
+## Name and Description
+
+**Name** is required. **Description** is optional.
+
+
+---
+
 ## Grid Maximum Power
 
 The **Grid Maximum Power** defines the highest electrical power that can be drawn from, or fed into, the power grid through this connection.
 
 This value should be set to the **lower of the following two limits**:
 
-* **Contractual limit**\nThe maximum power agreed in your contract with the energy provider.\nThis limit is defined by the grid operator and exceeding it may result in penalties or disconnection.
-* **Physical (installation) limit**\nThe maximum power allowed by the electrical protections installed in your building, such as main circuit breakers or fuses.\nThese protections physically limit how much power can safely flow through the installation.
+* **Contractual limit** — The maximum power agreed in your contract with the energy provider. This limit is defined by the grid operator and exceeding it may result in penalties or disconnection.
+* **Physical (installation) limit** — The maximum power allowed by the electrical protections installed in your building, such as main circuit breakers or fuses. These protections physically limit how much power can safely flow through the installation.
 
 In practice, the usable maximum power of the connection is always constrained by the **stricter (lower) of these two values**, even if the other limit is higher.
 
-**Important:**\nIf you are unsure which value applies, consult your installation documentation or an electrician. Setting this value higher than the actual contractual or physical limit does not increase the available power.\nIn real installations, exceeding these limits **may lead to tripping protective devices, damage to the electrical installation, or penalties imposed by the energy provider**.
-
-Note:
-
-It is not used yet, but in the future it will be used to limit power drawing from the grid to stay under this limit.
+**Important:** If you are unsure which value applies, consult your installation documentation or an electrician. Setting this value higher than the actual contractual or physical limit does not increase the available power. In real installations, exceeding these limits **may lead to tripping protective devices, damage to the electrical installation, or penalties imposed by the energy provider**.
 
 
 ---
@@ -43,7 +46,37 @@ Specifies whether the connection uses:
 * **1 phase**, or
 * **3 phases**
 
-It is not used yet. In the future it is planned to be used to check maximum per-phase load.
+
+---
+
+## Surplus Mode
+
+**Surplus mode** lets the Unwaste Robot react to local photovoltaic surplus (energy exported to the grid) by requesting **Surplus** operating mode on managed devices. Surplus sits between Comfort and Boost in terms of energy use — devices consume more when there is excess solar production.
+
+### Enabling Surplus mode
+
+Turn **Surplus mode** on in the connection configuration.
+
+When enabled, you must also set:
+
+* **Surplus on threshold** — average export power (W) over the previous 15 minutes above which the system considers surplus conditions active
+* **Surplus off threshold** — average import power (W) in the current 15 minutes above which surplus conditions end
+
+### Requirements
+
+Surplus mode requires:
+
+* **Energy import** and **Energy return** readings configured on the **main circuit**
+* **Surplus** defined in the **States Map** for every managed device with State control enabled
+
+Without these, the connection configuration cannot be validated while Surplus mode is on.
+
+### Behaviour
+
+* Surplus is applied automatically based on grid import/export measurements and electricity prices — it is **not** available in schedules or overrides.
+* When Surplus mode is active on a device, the dashboard may show **Surplus** as the mode source (see [Determining what controls a device](../Profiles,%20schedules%20and%20overrides/Determining%20what%20controls%20a%20device.md)).
+
+Surplus mode is optional. Use it when you have on-site PV generation and controllable loads that can use excess production.
 
 
 ---
@@ -52,14 +85,14 @@ It is not used yet. In the future it is planned to be used to check maximum per-
 
 The geographical location of the connection, provided as latitude and longitude in decimal format.
 
-It will be used as a base location for all future weather forecasts.
+It is used as a base location for weather and solar forecasts.
 
 
 ---
 
 ## Energy Usage Forecast Method
 
-This forecast is **required** if the system manages an energy storage (for example, a battery).\nOtherwise, it is optional (you can set it to None then).
+This forecast is **required** if the system manages an energy storage (for example, a battery). Otherwise, it is optional (you can set it to None).
 
 The forecast estimates future energy consumption based on past usage.
 
@@ -68,8 +101,6 @@ Available methods:
 * **None** – no consumption forecast is used
 * **Daily** – averages energy usage from the last 14 days
 * **Weekly** – averages energy usage for the same weekday over the last 4 weeks
-
-Additional methods will be added in the future.
 
 
 ---
@@ -108,7 +139,7 @@ In some regions, energy tariffs already include distribution costs. In such case
 
 ### Distribution Prices
 
-**Optional.** 
+**Optional.**
 
 Defines the cost of electricity distribution, if charged separately, and how it varies over time.
 
@@ -149,7 +180,7 @@ Prices change frequently—typically every hour, and sometimes every 15 minutes.
 
 Because of this, the Unwaste Robot updates prices daily by downloading them from the cloud (you cannot define prices yourself).
 
-To configure a dynamic tariff, simply select it from the list:\n**country → energy provider → tariff name**
+To configure a dynamic tariff, simply select it from the list: **country → energy provider → tariff name**
 
 Selecting a country updates available providers list to show those from this country, and selecting provider updates list of available tariffs.
 
@@ -160,8 +191,8 @@ Selecting a country updates available providers list to show those from this cou
 
 * Dynamic prices are downloaded daily. If the Unwaste Robot cannot download new prices (for example due to connectivity issues), it generates an **alert** for the user.
 * The Unwaste Robot **does not reuse yesterday's prices** as a fallback. Daily dynamic prices may differ significantly, and using outdated prices could lead to incorrect decisions and financial loss.
-* When valid dynamic prices are not available, the system switches affected devices to **UNMANAGED MODE** until current prices are available again.
-  * In UNMANAGED MODE, the Unwaste Robot does not send Eco / Comfort / Boost / Off control signals based on dynamic pricing.
+* When valid dynamic prices are not available, the system switches affected devices to **Unmanaged mode** until current prices are available again.
+  * In Unmanaged mode, the Unwaste Robot does not send Eco / Comfort / Boost / Off control signals based on dynamic pricing.
   * Monitoring and views may still work if measurements are available.
 
 
@@ -169,15 +200,15 @@ Selecting a country updates available providers list to show those from this cou
 
 ### Static Tariffs
 
-Prices are mostly fixed and usually vary only by time of day.\nThey may also include weekend or seasonal variations.
+Prices are mostly fixed and usually vary only by time of day. They may also include weekend or seasonal variations.
 
 They are maintained externally and updated automatically.
 
-Configuration is done by selecting the tariff from the list:\n**country → energy provider → tariff name**
+Configuration is done by selecting the tariff from the list: **country → energy provider → tariff name**
 
 Selecting a country updates available providers list to show those from this country, and selecting provider updates list of available tariffs.
 
-**Important!** This type of tariffs requires the Unwaste Robot to be connected to cloud  to check for tariff updates.
+**Important!** This type of tariffs requires the Unwaste Robot to be connected to cloud to check for tariff updates.
 
 
 ---
@@ -218,9 +249,5 @@ Incorrect tariff configuration may lead to suboptimal or misleading optimization
 
 # Screenshot
 
- ![](../.gitbook/assets/Configuration_53fb8090-2c5f-4095-8d84-1065a7971b94_Screenshot_connection.png " =821x798")
+ ![](../.gitbook/assets/2026-07-10_Configuration_connection.png " =821x798")
 
-
-\
-
-\

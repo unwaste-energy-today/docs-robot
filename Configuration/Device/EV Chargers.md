@@ -21,23 +21,23 @@ For a single-phase device in a three-phase installation, only one field is used.
 
 ---
 
+### Energy return
+
+Optional. Select one to three Home Assistant entities representing energy exported from the charger (if applicable).
+
+
+---
+
 ### Power flow
 
-Optional. Select one to three Home Assistant entities representing instantaneous charging power.
-
-For a three-phase device, you can provide:
-
-* one sensor for summed power (leaving the rest empty) - it must be specified in the L1 field
-* three sensors, each corresponding to one phase - L1, L2, L3.
-
-For a single-phase device in a three-phase installation, only one field is used. It should correspond to the phase of the circuit the device is connected to.
+Optional. Instantaneous power is configured in **Optional monitoring**. See [Optional monitoring](../Optional%20monitoring.md).
 
 
 ---
 
 ### Control
 
-Control configuration is identical to other devices.
+Control configuration is identical to other devices. See [Device control](Device%20control.md).
 
 Important:
 
@@ -54,4 +54,5 @@ The best scenario is to connect vehicle just after returning and leave it connec
 
 # Screenshot
 
- ![](../.gitbook/assets/Configuration_Device_7fea67fa-de48-4ab2-b67d-a9607cb10e5e_Screenshot_EV_Charger.png " =811x655")
+ ![](../.gitbook/assets/2026-07-10_Configuration_device_ev_charger.png " =811x655")
+

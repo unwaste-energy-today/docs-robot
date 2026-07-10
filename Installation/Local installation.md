@@ -2,64 +2,53 @@
 
 **Instrukcja Instalacji**
 
-wchodzimy w HA w settings → addons
+This page describes installing the Unwaste add-on in Home Assistant. For the Polish version of the same steps, see [Instrukcja Instalacji](../Instrukcja%20Instalacji.md).
 
 
- ![](../.gitbook/assets/Installation_a129f186-f1dd-47ae-8e84-a75cd2758cf9_image.png) ![](../.gitbook/assets/Installation_a129f186-f1dd-47ae-8e84-a75cd2758cf9_image.png)
+---
+
+## Add the Unwaste repository
+
+1. Open Home Assistant → **Settings** → **Add-ons** → **Add-on Store**.
+2. Open the menu (top left) → **Repositories**.
+3. Add the Unwaste repository URL and click **Add**:
+
+**https://gitlab.com/unwaste/public/unwaste-haos-repository-production**
+
+4. Close the dialog. From the same menu, select **Check for updates**.
+5. **Refresh the browser page** — Home Assistant does not reload the store automatically; the Unwaste add-on may not appear until you refresh.
 
 
-\
-klikamy "addon store"
+---
+
+## Install the add-on
+
+1. Find **Unwaste** on the add-on list and open it.
+2. Click **Install** and wait for installation to finish.
 
 
- ![](../.gitbook/assets/Installation_a129f186-f1dd-47ae-8e84-a75cd2758cf9_image.png) ![](../.gitbook/assets/Installation_a129f186-f1dd-47ae-8e84-a75cd2758cf9_image.png)
+---
+
+## Configure the add-on
+
+On the add-on **Configuration** tab:
+
+* **Use external database** — leave off to use the built-in database (default).
+* When **Use external database** is on, fill in server address, port, user, password, database name, and SSL as required.
+
+When **Use external database** is off, leave the database connection fields empty.
+
+See [Robot settings](../Configuration/Robot%20settings.md) for details.
 
 
-\
-w lewym górnym rogu klikamy menu a w nim Repositories
+---
 
+## Start the add-on
 
- ![](../.gitbook/assets/Installation_a129f186-f1dd-47ae-8e84-a75cd2758cf9_image.png) ![](../.gitbook/assets/Installation_a129f186-f1dd-47ae-8e84-a75cd2758cf9_image.png)
+On the add-on **Info** tab, enable:
 
+* **Start on boot**
+* **Watchdog** (recommended)
+* **Show in sidebar** (recommended — opens the Unwaste panel)
 
-\
-W oknie które się otworzy wprowadzamy link do repozytorium Unwaste i klikamy add\n**<https://gitlab.com/unwaste/public/unwaste-haos-repository-develop>**
-
-
-\
- ![](../.gitbook/assets/Installation_a129f186-f1dd-47ae-8e84-a75cd2758cf9_image.png) ![](../.gitbook/assets/Installation_a129f186-f1dd-47ae-8e84-a75cd2758cf9_image.png)
-
-
-po dodaniu repozytorium zamykamy to okno, i z tego samego menu co wcześniej, wybieramy "check for updates"
-
-
- ![](../.gitbook/assets/Installation_a129f186-f1dd-47ae-8e84-a75cd2758cf9_image.png) ![](../.gitbook/assets/Installation_a129f186-f1dd-47ae-8e84-a75cd2758cf9_image.png)
-
-
-Następnie ODŚWIEŻAMY STRONĘ (ważny krok - bo Home Assistant nie robi tego automatycznie i bez odświeżenia strony addon nie pokaże się na liście)
-
-
-szukamy na liście addonu Unwaste
-
-
- ![](../.gitbook/assets/Installation_a129f186-f1dd-47ae-8e84-a75cd2758cf9_image.png) ![](../.gitbook/assets/Installation_a129f186-f1dd-47ae-8e84-a75cd2758cf9_image.png)
-
-
-wchodzimy w niego i instalujemy tak jak każdy inny addon
-
-
-Po zainstalowaniu konfigurujemy go; możemy wprowadzić adres zewnętrznej bazy danych jeśli chcemy, a jeśli nie chcemy to musimy wprowadzić spacje w pola, bo na razie nie udało się zrobić żeby pola były całkowicie opcjonalne
-
-Po skonfigurowaniu zaznaczamy jeszcze te opcje:
-
-
- ![](../.gitbook/assets/Installation_a129f186-f1dd-47ae-8e84-a75cd2758cf9_image.png) ![](../.gitbook/assets/Installation_a129f186-f1dd-47ae-8e84-a75cd2758cf9_image.png)
-
-
-i możemy uruchomić addon.
-
-
-\
-
-
-1. \
+Click **Start**. Open the Unwaste panel from the sidebar to complete [Initial configuration](Initial%20configuration.md).

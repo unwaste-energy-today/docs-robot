@@ -11,7 +11,14 @@ At the moment, the system supports solar installations (solar panels connected t
 
 # Inverter Configuration
 
-Configuring an inverter is straightforward. Only one setting is required; the rest are optional and add extra information or features.
+Configuring an inverter requires **Energy production** and **Energy usage** readings. Other fields add forecasts and optional monitoring.
+
+
+---
+
+## Name and Description
+
+**Name** is required. **Description** is optional.
 
 
 ---
@@ -33,32 +40,18 @@ For a single-phase inverter in a three-phase installation, only one field is use
 
 Only energy sensors would be available on this list.
 
-
----
-
-## Power Flow
-
-This optional setting allows you to select one to three sensors that shows the current power flow from the inverter.
-
-For a three-phase inverter, you can provide:
-
-* one sensor for summed production (leaving the rest empty) - it must be specified in the L1 field
-* three sensors, each corresponding to one phase - L1, L2, L3.
-
-For a single-phase inverter in a three-phase installation, only one field is used. It should correspond to the phase of the circuit the inverter is connected to.
-
-This setting is optional. If you don't provide these sensors, power flow information will not be shown on power flow graphs.
-
-Only power sensors would be available on this list.
+Use **Monitoring alerts** on this block if needed. See [Monitoring alerts](Monitoring%20alerts.md).
 
 
 ---
 
-## Irradiance Meter
+## Energy Usage
 
-This is an optional sensor that measures sunlight intensity (usually from a device called a pyranometer).
+This setting defines where the system reads **on-site self-consumption** of produced energy — how much generated energy is used within the installation rather than exported.
 
-If provided, the system will display a sunlight chart.\nThis information is for reference only and does not affect how the system operates.
+This setting is **required**.
+
+For a three-phase inverter, the same L1 / L2 / L3 rules apply as for Energy production.
 
 
 ---
@@ -76,13 +69,11 @@ As of now, the system supports only two forecast types:
 * "None", meaning no forecast is available. When *None* is selected, the system operates without production forecasts and relies only on real-time measurements.
 * "Direct", which means a direct reading of forecast configured in Home Assistant.
 
-In the future we plan to add other types of forecast, based on different weather forecast services.
-
 In Direct type, you must choose one of available forecast entities, compatible with Home Assistant's Energy Dashboard. It must show remaining energy production for the current day.
 
 Note 1: Forecast quality directly affects battery and load optimization decisions. Inaccurate forecasts can significantly affect battery charging decisions and export vs self-consumption optimization, potentially reducing expected savings.
 
-Note 2: This is a different than forecast than Energy usage Forecast (defined in Connection), but both of them are used for controlling a storage.
+Note 2: This is a different forecast than Energy usage Forecast (defined in Connection), but both of them are used for controlling a storage.
 
 
 ---
@@ -93,22 +84,30 @@ The most commonly used forecast sources are:
 
 **1) Solcast**
 
-The most accurate option, typically within a 5–10% error range.\nRequires a paid Solcast API key.
+The most accurate option, typically within a 5–10% error range. Requires a paid Solcast API key.
 
 **2) Open Meteo Solar Forecast**
 
-A free option based on the Open-Meteo service.\nGenerally reliable and the best choice among free alternatives, though less accurate than Solcast.
+A free option based on the Open-Meteo service. Generally reliable and the best choice among free alternatives, though less accurate than Solcast.
 
 **3) Forecast.Solar**
 
-Built into Home Assistant and free to use.\nLess accurate, especially on cloudy days and during winter, as it often overestimates production.
+Built into Home Assistant and free to use. Less accurate, especially on cloudy days and during winter, as it often overestimates production.
+
+
+---
+
+## Optional Monitoring
+
+Instantaneous power, voltage, current, irradiance, and other extra sensors are configured under **Optional monitoring** on the inverter form.
+
+* **Power flow** and other electrical readings — see [Optional monitoring](Optional%20monitoring.md)
+* **Irradiance** and custom sensors — add via [Additional readings](Additional%20readings.md) (type Irradiance)
 
 
 ---
 
 # Screenshot
 
- ![](../.gitbook/assets/Configuration_60c7b161-176c-4001-9242-ff0ba6337a06_Screenshot_Production.png " =821x516")
+ ![](../.gitbook/assets/2026-07-10_Configuration_production.png " =821x516")
 
-
-\

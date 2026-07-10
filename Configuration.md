@@ -8,7 +8,7 @@
 * monitor energy production, consumption, and storage,
 * send meaningful control signals to selected devices.
 
-Configuration does **not** change how your electrical installation works physically.\nIt creates a **logical model** that reflects what already exists in reality.
+Configuration does **not** change how your electrical installation works physically. It creates a **logical model** that reflects what already exists in reality.
 
 The quality of configuration directly affects:
 
@@ -31,6 +31,12 @@ Configuration in Unwaste is built in **layers**, from the most general to the mo
 
 Each layer depends on the previous one and should be configured in order.
 
+Shared mechanisms used across several layers:
+
+* [Optional monitoring](Configuration/Optional%20monitoring.md) – extra electrical readings and graphs
+* [Additional readings](Configuration/Additional%20readings.md) – custom named sensors
+* [Monitoring alerts](Configuration/Monitoring%20alerts.md) – threshold alerts on readings
+
 
 ---
 
@@ -43,7 +49,8 @@ Here you define:
 * number of phases (single-phase or three-phase),
 * location (used for forecasts and solar calculations),
 * tariff-related information,
-* consumption forecast method (required if energy storage is used).
+* consumption forecast method (required if energy storage is used),
+* optional **Surplus mode** (for installations with PV and controllable loads).
 
 This step establishes the **global context** for all further configuration.
 
@@ -68,7 +75,7 @@ Circuits are essential for:
 * separating different types of consumption,
 * assigning meters, devices, and production sources correctly.
 
-> Important: The main circuit is mandatory.\nOther circuits are optional but strongly recommended.
+> Important: The main circuit is mandatory. Other circuits are optional but strongly recommended.
 
 
 ---
@@ -88,7 +95,7 @@ Configuration defines:
 * how the Unwaste Robot can read data from these devices,
 * whether the Unwaste Robot can send control signals to them.
 
-> Important:\nControl signals are advisory. Devices and inverters may accept, limit, or ignore them based on their own logic and safety rules.
+> Important: Control signals are advisory. Devices and inverters may accept, limit, or ignore them based on their own logic and safety rules.
 
 
 ---
@@ -100,7 +107,7 @@ A **device** is any appliance that consumes energy.
 For each device you decide independently:
 
 * whether it is **monitored** (energy usage is measured),
-* whether it is **controlled** (receives Eco / Comfort / Boost / Off signals).
+* whether it is **controlled** (receives Eco / Comfort / Boost / Off / Surplus signals).
 
 Monitoring and control are separate:
 
@@ -133,14 +140,16 @@ These mechanisms are described in separate sections of the documentation and bui
 A recommended workflow for a new installation:
 
 
-1. Configure the **connection**
-2. Create the **main circuit**
-3. Add important **sub-circuits**
-4. Attach **meters** to circuits
-5. Configure **production sources** (for example PV)
-6. Configure **energy storage** (if present)
-7. Add and assign **devices**
-8. Enable control where appropriate
+1. Complete [Robot settings](Configuration/Robot%20settings.md) and onboarding
+2. Configure the **connection**
+3. Create the **main circuit**
+4. Add important **sub-circuits**
+5. Attach **meters** to circuits
+6. Configure **production sources** (for example PV)
+7. Configure **energy storage** (if present)
+8. Add and assign **devices**
+9. Enable control where appropriate
+10. Optionally configure [Surplus mode](Configuration/Connection.md#surplus-mode) and [monitoring alerts](Configuration/Monitoring%20alerts.md)
 
 You can return to configuration at any time to refine or extend it.
 

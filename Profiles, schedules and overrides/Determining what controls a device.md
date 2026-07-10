@@ -4,7 +4,7 @@
 
 Sometimes it might be needed to determine what element is now in force (that is, if the mode is determined by schedules or overrides or by default mechanism.
 
-That's why we show this information directly in dashboard, because it could be useful for "debugging" your installation, where this rule comes from. 
+That's why we show this information directly in dashboard, because it could be useful for "debugging" your installation, where this rule comes from.
 
 It is only a way to see this information, you cannot change it here.
 
@@ -23,17 +23,21 @@ Mode, as usual, takes one of these values:
 * Off
 * Eco
 * Comfort
+* Surplus
 * Boost
 
-Mode source can take one of three possible values:
+Mode source can take one of these values:
 
-* Tariff - that means the algorithm determined this mode looking at the price of electricity
-* Schedule - that means a schedule has determined this mode
-* Override - that means that override forced this mode
+* **Tariff** — the mode was determined from electricity prices (default price-based control)
+* **Surplus** — Surplus mode was applied because [Surplus mode](../Configuration/Connection.md#surplus-mode) is enabled and export/import conditions were met
+* **Schedule** — a schedule determined this mode
+* **Override** — an override forced this mode
 
 Unmanaged indicates the device is not under tariff, schedule, or override control.
 
 Mode source is not shown for Disabled or Unmanaged modes.
+
+Surplus is not available in schedules or overrides — it applies only through the default control mechanism when Surplus mode is configured on the connection.
 
 ## Examples for devices
 
@@ -43,14 +47,13 @@ It can look like in these examples of the same device:
 
 # Storages
 
-Storages are controlled by quite different algorithm, so they don't have a mode source parameter - they show only their current mode, and it is one of valid storage operating modes:
+Storages use a different control model than devices, so they do not have a mode source parameter — they show only their current mode, and it is one of valid storage operating modes:
 
 * Disabled
 * Unmanaged
 * Default
 * Force charge
+* Force discharge
+* Lock discharge
+* Lock both
 
-
-\
-
-\

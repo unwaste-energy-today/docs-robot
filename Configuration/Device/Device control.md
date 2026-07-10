@@ -14,14 +14,15 @@ The Unwaste Robot **does not directly enforce behavior**. It only sends a signal
 It operates like this:
 
 * Every 15 minutes, the Unwaste Robot analyzes prices and determines if electricity is cheap or expensive at the moment.
-  * For static tariffs (which are usually two-tiered) it simply sets Eco for higher price tier and Comfort for lower price tier, Off and Boost modes are unused
-  * For dynamic prices (which vary greatly) it calculates which mode to use (using all four: Off/Eco/Comfort/Boost) with our internal algorithm that ensures there would be at least some hours when energy would be marked as Comfort
+  * For static tariffs (which are usually two-tiered) it simply sets Eco for higher price tier and Comfort for lower price tier; Off and Boost modes are unused
+  * For dynamic prices (which vary greatly) it assigns Off, Eco, Comfort, or Boost based on how cheap or expensive the current period is compared to the rest of the day, so that Comfort periods occur regularly across the day
+* When [Surplus mode](../Connection.md#surplus-mode) is enabled on the connection and surplus conditions are met, the Unwaste Robot may request **Surplus** mode instead of the price-based mode (Surplus is not used in schedules or overrides)
 * The Unwaste Robot then decides which mode to request to each device, taking into account:
-  * electricity price
+  * electricity price (and Surplus conditions, if applicable)
   * schedule set for this device
   * if there are overrides present
-* The Unwaste Robot sends appropriate signal to the device. 
-* The device decides how (or if) it reacts. 
+* The Unwaste Robot sends appropriate signal to the device.
+* The device decides how (or if) it reacts.
 * The installation limits what is physically possible - for example, it is not possible to heat whole home or charge a car completely in timespan of couple of minutes.
 
 There is no guaranteed outcome of sending this signal to device, but Unwaste Robot does its best.
@@ -37,12 +38,12 @@ Device control is based on defining **named controllable parameters** and assign
 
 
 1. **Define controllable parameters** — tell the system what aspects of the device can be controlled and assign a user-friendly name to each.
-2. **Assign values for each operating mode** — decide what values each parameter should receive in Eco, Comfort, Boost, and Off.
+2. **Assign values for each operating mode** — decide what values each parameter should receive in each mode.
 
 
 ---
 
-## Enabling Control (prerequisite
+## Enabling Control (prerequisite)
 
 Before any parameters or modes can be configured, **control must be enabled** for the device.
 
@@ -58,7 +59,7 @@ The selected control type determines whether the **States Map** section is avail
 
 Note: "None" and "Disabled" are separate concepts and serve different purposes.
 
-"None" tells us that there is no control available at all, which is useful, as empty "State" form would complain for missing values.
+"None" means that there is no control available at all. This is useful when an empty "State" form would require values that do not apply.
 
 "Disabled" allows to temporarily disable control, without losing all the configuration stored in "State" form.
 
@@ -80,6 +81,7 @@ Think of this as *creating named control channels*.
 
 * **Switch** entities accept simple on/off values.
 * **Select** entities allow choosing one value from a predefined list (for example an operating state supported by the device).
+* **Number** entities accept a numeric value within a defined range.
 
 
 ---
@@ -90,23 +92,19 @@ Think of this as *creating named control channels*.
 * Because entity naming and capabilities vary between manufacturers and integrations, this documentation does not provide a universal "entity selection guide".
 * If you are unsure which entity to use, verify in Home Assistant whether it supports the required action (for example switching modes or turning on/off).
 
-**Planned improvement**
-
-* A simplified configuration mechanism for selected supported devices is planned. In most supported cases, users will not need to select entities manually.
-* This mechanism is not available in this release.
-
 
 ---
 
 ## Step 2: Assign values for each operating mode
 
-After parameters are defined and named, assign **values for each operating mode**:
+After parameters are defined and named, assign **values for each operating mode** in the **States Map**:
 
 * Disabled
 * Unmanaged
 * Off
 * Eco
 * Comfort
+* Surplus (required when Surplus mode is enabled on the connection — see [Connection](../Connection.md#surplus-mode))
 * Boost
 
 For each mode, you must:
@@ -121,7 +119,7 @@ When a mode becomes active, all enabled control entities for that mode are set s
 * Each state must have **at least one enabled entity** configured.
 * If a device does not support a specific mode, approximate configuration may be applied (for example, mapping Boost to Comfort).
 * If Eco or Comfort mode is missing, the device may not be smart-grid ready and should be mapped to simple on/off semantics:
-  * Disabled, Off and Eco modes should be mapped to Turn Off state 
+  * Disabled, Off and Eco modes should be mapped to Turn Off state
   * Unmanaged, Comfort and Boost should be mapped to Turn On state
 
 
@@ -136,8 +134,10 @@ A device can operate in one of the following modes:
 * **Off mode** – the device is instructed to turn off or use only the minimum possible energy
 * **Eco mode** – the device is instructed to operate in a low energy consumption mode
 * **Comfort mode** – the device is allowed to operate with higher energy consumption
+* **Surplus mode** – the device is instructed to use more energy to absorb local PV surplus (only when Surplus mode is enabled on the connection)
 * **Boost mode** – the device is instructed to use as much energy as possible, and store it if the device supports for example overheating
 
 ## Screenshot
 
- ![](../.gitbook/assets/Configuration_Device_79c04140-71c0-408e-be9c-ecdaef279a5d_Screenshot_storage_control.png " =770x1008")
+ ![](../.gitbook/assets/2026-07-10_Configuration_device_control.png " =770x1008")
+

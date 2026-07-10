@@ -12,9 +12,9 @@ If you imagine your electrical system as a tree:
 
 A circuit represents one point in this tree where energy flows into or out of a part of the installation.
 
-There is one special circuit called the **main circuit**.\nIt represents the trunk of the tree and connects all other circuits.
+There is one special circuit called the **main circuit**. It represents the trunk of the tree and connects all other circuits.
 
-Each circuit can measure the energy flowing through its part of the system.\nThis is done by linking the circuit to one or more compatible smart meters.
+Each circuit can measure the energy flowing through its part of the system. This is done by linking the circuit to one or more compatible smart meters.
 
 
 ---
@@ -28,6 +28,8 @@ Conceptually, the main circuit represents the **main electricity meter of your h
 It measures the total amount of energy flowing **into and out of your entire installation** and should be connected to the main smart meter of your grid connection.
 
 Without correct readings from the main circuit, the Unwaste Robot cannot operate properly.
+
+**Energy import** and **Energy return** on the main circuit are also **required when Surplus mode** is enabled on the connection. See [Connection](Connection.md#surplus-mode).
 
 
 ---
@@ -48,6 +50,13 @@ Common examples include:
 ---
 
 # Configuration
+
+
+---
+
+## Name and Description
+
+**Name** is required. **Description** is optional.
 
 
 ---
@@ -80,6 +89,8 @@ If any sub-circuit has no import reading, it will still show the summed energy u
 
 Only energy sensors would be available on this list.
 
+Use **Monitoring alerts** on this block if needed. See [Monitoring alerts](Monitoring%20alerts.md).
+
 
 ---
 
@@ -94,7 +105,7 @@ As in the Energy Import, for three-phase circuits, you can provide:
 * one sensor for summed return (leaving the rest empty)  - it must be specified in the L1 field
 * three sensors, each corresponding to one phase - L1, L2, L3.
 
-This setting is optional. By not providing this sensor, you are stating that the system should assume no energy is flowing back to the grid - which is correct when there is no Production element in this circuit or any of its sub-circuits.
+This setting is optional for sub-circuits but **required on the main circuit when Surplus mode** is enabled on the connection.
 
 Only energy sensors would be available on this list.
 
@@ -103,18 +114,16 @@ Only energy sensors would be available on this list.
 
 ## Power Flow
 
-Defines which Home Assistant sensor(s) are used to measure **instantaneous power** flowing through the circuit.
+Instantaneous **power flow** for a circuit is configured in the **Optional monitoring** section (not on the main part of the circuit form). See [Optional monitoring](Optional%20monitoring.md).
 
-Only sensors that report **power values** are supported.
 
-For three-phase circuits, you can provide:
+---
 
-* one sensor for summed power flow (leaving the rest empty)  - it must be specified in the L1 field
-* three sensors, each corresponding to power flow on one phase - L1, L2, L3.
+## Optional Monitoring
 
-This setting is optional. If you don't provide this sensor, it would only mean that it will not be shown on power flow graphs.
+Circuits have the **full** optional monitoring set, including reactive power, power factor, and reactive energy readings.
 
-Only power sensors would be available on this list.
+See [Optional monitoring](Optional%20monitoring.md) and [Additional readings](Additional%20readings.md).
 
 
 ---
@@ -146,8 +155,6 @@ The system accepts either:
 * one total reading, or
 * three separate phase readings
 
-and automatically combines them internally.
-
 
 ---
 
@@ -173,7 +180,5 @@ In some installations this may not be fully possible, for example when a three-p
 
 # Screenshot
 
- ![](../.gitbook/assets/Configuration_56166d8c-bfc2-4ffd-afe0-9088b30f1fd9_Screenshot_circuit.png " =818x501")
+ ![](../.gitbook/assets/2026-07-10_Configuration_circuit.png " =818x501")
 
-
-\

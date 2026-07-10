@@ -20,7 +20,7 @@ It answers: "What is happening right now?"
 * Values represent the **most recent reading**.
 * Updated every **5 seconds**.
 * No accumulation is performed.
-* Power flow history is **not stored** in the database.
+* Power flow history is **not stored** for long-term replay in this view.
 
 This is intentionally different from Energy Usage, which is historical and cumulative.
 

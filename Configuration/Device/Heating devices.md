@@ -62,44 +62,28 @@ Examples:
 
 ## Configuration
 
-All readings below are optional. The device will operate without them, but configuring them improves analysis as data would be stored and presented as graphs.
+At the device level, configure **Energy consumed** and optional **Energy return** like other devices.
+
+Heating-specific readings are configured per **DHW circuit** and **Heating circuit** on the form.
 
 
 ---
 
-### Energy consumed
+### Energy consumed / Energy return (device level)
 
-Total electrical energy used by the heating circuit.
-
-For a three-phase device, you can provide:
-
-* one sensor for summed energy (leaving the rest empty) - it must be specified in the L1 field
-* three sensors, each corresponding to one phase - L1, L2, L3.
-
-For a single-phase device in a three-phase installation, only one field is used. It should correspond to the phase of the circuit the device is connected to.
+Optional. Total electrical energy for the whole device (L1 / L2 / L3 as for other devices).
 
 
 ---
 
-### Power flow
+### DHW circuit / Heating circuit
 
-Instantaneous electrical power used by the circuit.
+Each circuit section includes:
 
-For a three-phase device, you can provide:
+* **Energy reading** — electrical energy used by that circuit
+* **Heat produced** — optional thermal energy produced (useful for COP analysis)
 
-* one sensor for summed power (leaving the rest empty) - it must be specified in the L1 field
-* three sensors, each corresponding to one phase - L1, L2, L3.
-
-For a single-phase device in a three-phase installation, only one field is used. It should correspond to the phase of the circuit the device is connected to.
-
-
----
-
-### **Heat produced**
-
-Optional.\nAn energy entity representing the amount of heat produced by this heating circuit.
-
-This value is useful mainly for advanced analysis, such as estimating efficiency (for example COP in heat pumps).
+**Power flow** for the device is configured under **Optional monitoring**. See [Optional monitoring](../Optional%20monitoring.md).
 
 
 ---
@@ -108,14 +92,12 @@ This value is useful mainly for advanced analysis, such as estimating efficiency
 
 Heating devices use the same control mechanism as other devices.
 
-See **Device Control** for details.
+See [Device control](Device%20control.md) for details.
 
 
 ---
 
 # Screenshot of a heat pump configuration
 
- ![](../.gitbook/assets/Configuration_Device_adb33e5e-de36-4e65-bd68-1f3fa42a254d_Screenshot_Heat_pump.png " =821x991")
+ ![](../.gitbook/assets/2026-07-10_Configuration_device_heat_pump.png " =821x991")
 
-
-\
