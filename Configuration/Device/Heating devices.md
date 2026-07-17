@@ -99,5 +99,5 @@ See [Device control](Device%20control.md) for details.
 
 # Screenshot of a heat pump configuration
 
- ![](../.gitbook/assets/2026-07-10_Configuration_device_heat_pump.png " =821x991")
+ ![](../../.gitbook/assets/2026-07-10_Configuration_device_heat_pump.png " =821x991")
 

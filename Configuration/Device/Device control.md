@@ -140,5 +140,5 @@ A device can operate in one of the following modes:
 
 ## Screenshot
 
- ![](../.gitbook/assets/2026-07-10_Configuration_device_control.png " =770x1008")
+ ![](../../.gitbook/assets/2026-07-10_Configuration_device_control.png " =770x1008")
 

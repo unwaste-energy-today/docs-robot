@@ -53,5 +53,5 @@ Control configuration is identical to other devices. See [Device control](Device
 
 # Screenshot
 
- ![](../.gitbook/assets/2026-07-10_Configuration_device_generic.png " =811x655")
+ ![](../../.gitbook/assets/2026-07-10_Configuration_device_generic.png " =811x655")
 

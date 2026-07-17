@@ -54,5 +54,5 @@ The best scenario is to connect vehicle just after returning and leave it connec
 
 # Screenshot
 
- ![](../.gitbook/assets/2026-07-10_Configuration_device_ev_charger.png " =811x655")
+ ![](../../.gitbook/assets/2026-07-10_Configuration_device_ev_charger.png " =811x655")
 
