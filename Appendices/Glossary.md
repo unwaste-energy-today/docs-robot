@@ -13,11 +13,13 @@ Important: Not all devices support "Boost" mode. It is available only on devices
 
 ## Circuit
 
-Represents any part of your electrical installation.\nA main circuit is always created with a connection and cannot be removed. Sub-circuits may be added. Circuits and sub-circuits are used to model energy flows and attach production, storage, and devices.
+Represents any part of your electrical installation.
+A main circuit is always created with a connection and cannot be removed. Sub-circuits may be added. Circuits and sub-circuits are used to model energy flows and attach production, storage, and devices.
 
 When a circuit is connected to energy usage readings from a smart meter, it can be used to visualize energy flow within the installation.
 
-In a local [Unwaste Robot,](#h-unwaste-robot) circuits and sub-circuits can be organized into a hierarchical structure, creating a clear energy flow diagram.\nThe cloud [Unwaste Robot](#h-unwaste-robot) supports only a single main circuit.
+In a local [Unwaste Robot,](#h-unwaste-robot) circuits and sub-circuits can be organized into a hierarchical structure, creating a clear energy flow diagram.
+The cloud [Unwaste Robot](#h-unwaste-robot) supports only a single main circuit.
 
 
 ---
@@ -35,7 +37,9 @@ This does not force the device to consume energy; it only signals that energy is
 
 ## Connection
 
-Represents a physical connection to the power grid and contains the definition of energy prices for that connection.\nImportant: Prices and operating modes are calculated separately for each connection.\nAlthough multiple connections can be added, most installations have only one. Splitting parts of a single local installation into multiple connections is usually counterproductive.
+Represents a physical connection to the power grid and contains the definition of energy prices for that connection.
+Important: Prices and operating modes are calculated separately for each connection.
+Although multiple connections can be added, most installations have only one. Splitting parts of a single local installation into multiple connections is usually counterproductive.
 
 
 ---
@@ -76,14 +80,16 @@ Please refer to your storage documentation and configuration for details.
 
 see [→Design dashboard](#h-design-dashboard), [→Installation graph](#h-installation-graph)
 
-A user interface mode in the Unwaste EMS where the structure of an electrical installation is created and modified.\nIn Design mode, you add and organize connections, circuits, production sources, storage, and devices.
+A user interface mode in the Unwaste EMS where the structure of an electrical installation is created and modified.
+In Design mode, you add and organize connections, circuits, production sources, storage, and devices.
 
 
 ---
 
 ## Design dashboard
 
-The main view within Design mode where all existing connections are listed and where new installations can be created.\nFrom the Design dashboard, you can enter the installation graph for each connection.
+The main view within Design mode where all existing connections are listed and where new installations can be created.
+From the Design dashboard, you can enter the installation graph for each connection.
 
 
 ---
@@ -116,40 +122,23 @@ The resulting mode is then applied to the device.
 
 A control signal sent by the Unwaste Robot, one of:
 
-[→ "Unmanaged" mode ](#h-unmanaged-mode-devices-and-storages)\n[→ "Off" mode ](#h-off-mode-devices)\n[→ "Eco" mode ](#h-eco-mode-devices)\n[→ "Comfort" mode ](#h-comfort-mode-devices)\n[→ "Surplus" mode](#h-surplus-mode-devices)\n[→ "Boost" mode](#h-boost-mode-devices)
+[→ "Unmanaged" mode ](#h-unmanaged-mode-devices-and-storages)
+[→ "Off" mode ](#h-off-mode-devices)
+[→ "Eco" mode ](#h-eco-mode-devices)
+[→ "Comfort" mode ](#h-comfort-mode-devices)
+[→ "Boost" mode](#h-boost-mode-devices)
 
 Devices interpret these signals according to their capabilities and configuration.
 
 Important notes:
 
-**Note 1.** Not all devices support all modes. "Boost" mode is particularly rare.\nDevices with only ON/OFF control should map:
+**Note 1.** Not all devices support all modes. "Boost" mode is particularly rare.
+Devices with only ON/OFF control should map:
 
 * "Off" and "Eco" → OFF
 * "Comfort" and "Boost" → ON
 
 **Note 2.** These modes are signals sent to devices. Each device ultimately decides whether and how to respond.
-
-
----
-
-## "Surplus" mode (devices)
-
-One of [→ Device operating modes](#h-device-operating-mode)
-
-In this mode, the device is encouraged to use more energy to absorb local photovoltaic surplus. It applies when [Surplus mode](#h-surplus-mode) is enabled on the connection and export/import thresholds indicate surplus conditions.
-
-Surplus is between Comfort and Boost in typical energy use. It is not available in schedules or overrides.
-
-
----
-
-## Surplus mode (connection)
-
-A connection-level setting that enables the Unwaste Robot to request **Surplus** operating mode on managed devices when the installation is exporting surplus energy to the grid.
-
-Requires main circuit energy import and return readings, Surplus thresholds on the connection, and Surplus entries in each managed device's States Map.
-
-See [Connection](../Configuration/Connection.md#surplus-mode).
 
 
 ---
@@ -160,14 +149,16 @@ One of [→ Device operating modes](#h-device-operating-mode)
 
 In this mode, the device limits its energy usage. It is activated when energy prices are high.
 
-Devices capable of operating at different power levels typically interpret this mode as a low-power or energy-saving state.\nFor example, heat pumps, refrigerators, or air conditioning systems may continue operating at a reduced level to maintain temperature.
+Devices capable of operating at different power levels typically interpret this mode as a low-power or energy-saving state.
+For example, heat pumps, refrigerators, or air conditioning systems may continue operating at a reduced level to maintain temperature.
 
 
 ---
 
 ## Energy tariffs
 
-Energy prices are one of the most important elements of the system.\nFor each [→Connection](#h-connection), at least the following price must be defined:
+Energy prices are one of the most important elements of the system.
+For each [→Connection](#h-connection), at least the following price must be defined:
 
 * energy price – the cost of electricity purchased from the grid
 * distribution price (optional) – used if distribution costs are not included in the energy price
@@ -226,7 +217,8 @@ An installation consists of one or more connections and their associated circuit
 
 see [→Connection](#h-connection), [→Circuit](#h-circuit), [→Device](#h-device), [→Production](#h-production), [→Storage](#h-storage)
 
-A visual, tree-like representation of an electrical installation showing the hierarchical relationship between elements such as connections, circuits, production sources, energy storage, and devices.\nIt reflects how energy flows and how elements are structurally organized for monitoring and control.
+A visual, tree-like representation of an electrical installation showing the hierarchical relationship between elements such as connections, circuits, production sources, energy storage, and devices.
+It reflects how energy flows and how elements are structurally organized for monitoring and control.
 
 
 ---
@@ -235,14 +227,16 @@ A visual, tree-like representation of an electrical installation showing the hie
 
 see [→Device](#h-storage), [→Storage](#h-device), [→Control](#h-control)
 
-Any device or energy storage that is configured for control and can receive operating mode signals from the Unwaste Robot.\nManaged elements must be correctly configured in Home Assistant and support control actions to participate in optimization.
+Any device or energy storage that is configured for control and can receive operating mode signals from the Unwaste Robot.
+Managed elements must be correctly configured in Home Assistant and support control actions to participate in optimization.
 
 
 ---
 
 ## Monitoring
 
-The process of reading and reporting energy or power values from devices, circuits, or other elements without influencing their behavior.\nMonitoring provides insight into energy usage, production, and storage status.
+The process of reading and reporting energy or power values from devices, circuits, or other elements without influencing their behavior.
+Monitoring provides insight into energy usage, production, and storage status.
 
 
 ---
@@ -253,7 +247,8 @@ One of [→ Device operating modes](#h-device-operating-mode)
 
 Off mode means the device is instructed to stop normal operation to reduce energy usage when prices are high.
 
-This does not always mean the device is completely powered off.\nFor example, for heat pumps, "Off" typically means an anti-frost or protection mode.
+This does not always mean the device is completely powered off.
+For example, for heat pumps, "Off" typically means an anti-frost or protection mode.
 
 
 ---
@@ -294,7 +289,8 @@ Typical examples include:
 * **weekend** – adjusted rules for weekends
 * **vacation** – minimal energy usage when nobody is present
 
-Profiles can be freely defined as needed.\nThere must always be at least one "default" profile.
+Profiles can be freely defined as needed.
+There must always be at least one "default" profile.
 
 Each device can have a separate [→schedule](#h-schedule) for each profile.
 
@@ -416,7 +412,9 @@ If `RUs > (RPr + EAv)` and energy is cheap, "Force charge" mode is activated.
 
 Possible storage states:
 
-[→ "Unmanaged" mode ](#h-unmanaged-mode-devices-and-storages)\n[→ "Default mode" ](#h-default-mode-storages)\n[→ "Force charge"](#h-force-charge-mode-storages)\n[→ "Force discharge"](#h-force-charge-mode-storages)\n[→ "Lock discharge"](#h-force-charge-mode-storages)\n[→ "Lock both"](#h-force-charge-mode-storages)
+[→ "Unmanaged" mode ](#h-unmanaged-mode-devices-and-storages)
+[→ "Default mode" ](#h-default-mode-storages)
+[→ "Force charge"](#h-force-charge-mode-storages)
 
 More modes may be added in the future.
 
