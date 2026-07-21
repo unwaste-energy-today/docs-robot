@@ -1,9 +1,3 @@
----
-description: >-
-  Look up Unwaste EMS terms, control modes, calculations, and configuration
-  concepts.
----
-
 # Glossary
 
 ## "Boost" mode (devices)
@@ -421,9 +415,8 @@ It supports reliable updates and configuration of the robot's operating environm
 
 ## Unwaste Robot
 
-An entity that manages energy usage within the Unwaste EMS and aims to maximize savings.
+Unwaste Robot is software that manages energy use in Unwaste EMS. It aims to maximize savings.
 
-Two types are available:
+It can run as a Home Assistant application or as an application within Unwaste OS.
 
-* **cloud robot** – no hardware required, suitable for small installations
 * **local robot** – on-site hardware with extended capabilities for full installations

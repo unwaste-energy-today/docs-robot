@@ -1,9 +1,3 @@
----
-description: >-
-  Understand the local-first Unwaste Robot architecture and cloud-connected
-  features.
----
-
 # Introduction
 
 ## System Architecture
@@ -11,6 +5,8 @@ description: >-
 Unwaste EMS is built around a unique architecture designed to combine local reliability with cloud convenience.
 
 ### The Local Robot Concept
+
+The **Unwaste Robot** is the on-site controller for your energy infrastructure. It monitors and controls devices directly on your local network. Deploy it at a home, business, or facility using supported [hardware](../installation-for-home-assistant/hardware-requirements.md) running [Home Assistant](../installation-for-home-assistant/software-requirements.md).
 
 The **Unwaste Robot** is the core controller of Unwaste EMS. It runs locally, close to your energy infrastructure. It monitors and controls devices directly.
 
