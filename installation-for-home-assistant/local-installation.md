@@ -4,8 +4,7 @@
 
 This page describes installing the Unwaste add-on in Home Assistant.
 
-
----
+***
 
 ## Add the Unwaste repository
 
@@ -18,16 +17,14 @@ This page describes installing the Unwaste add-on in Home Assistant.
 4. Close the dialog. From the same menu, select **Check for updates**.
 5. **Refresh the browser page** — Home Assistant does not reload the store automatically; the Unwaste add-on may not appear until you refresh.
 
-
----
+***
 
 ## Install the add-on
 
 1. Find **Unwaste** on the add-on list and open it.
 2. Click **Install** and wait for installation to finish.
 
-
----
+***
 
 ## Configure the add-on
 
@@ -38,10 +35,9 @@ On the add-on **Configuration** tab:
 
 When **Use external database** is off, leave the database connection fields empty.
 
-See [Robot settings](../Configuration/Robot%20settings.md) for details.
+See [Robot settings](<../Configuration/Robot settings.md>) for details.
 
-
----
+***
 
 ## Start the add-on
 
@@ -51,4 +47,4 @@ On the add-on **Info** tab, enable:
 * **Watchdog** (recommended)
 * **Show in sidebar** (recommended — opens the Unwaste panel)
 
-Click **Start**. Open the Unwaste panel from the sidebar to complete [Initial configuration](Initial%20configuration.md).
+Click **Start**. Open the Unwaste panel from the sidebar to complete [Initial configuration](initial-configuration.md).

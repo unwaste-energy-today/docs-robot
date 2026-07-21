@@ -1,17 +1,18 @@
 # Connecting devices
 
-# Before You Configure Unwaste
+## Connecting devices
+
+## Before You Configure Unwaste
 
 Unwaste EMS reads data from and sends control signals through **Home Assistant entities**.
 
 Before you add production sources, storage, or devices in Unwaste **Design mode**, those integrations must already work in Home Assistant.
 
+***
 
----
+### What to Prepare in Home Assistant
 
-## What to Prepare in Home Assistant
-
-### Energy metering
+#### Energy metering
 
 For the **main circuit**, you need Home Assistant **energy** sensors that report:
 
@@ -20,11 +21,11 @@ For the **main circuit**, you need Home Assistant **energy** sensors that report
 
 Use the same entities you would add to the Home Assistant **Energy** dashboard, or dedicated smart meter integrations.
 
-### Production (PV)
+#### Production (PV)
 
 Configure your inverter integration so that **energy production** (and optionally forecast) entities are available.
 
-### Storage (battery)
+#### Storage (battery)
 
 Configure battery integration entities for:
 
@@ -32,7 +33,7 @@ Configure battery integration entities for:
 * charge level (percent or kWh), if available
 * control entities (switches or selects) if the Unwaste Robot should manage the battery
 
-### Controllable devices
+#### Controllable devices
 
 For devices you want the Unwaste Robot to manage, identify Home Assistant entities that can:
 
@@ -41,12 +42,11 @@ For devices you want the Unwaste Robot to manage, identify Home Assistant entiti
 
 Examples: heat pump climate entities, EV charger switches, SG Ready inputs.
 
-You will map these entities in [Device control](../Configuration/Device/Device%20control.md).
+You will map these entities in [Device control](<../Configuration/Device/Device control.md>).
 
+***
 
----
-
-## Entity Naming
+### Entity Naming
 
 Entity names depend on your integrations. Unwaste shows a list of compatible entities when you configure each field.
 
@@ -56,15 +56,14 @@ If an expected sensor does not appear:
 * check that the entity reports the correct device class (energy, power, etc.),
 * wait for the entity to receive at least one update.
 
+***
 
----
-
-## Next Steps
+### Next Steps
 
 When Home Assistant entities are ready:
 
-1. Complete [Initial configuration](Initial%20configuration.md) if you have not already.
-2. Follow [Designing your electrical installation](../Configuration/Designing%20your%20electrical%20installation.md) to build the installation graph.
+1. Complete [Initial configuration](../installation-for-home-assistant/initial-configuration.md) if you have not already.
+2. Follow [Designing your electrical installation](<../Configuration/Designing your electrical installation.md>) to build the installation graph.
 3. Map entities on each form (connection, circuit, production, storage, device).
 
-Optional readings and alerts can be added later via [Optional monitoring](../Configuration/Optional%20monitoring.md) and [Monitoring alerts](../Configuration/Monitoring%20alerts.md).
+Optional readings and alerts can be added later via [Optional monitoring](<../Configuration/Optional monitoring.md>) and [Monitoring alerts](<../Configuration/Monitoring alerts.md>).

@@ -1,6 +1,8 @@
 # Robot settings
 
-# Global Settings
+## Robot settings
+
+## Global Settings
 
 When you first open the Unwaste EMS after installing the Home Assistant add-on, an **onboarding wizard** collects basic settings for your **Unwaste Robot**.
 
@@ -17,19 +19,17 @@ Typical global settings include:
 * **Language** — interface language
 * **Include VAT** — whether prices include value-added tax
 
+***
 
----
-
-# Connection Location
+## Connection Location
 
 The **connection** form also has latitude and longitude fields.
 
 In most installations these match the global robot location. They define the reference point for forecasts tied to that grid connection.
 
+***
 
----
-
-# After Onboarding
+## After Onboarding
 
 Once onboarding is complete:
 
@@ -37,12 +37,11 @@ Once onboarding is complete:
 2. Configure the **connection** (tariffs, forecasts, optional Surplus mode).
 3. Set up circuits, production, storage, and devices as described in the Configuration section.
 
-See [Initial configuration](../Installation/Initial%20configuration.md) for the first-run workflow.
+See [Initial configuration](../installation-for-home-assistant/initial-configuration.md) for the first-run workflow.
 
+***
 
----
-
-# Home Assistant Add-on Options
+## Home Assistant Add-on Options
 
 Outside the Unwaste web interface, the add-on has optional settings in Home Assistant:
 
@@ -51,5 +50,4 @@ Outside the Unwaste web interface, the add-on has optional settings in Home Assi
 
 When **Use external database** is off, leave the database fields empty.
 
-See [Local installation](../Installation/Local%20installation.md) for add-on installation steps.
-
+See [Local installation](../installation-for-home-assistant/local-installation.md) for add-on installation steps.

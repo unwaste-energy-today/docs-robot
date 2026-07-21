@@ -13,14 +13,23 @@
 * [Introduction](<Getting started/Introduction.md>)
 * [System editions and licensing models](<Getting started/System editions and licensing models.md>)
 
-## Installation
+## Installation for Home Assistant
 
-* [Installation](Installation.md)
-* [Hardware requirements](<Installation/Hardware requirements.md>)
-* [Software requirements](<Installation/Software requirements.md>)
-* [Local installation](<Installation/Local installation.md>)
-* [Initial configuration](<Installation/Initial configuration.md>)
-* [Connecting devices](<Installation/Connecting devices.md>)
+* [Installation](installation-for-home-assistant/installation.md)
+* [Hardware requirements](installation-for-home-assistant/hardware-requirements.md)
+* [Software requirements](installation-for-home-assistant/software-requirements.md)
+* [Local installation](installation-for-home-assistant/local-installation.md)
+* [Initial configuration](installation-for-home-assistant/initial-configuration.md)
+* [Connecting devices](installation-for-home-assistant/connecting-devices.md)
+
+## Installation for Unwaste OS
+
+* [Installation](installation-for-unwaste-os/installation.md)
+* [Hardware requirements](installation-for-unwaste-os/hardware-requirements.md)
+* [Software requirements](installation-for-unwaste-os/software-requirements.md)
+* [Local installation](installation-for-unwaste-os/local-installation.md)
+* [Initial configuration](installation-for-unwaste-os/initial-configuration.md)
+* [Connecting devices](installation-for-unwaste-os/connecting-devices.md)
 
 ## Configuration
 
@@ -78,7 +87,7 @@
 
 ## Country specific
 
-* [Polska](Country%20Specific/Polska.md)
+* [Polska](<Country Specific/Polska.md>)
 
 ## Appendices
 
