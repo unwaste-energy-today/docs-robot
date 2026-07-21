@@ -8,9 +8,9 @@ description: >-
 
 ### Overview
 
-A Cloud Account is optional for basic local operation of the **Unwaste Robot**. The system can operate locally using custom tariffs and local control logic.
+The **Unwaste Robot** software can operate independently with local control logic and custom tariffs. However, full Unwaste Robot functionality requires access to external data. **Unwaste Cloud** provides this connection.
 
-However, a Cloud Account is required for:
+To use Unwaste Cloud, you must [create a user account](creating-account-in-unwaste-cloud.md) and associate your Unwaste Robot with it. A Cloud Account is required for:
 
 * using **static tariffs with automatic updates**,
 * using **dynamic tariffs**,

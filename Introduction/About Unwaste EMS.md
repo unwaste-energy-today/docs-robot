@@ -10,6 +10,8 @@ Unwaste EMS is an advanced energy management system created with a passion for s
 
 Unwaste EMS helps you **intelligently manage your energy consumption** by automatically optimizing how your devices operate. The system analyzes your usage patterns, renewable energy production, and electricity tariffs to make the best decisions in real-time. This allows you to achieve significant savings without sacrificing comfort.
 
+The system acts as a second guardian of your energy costs and electrical installation. It monitors correct operation and can advise how to expand your installation and achieve further savings.
+
 ## Universal and Flexible
 
 Unwaste EMS is designed with **universality and flexibility** in mind:

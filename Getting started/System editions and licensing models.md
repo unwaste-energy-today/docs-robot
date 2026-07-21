@@ -19,6 +19,8 @@ The basic version of Unwaste EMS is **available free of charge** for individual 
 
 The free version provides full functionality for typical home installations, making energy optimization accessible to everyone.
 
+Learn why we offer the software free of charge on our [About us](https://unwaste.energy/about) page.
+
 ## For Business Users
 
 If you want to use Unwaste EMS in your business, commercial installation, or industrial facility, we offer dedicated business licensing options.
@@ -29,7 +31,7 @@ Business licenses provide:
 * Advanced features for commercial operations
 * Professional technical support
 * Custom integration options
-* Service level agreements (SLAs)
+* Long-term warranty and service level agreements (SLAs)
 
 ## Licencing models
 
