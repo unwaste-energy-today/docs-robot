@@ -16,6 +16,8 @@ The **Unwaste Robot** is the core controller of Unwaste EMS. It runs locally, cl
 
 The Local Robot operates on-site at your home, business, or facility. It runs within Home Assistant or on Unwaste OS. See [Installation options](../getting-started/installation-options.md) for details.
 
+The Local Robot is available through your local LAN. Connect it to [Unwaste Cloud](https://app.gitbook.com/s/Wf3M0a04WuhvfEbAgXFl/unwaste-cloud) to manage multiple Unwaste Robots from anywhere. Use the [web portal](https://cloud.unwaste.energy/) or mobile app.
+
 **Key advantages of local operation:**
 
 * **Responsive control** — Decisions remain local and avoid internet latency.

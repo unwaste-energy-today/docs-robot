@@ -75,7 +75,7 @@ This allows you to:
 * check alerts and robot status (online/offline),
 * manage settings without being on the local network.
 
-The Cloud Account is also a required prerequisite for using the mobile app (when released). Both the Unwaste Robot and the mobile application connect to the cloud, which ensures reliable communication regardless of local network configuration.
+The Cloud Account is also a required prerequisite for using the mobile app. Both the Unwaste Robot and the mobile application connect to the cloud, which ensures reliable communication regardless of local network configuration.
 
 Example:\
 While away from home, you can verify whether storage is charging during low-price hours or check if heating devices are operating as expected.
