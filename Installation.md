@@ -13,7 +13,7 @@ Unwaste OS and other deployment options are not covered here.
 * Minimum 2 GB RAM recommended
 * Network connectivity
 
-See [Hardware requirements](Appendices/Hardware%20requirements.md) for details.
+See [Hardware requirements](Installation/Hardware%20requirements.md) for details.
 
 
 ---
@@ -21,7 +21,7 @@ See [Hardware requirements](Appendices/Hardware%20requirements.md) for details.
 ## Installation Steps
 
 
-1. **Install the add-on** — Follow [Local installation](Installation/Local%20installation.md) (or [Instrukcja Instalacji](Instrukcja%20Instalacji.md) in Polish).
+1. **Install the add-on** — Follow [Local installation](Installation/Local%20installation.md).
 2. **Initial configuration** — Complete onboarding and [Robot settings](Configuration/Robot%20settings.md). See [Initial configuration](Installation/Initial%20configuration.md).
 3. **Connect devices in Home Assistant** — Integrate meters and controllable devices before configuring Unwaste. See [Connecting devices](Installation/Connecting%20devices.md).
 4. **Configure the installation** — Use Design mode to build your installation graph. See [Configuration](Configuration.md).
