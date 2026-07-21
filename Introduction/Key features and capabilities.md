@@ -1,3 +1,9 @@
+---
+description: >-
+  Explore Unwaste EMS monitoring, automation, storage, and device control
+  capabilities.
+---
+
 # Key features and capabilities
 
 Unwaste EMS combines intelligent automation with comprehensive monitoring to deliver a complete energy management solution. Here are the core capabilities that set it apart:
@@ -48,13 +54,6 @@ Measure your financial and environmental impact with detailed savings reports sh
 
 Start with basic monitoring and expand to full automation. The system grows with your needs, from single-circuit installations to complex multi-circuit setups with multiple energy sources and storage systems.
 
-## Cloud and Local Deployment
-
-Choose between:
-
-* **Cloud Robot** - lightweight solution for smaller installations
-* **Local Robot** - on-premise hardware for advanced features and complete data control
-
----
+***
 
 Every feature works together to create a seamless energy management experience that reduces costs, maximizes renewable energy usage, and simplifies control of your entire electrical installation.

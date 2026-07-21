@@ -1,3 +1,7 @@
+---
+description: Learn how Unwaste Robot selects and sends operating modes to devices.
+---
+
 # Device control
 
 ## "What device control means"
@@ -10,12 +14,11 @@ The Unwaste Robot **does not directly enforce behavior**. It only sends a signal
 * the Unwaste Robot does not override thermostats or vehicle BMS,
 * due to these limitations, the Unwaste Robot does not guarantee comfort or readiness.
 
-
 It operates like this:
 
 * Every 15 minutes, the Unwaste Robot analyzes prices and determines if electricity is cheap or expensive at the moment.
   * For static tariffs (which are usually two-tiered) it simply sets Eco for higher price tier and Comfort for lower price tier; Off and Boost modes are unused
-  * For dynamic prices (which vary greatly) it assigns Off, Eco, Comfort, or Boost based on how cheap or expensive the current period is compared to other periods that day and to recent price history (see [Price-based device control](../../Inner%20Workings/Price-based%20device%20control.md))
+  * For dynamic prices (which vary greatly) it assigns Off, Eco, Comfort, or Boost based on how cheap or expensive the current period is compared to other periods that day and to recent price history (see [Price-based device control](<../../Inner Workings/Price-based device control.md>))
 * When [Surplus mode](../Connection.md#surplus-mode) is enabled on the connection and export/import conditions are met, the Unwaste Robot may request **Surplus** mode instead of the current price-based mode (Off, Eco, or Comfort). If the price-based mode is **Boost**, Boost takes precedence over Surplus. Surplus is not used in schedules or overrides.
 * The Unwaste Robot then decides which mode to request to each device, taking into account:
   * electricity price (price-based mode)
@@ -30,25 +33,22 @@ There is no guaranteed outcome of sending this signal to device, but Unwaste Rob
 
 Exact outcomes cannot be guaranteed. The Unwaste Robot optimizes based on available information, but final behavior depends on the device.
 
-
----
+***
 
 ## How device control works
 
 Device control is based on defining **named controllable parameters** and assigning **mode-specific values** for them. The configuration consists of two main steps:
 
-
 1. **Define controllable parameters** — tell the system what aspects of the device can be controlled and assign a user-friendly name to each.
 2. **Assign values for each operating mode** — decide what values each parameter should receive in each mode.
 
-
----
+***
 
 ## Enabling Control (prerequisite)
 
 Before any parameters or modes can be configured, **control must be enabled** for the device.
 
-Without enabled control, the device remains in *Unmanaged* mode and is only monitored.
+Without enabled control, the device remains in _Unmanaged_ mode and is only monitored.
 
 When enabling control, you must select the **type of control**:
 
@@ -57,15 +57,13 @@ When enabling control, you must select the **type of control**:
 
 The selected control type determines whether the **States Map** section is available for configuration.
 
-
 Note: "None" and "Disabled" are separate concepts and serve different purposes.
 
 "None" means that there is no control available at all. This is useful when an empty "State" form would require values that do not apply.
 
 "Disabled" allows to temporarily disable control, without losing all the configuration stored in "State" form.
 
-
----
+***
 
 ## Step 1: Define controllable parameters
 
@@ -76,7 +74,7 @@ In this step, you define **which parts of the device can be controlled**. Each c
 
 The name serves as a reference when assigning values per operating mode. No values are sent to the device in this step; you are only telling the Unwaste Robot what can potentially be controlled.
 
-Think of this as *creating named control channels*.
+Think of this as _creating named control channels_.
 
 ### Examples of entity types
 
@@ -84,8 +82,7 @@ Think of this as *creating named control channels*.
 * **Select** entities allow choosing one value from a predefined list (for example an operating state supported by the device).
 * **Number** entities accept a numeric value within a defined range.
 
-
----
+***
 
 ### **Note: selecting Home Assistant entities**
 
@@ -93,8 +90,7 @@ Think of this as *creating named control channels*.
 * Because entity naming and capabilities vary between manufacturers and integrations, this documentation does not provide a universal "entity selection guide".
 * If you are unsure which entity to use, verify in Home Assistant whether it supports the required action (for example switching modes or turning on/off).
 
-
----
+***
 
 ## Step 2: Assign values for each operating mode
 
@@ -123,14 +119,13 @@ When a mode becomes active, all enabled control entities for that mode are set s
   * Disabled, Off and Eco modes should be mapped to Turn Off state
   * Unmanaged, Comfort and Boost should be mapped to Turn On state
 
-
----
+***
 
 ## Device Control Modes
 
 A device can operate in one of the following modes:
 
-* **Disabled mode**  – the device is temporarily disabled by user or the Unwaste Robot
+* **Disabled mode** – the device is temporarily disabled by user or the Unwaste Robot
 * **Unmanaged mode** – the device is not controlled by the Unwaste Robot
 * **Off mode** – the device is instructed to turn off or use only the minimum possible energy
 * **Eco mode** – the device is instructed to operate in a low energy consumption mode
@@ -140,5 +135,4 @@ A device can operate in one of the following modes:
 
 ## Screenshot
 
- ![](../../.gitbook/assets/2026-07-10_Configuration_device_control.png " =770x1008")
-
+![](../../.gitbook/assets/2026-07-10_Configuration_device_control.png)

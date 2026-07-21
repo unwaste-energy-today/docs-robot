@@ -1,3 +1,7 @@
+---
+description: Learn how Unwaste EMS helps optimize energy use, production, and storage.
+---
+
 # About Unwaste EMS
 
 Unwaste EMS is an advanced energy management system created with a passion for saving energy and protecting the environment. Our mission is to enable every user to maximize energy efficiency and achieve real savings on electricity bills.

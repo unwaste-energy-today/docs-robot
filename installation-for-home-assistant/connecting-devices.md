@@ -1,3 +1,7 @@
+---
+description: Prepare Home Assistant devices and integrations for use with Unwaste EMS.
+---
+
 # Connecting devices
 
 ## Connecting devices

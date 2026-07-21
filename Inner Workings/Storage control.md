@@ -1,8 +1,12 @@
+---
+description: Learn how Unwaste decides when to request battery charging from the grid.
+---
+
 # Storage control
 
 ## What is storage control
 
-**Storage control** describes how the **Unwaste Robot** decides *when to request charging an energy storage from the grid*.
+**Storage control** describes how the **Unwaste Robot** decides _when to request charging an energy storage from the grid_.
 
 The Unwaste Robot does **not** control whether surplus energy from local production (for example photovoltaic panels) is stored.\n**Any surplus production that is not consumed immediately is always stored**, regardless of settings or prices.
 
@@ -12,8 +16,7 @@ What the Unwaste Robot controls is the **Force Charge mode**, which is effective
 
 The purpose of storage control is to request grid charging only when it is economically justified.
 
-
----
+***
 
 ## How it works (high level)
 
@@ -31,8 +34,7 @@ In general, it:
 * **avoids Force Charge when grid energy is expensive**,
 * **avoids Force Charge if significant local production is expected**, even if the storage is not currently full.
 
-
----
+***
 
 ## What this means in practice
 
@@ -43,8 +45,7 @@ In general, it:
 
 This helps reduce costs while preserving full use of locally produced energy.
 
-
----
+***
 
 ## Important notes
 
@@ -62,8 +63,7 @@ This helps reduce costs while preserving full use of locally produced energy.
 
 If required data is missing, the system may fall back to conservative behavior.
 
-
----
+***
 
 ## Example
 
@@ -72,7 +72,6 @@ A household with:
 * a battery,
 * solar panels,
 * a dynamic electricity tariff.
-
 
 If:
 
@@ -84,7 +83,6 @@ the Unwaste Robot will:
 * **not enable Force Charge**, even if the battery is not full,
 * allow the battery to fill later using surplus solar energy.
 
-
 If:
 
 * electricity becomes cheap at night,
@@ -92,9 +90,8 @@ If:
 
 the Unwaste Robot may enable **Force Charge** to prepare for next-day consumption.
 
-
----
+***
 
 ## Surplus mode for devices (separate topic)
 
-**Device Surplus mode** (when enabled on the connection) increases load during PV export. It is unrelated to storage Force Charge and is described in [Connection](../Configuration/Connection.md#surplus-mode) and [Device control](../Configuration/Device/Device%20control.md).
+**Device Surplus mode** (when enabled on the connection) increases load during PV export. It is unrelated to storage Force Charge and is described in [Connection](../Configuration/Connection.md#surplus-mode) and [Device control](<../Configuration/Device/Device control.md>).

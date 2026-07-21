@@ -1,3 +1,9 @@
+---
+description: >-
+  Review supported hardware and recommended specifications for Unwaste OS
+  deployments.
+---
+
 # Hardware requirements
 
 ## Hardware Options
@@ -9,7 +15,7 @@ Unwaste Robot runs on amd64 or arm64 hardware that meets the requirements below.
 **reComputer R1125-10** - Our officially recommended and tested platform
 
 {% hint style="success" %}
-The **reComputer R1125-10** is tested and validated in our laboratory with Unwaste EMS software. This device is based on Raspberry Pi Compute Module 4 (CM4) and provides a reliable, production-ready solution.
+The **reComputer R1125-10** is tested and validated in our laboratory with Unwaste Robot software. This device is based on Raspberry Pi Compute Module 4 (CM4) and provides a reliable, production-ready solution.
 {% endhint %}
 
 **Why choose reComputer R1125-10:**
@@ -25,11 +31,11 @@ If you want a hassle-free setup with hardware we know works perfectly with our s
 
 ### Option 2: Use Your Own Hardware
 
-You can run Unwaste EMS on your own hardware with Home Assistant already installed, provided it meets the requirements specified below. This gives you flexibility to use existing equipment or choose your preferred platform.
+You can run Unwaste Robot on your own hardware that meets the requirements specified below. This gives you flexibility to use existing equipment or choose your preferred platform.
 
 ## Minimum Hardware Requirements
 
-To run Home Assistant with Unwaste EMS, your system must meet these minimum specifications:
+To run Unwaste OS, your system must meet these minimum specifications:
 
 * **Processor (CPU):** 1.5 GHz single-core processor (64-bit required)
 * **RAM:** 2 GB minimum (4 GB or more recommended)
@@ -46,8 +52,6 @@ While these minimum specifications will work, they may result in slower performa
 For optimal performance and long-term reliability, we recommend:
 
 ### Recommended Platforms
-
-If using your own hardware (Option 2), we recommend:
 
 **Primary Recommendations:**
 
@@ -81,7 +85,7 @@ If using your own hardware (Option 2), we recommend:
 ### Storage Media Warning
 
 {% hint style="danger" %}
-**Avoid low-quality microSD cards for production use.** They frequently fail under the constant read/write operations required by the Home Assistant database. Use an SSD whenever possible.
+**Never use low-quality microSD cards for production use.** They frequently fail under the constant read/write operation. Use an SSD whenever possible.
 {% endhint %}
 
 ### Power Consumption

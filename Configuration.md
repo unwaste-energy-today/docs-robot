@@ -1,8 +1,14 @@
-# Configuration
+---
+description: >-
+  Learn how to model your electrical installation for monitoring and energy
+  control.
+---
+
+# Configuration basics
 
 ## What configuration means in Unwaste
 
-**Configuration** is the process of describing your real electrical installation to the Unwaste system so that the **Unwaste Robot** can correctly:
+**Configuration** is the process of describing your real electrical installation to the Unwaste system. It lets the [Unwaste Robot](Appendices/Glossary.md#h-unwaste-robot) correctly:
 
 * understand how energy flows through your installation,
 * monitor energy production, consumption, and storage,
@@ -16,13 +22,11 @@ The quality of configuration directly affects:
 * accuracy of statistics and savings,
 * effectiveness and safety of device control.
 
-
----
+***
 
 ## How configuration is structured
 
 Configuration in Unwaste is built in **layers**, from the most general to the most specific:
-
 
 1. **Connection** – your connection to the power grid
 2. **Circuits** – how energy flows inside your installation
@@ -33,16 +37,15 @@ Each layer depends on the previous one and should be configured in order.
 
 Shared mechanisms used across several layers:
 
-* [Optional monitoring](Configuration/Optional%20monitoring.md) – extra electrical readings and graphs
-* [Additional readings](Configuration/Additional%20readings.md) – custom named sensors
-* [Monitoring alerts](Configuration/Monitoring%20alerts.md) – threshold alerts on readings
+* [Optional monitoring](<Configuration/Optional monitoring.md>) – extra electrical readings and graphs
+* [Additional readings](<Configuration/Additional readings.md>) – custom named sensors
+* [Monitoring alerts](<Configuration/Monitoring alerts.md>) – threshold alerts on readings
 
-
----
+***
 
 ## Step 1: Configure the connection
 
-The **connection** represents your physical connection to the power grid.
+The [**connection**](Appendices/Glossary.md#h-connection) represents your physical connection to the power grid.
 
 Here you define:
 
@@ -56,12 +59,11 @@ This step establishes the **global context** for all further configuration.
 
 > Note: Most installations have exactly one connection.
 
-
----
+***
 
 ## Step 2: Define circuits (electrical structure)
 
-**Circuits** describe how energy flows through your installation.
+[**Circuits**](Appendices/Glossary.md#h-circuit) describe how energy flows through your installation.
 
 They form a tree structure:
 
@@ -77,8 +79,7 @@ Circuits are essential for:
 
 > Important: The main circuit is mandatory. Other circuits are optional but strongly recommended.
 
-
----
+***
 
 ## Step 3: Add energy production and storage
 
@@ -87,7 +88,7 @@ At this stage you describe where energy comes from and where it can be stored.
 This may include:
 
 * solar inverters (energy production),
-* batteries or other energy storage systems.
+* batteries or other [energy storage systems](Appendices/Glossary.md#h-storage).
 
 Configuration defines:
 
@@ -97,12 +98,11 @@ Configuration defines:
 
 > Important: Control signals are advisory. Devices and inverters may accept, limit, or ignore them based on their own logic and safety rules.
 
-
----
+***
 
 ## Step 4: Configure devices
 
-A **device** is any appliance that consumes energy.
+A [**device**](Appendices/Glossary.md#h-device) is any appliance that consumes energy.
 
 For each device you decide independently:
 
@@ -116,8 +116,7 @@ Monitoring and control are separate:
 
 Devices are attached to circuits to ensure their energy usage is counted correctly.
 
-
----
+***
 
 ## Configuration vs control
 
@@ -132,15 +131,13 @@ Actual behavior (when devices run, which mode is active) is determined later by:
 
 These mechanisms are described in separate sections of the documentation and build on top of a correct configuration.
 
-
----
+***
 
 ## Typical configuration workflow
 
 A recommended workflow for a new installation:
 
-
-1. Complete [Robot settings](Configuration/Robot%20settings.md) and onboarding
+1. Complete [Robot settings](<Configuration/Robot settings.md>) and onboarding
 2. Configure the **connection**
 3. Create the **main circuit**
 4. Add important **sub-circuits**
@@ -149,12 +146,11 @@ A recommended workflow for a new installation:
 7. Configure **energy storage** (if present)
 8. Add and assign **devices**
 9. Enable control where appropriate
-10. Optionally configure [Surplus mode](Configuration/Connection.md#surplus-mode) and [monitoring alerts](Configuration/Monitoring%20alerts.md)
+10. Optionally configure [Surplus mode](Configuration/Connection.md#surplus-mode) and [monitoring alerts](<Configuration/Monitoring alerts.md>)
 
 You can return to configuration at any time to refine or extend it.
 
-
----
+***
 
 ## Important notes
 

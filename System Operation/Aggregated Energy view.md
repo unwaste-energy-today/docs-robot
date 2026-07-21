@@ -1,3 +1,7 @@
+---
+description: Analyze aggregated energy values across selected installation elements.
+---
+
 # Aggregated Energy view
 
 ### What the Aggregated Energy view is
@@ -6,10 +10,9 @@ The **Aggregated Energy** view allows the user to review historical energy total
 
 It answers: "What were the totals over this period?"
 
- ![](../.gitbook/assets/System Operation_edd8ae4c-4ead-470a-9308-5515cc40b931_Screenshot_energy_aggregated_select_timespan.png " =2063x924")
+!\[]\(../.gitbook/assets/System Operation\_edd8ae4c-4ead-470a-9308-5515cc40b931\_Screenshot\_energy\_aggregated\_select\_timespan.png " =2063x924")
 
-
----
+***
 
 ### Selecting a date range
 
@@ -17,24 +20,21 @@ It answers: "What were the totals over this period?"
 * Start and end dates are **inclusive**.
 * Presets are available (Today, Last 7 days, This month, etc.).
 
+!\[]\(../.gitbook/assets/System Operation\_b49a1c7b-11c8-4eaa-82c2-4076f19c0fcf\_Screenshot\_aggregated-date\_range.png " =581x315")
 
- ![](../.gitbook/assets/System Operation_b49a1c7b-11c8-4eaa-82c2-4076f19c0fcf_Screenshot_aggregated-date_range.png " =581x315")
-
-**Important:**\nIf the system was STOPPED during part of the selected period, those missing intervals are excluded from totals.
+**Important:** If the system was STOPPED during part of the selected period, those missing intervals are excluded from totals.
 
 See **System operation → Starting and stopping the Unwaste Robot** for details.
 
-
----
+***
 
 ### Aggregated results
 
 All values shown are **sums over the selected time range**.
 
- ![](../.gitbook/assets/System Operation_ccd6c45e-562b-42b5-b433-e5171a153bf9_Screenshot_energy_aggregated.png " =2058x925")
+!\[]\(../.gitbook/assets/System Operation\_ccd6c45e-562b-42b5-b433-e5171a153bf9\_Screenshot\_energy\_aggregated.png " =2058x925")
 
-
----
+***
 
 #### Totals panel
 
@@ -47,17 +47,15 @@ Definitions:
 * **Retrieved** – energy taken from storage (discharging).
 * **Used** – energy consumed by loads.
 
-
----
+***
 
 #### Self Use panel
 
 These values are computed using the **same self-use logic as daily views**, but applied across the entire selected range.
 
-**Important:**\nSelf-used energy is calculated per 15-minute interval and then summed.\nThis avoids misleading conclusions that can happen if production and consumption occur at different times of day.\nSee *Inner workings → Self-use calculation* for details.
+**Important:** Self-used energy is calculated per 15-minute interval and then summed. This avoids misleading conclusions that can happen if production and consumption occur at different times of day. See _Inner workings → Self-use calculation_ for details.
 
-
----
+***
 
 #### Heating panel
 
@@ -68,11 +66,10 @@ Fields currently shown:
 * **Used for Heating**
 * **Heating produced**
 * **Used for DHW heating**
-* **DHW heat produced** 
+* **DHW heat produced**
 
-
----
+***
 
 ### Savings
 
-Savings in this view apply to the selected historical time range.\nSee *Inner workings → Savings calculation* for the meaning and limitations (especially the estimated part of "Unwasted").
+Savings in this view apply to the selected historical time range. See _Inner workings → Savings calculation_ for the meaning and limitations (especially the estimated part of "Unwasted").

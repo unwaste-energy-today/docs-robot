@@ -1,6 +1,12 @@
+---
+description: Model energy flows by creating main circuits and optional sub-circuits.
+---
+
 # Circuit
 
-# What Is a Circuit
+## Circuit
+
+## What Is a Circuit
 
 A **circuit** is a basic building block of your electrical installation.
 
@@ -16,10 +22,9 @@ There is one special circuit called the **main circuit**. It represents the trun
 
 Each circuit can measure the energy flowing through its part of the system. This is done by linking the circuit to one or more compatible smart meters.
 
+***
 
----
-
-## Main Circuit (Required)
+### Main Circuit (Required)
 
 The **main circuit is mandatory**.
 
@@ -31,10 +36,9 @@ Without correct readings from the main circuit, the Unwaste Robot cannot operate
 
 **Energy import** and **Energy return** on the main circuit are also **required when Surplus mode** is enabled on the connection. See [Connection](Connection.md#surplus-mode).
 
+***
 
----
-
-## Sub-Circuits (Optional)
+### Sub-Circuits (Optional)
 
 All other circuits are optional.
 
@@ -46,32 +50,28 @@ Common examples include:
 * Tracking energy consumption for individual rental rooms
 * Seeing how much energy is used by a specific area, such as a kitchen and its appliances
 
+***
 
----
+## Configuration
 
-# Configuration
+***
 
-
----
-
-## Name and Description
+### Name and Description
 
 **Name** is required. **Description** is optional.
 
+***
 
----
-
-## Phase Count
+### Phase Count
 
 Defines whether the circuit uses:
 
 * **1 phase**, or
 * **3 phases**
 
+***
 
----
-
-## Energy Import
+### Energy Import
 
 Defines which Home Assistant sensor(s) are used to measure energy flowing **into** the circuit.
 
@@ -89,12 +89,11 @@ If any sub-circuit has no import reading, it will still show the summed energy u
 
 Only energy sensors would be available on this list.
 
-Use **Monitoring alerts** on this block if needed. See [Monitoring alerts](Monitoring%20alerts.md).
+Use **Monitoring alerts** on this block if needed. See [Monitoring alerts](<Monitoring alerts.md>).
 
+***
 
----
-
-## Energy Return
+### Energy Return
 
 Defines which Home Assistant sensor(s) are used to measure energy flowing **out of** the circuit, for example when exporting solar energy back to the grid.
 
@@ -102,38 +101,34 @@ Only sensors that report **total energy values** are supported.
 
 As in the Energy Import, for three-phase circuits, you can provide:
 
-* one sensor for summed return (leaving the rest empty)  - it must be specified in the L1 field
+* one sensor for summed return (leaving the rest empty) - it must be specified in the L1 field
 * three sensors, each corresponding to one phase - L1, L2, L3.
 
 This setting is optional for sub-circuits but **required on the main circuit when Surplus mode** is enabled on the connection.
 
 Only energy sensors would be available on this list.
 
+***
 
----
+### Power Flow
 
-## Power Flow
+Instantaneous **power flow** for a circuit is configured in the **Optional monitoring** section (not on the main part of the circuit form). See [Optional monitoring](<Optional monitoring.md>).
 
-Instantaneous **power flow** for a circuit is configured in the **Optional monitoring** section (not on the main part of the circuit form). See [Optional monitoring](Optional%20monitoring.md).
+***
 
-
----
-
-## Optional Monitoring
+### Optional Monitoring
 
 Circuits have the **full** optional monitoring set, including reactive power, power factor, and reactive energy readings.
 
-See [Optional monitoring](Optional%20monitoring.md) and [Additional readings](Additional%20readings.md).
+See [Optional monitoring](<Optional monitoring.md>) and [Additional readings](<Additional readings.md>).
 
+***
 
----
+## Important Notes
 
-# Important Notes
+***
 
-
----
-
-## Note 1
+### Note 1
 
 In installations without a dedicated smart meter (or without access to its data), a solar inverter may provide total energy import and return readings.
 
@@ -141,10 +136,9 @@ In some cases, these inverter readings can be used as a replacement for main cir
 
 Please consult a qualified electrician to confirm whether this applies to your installation.
 
+***
 
----
-
-## Note 2
+### Note 2
 
 Even for a three-phase circuit, it is allowed to configure **only one sensor** for energy import, energy return, or power flow.
 
@@ -155,17 +149,15 @@ The system accepts either:
 * one total reading, or
 * three separate phase readings
 
+***
 
----
-
-## Note 3
+### Note 3
 
 L1, L2 and L3 are designations for three different phases. They do not have to match the phase numbering used by the power utility. But if you opt to supply all three readings, these SHOULD be consistently designated - that is for example, if you designate a L2 phase reading in main circuit then you must consistently mark the same phase as L2 in all subcircuits and devices.
 
+***
 
----
-
-## Note 4
+### Note 4
 
 Do not mix a single total sensor with per-phase sensors within the same section.
 
@@ -178,7 +170,6 @@ If possible, avoid mixing total and per-phase sensors across the entire installa
 
 In some installations this may not be fully possible, for example when a three-phase inverter provides only total energy values. In such cases, use total readings consistently and do not combine them with per-phase sensors.
 
-# Screenshot
+## Screenshot
 
- ![](../.gitbook/assets/2026-07-10_Configuration_circuit.png " =818x501")
-
+![](../.gitbook/assets/2026-07-10_Configuration_circuit.png)

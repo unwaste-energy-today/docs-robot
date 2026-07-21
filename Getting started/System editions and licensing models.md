@@ -1,17 +1,12 @@
+---
+description: >-
+  Compare Unwaste EMS licensing options for residential, business, and
+  industrial users.
+---
+
 # System editions and licensing models
 
-Unwaste EMS is designed to serve both individual users and businesses, with licensing options tailored to different needs and use cases.
-
-Unwaste Robot runs in two deployment models:
-
-1. As a Home Assistant application (add-on).
-2. Independently on Unwaste OS.
-
-
-
-
-
-Please refer [Unwaste pricing](https://unwaste.energy/pricing) for more information.
+Unwaste EMS serves a broad range of users. It provides essential features for everyday energy management and advanced capabilities for demanding industrial customers.
 
 ## For Individual Users
 
@@ -36,7 +31,11 @@ Business licenses provide:
 * Custom integration options
 * Service level agreements (SLAs)
 
-### Get in Touch
+## Licencing models
+
+Please refer [Unwaste pricing](https://unwaste.energy/pricing) for more information.
+
+## Get in Touch
 
 To discuss business licensing, pricing, and custom solutions for your organization, please contact us at:
 

@@ -1,6 +1,10 @@
-# Robot settings
+---
+description: >-
+  Configure global Robot settings, onboarding details, and add-on database
+  options.
+---
 
-## Robot settings
+# Robot settings
 
 ## Global Settings
 

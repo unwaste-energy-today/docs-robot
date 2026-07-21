@@ -1,3 +1,9 @@
+---
+description: >-
+  Understand the local-first Unwaste Robot architecture and cloud-connected
+  features.
+---
+
 # Introduction
 
 ## System Architecture
@@ -6,14 +12,16 @@ Unwaste EMS is built around a unique architecture designed to combine local reli
 
 ### The Local Robot Concept
 
-At the heart of Unwaste EMS is the **Unwaste Robot** - a controller (software) that runs close to your energy infrastructure, directly monitoring and controlling your devices. The Local Robot operates on-site (at your home, business, or facility) using hardware that meets our [hardware requirements](../installation-for-home-assistant/hardware-requirements.md) and runs on [Home Assistant](../installation-for-home-assistant/software-requirements.md).
+The **Unwaste Robot** is the core controller of Unwaste EMS. It runs locally, close to your energy infrastructure. It monitors and controls devices directly.
+
+The Local Robot operates on-site at your home, business, or facility. It runs within Home Assistant or on Unwaste OS. See [Installation options](../getting-started/installation-options.md) for details.
 
 **Key advantages of local operation:**
 
-* **Real-time responsiveness** - Control decisions are made locally without depending on internet latency
-* **Privacy and security** - Your energy data stays on your premises
-* **Independent operation** - The system continues working even during internet outages
-* **Direct device control** - Communicates directly with your devices through the local network
+* **Responsive control** — Decisions remain local and avoid internet latency.
+* **Privacy and security** — Energy data stays on your premises.
+* **Independent operation** — The system continues during internet outages.
+* **Direct device control** — The robot communicates through the local network.
 
 ### Local-First with Cloud Enhancement
 
@@ -39,17 +47,17 @@ While the Local Robot works standalone, connecting to **Unwaste Cloud** unlocks 
 * **Access sharing** - Grant temporary access to installers or family members
 * **Future enhancements** - Advanced analytics, forecasting, and optimization features
 
-Learn more about cloud benefits in [Cloud Account Benefits](<../Cloud Account/Benefits of Cloud Account.md>).
+Learn more about cloud benefits in [Cloud Account Benefits](../unwaste-cloud/benefits-of-cloud-account.md).
 
 ## Getting Started
 
 To begin using Unwaste EMS:
 
 1. Review [System editions and licensing models](<System editions and licensing models.md>) to understand your options
-2. Check [Hardware Requirements](../installation-for-home-assistant/hardware-requirements.md) to choose your platform
-3. Review [Software Requirements](../installation-for-home-assistant/software-requirements.md) for Home Assistant setup
-4. Follow the [Installation](../installation-for-home-assistant/local-installation.md) guide
+2. Check [Installation options](../getting-started/installation-options.md)
+3. Review software and hardware requirements
+4. Follow the installation guide
 5. Complete [Configuration](<../Configuration/Designing your electrical installation.md>) of your electrical installation
-6. Optionally, connect to [Unwaste Cloud](<../Cloud Account/Creating account in Unwaste Cloud.md>) for enhanced features
+6. Optionally, connect to [Unwaste Cloud](../unwaste-cloud/creating-account-in-unwaste-cloud.md) for enhanced features
 
 The modular design means you can start with basic local operation and expand capabilities as your needs grow.

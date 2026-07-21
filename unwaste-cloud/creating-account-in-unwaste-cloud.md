@@ -1,4 +1,8 @@
-# Creating Cloud Account
+---
+description: Create a Personal or Business account for Unwaste Cloud services.
+---
+
+# Creating account
 
 ## Creating a Cloud Account
 
@@ -20,8 +24,7 @@ During registration, you can choose between:
 * **Personal account**
 * **Business account**
 
-![](../.gitbook/assets/2026-07-21_Create_private_cloud_account.png " =580x937")
-![](../.gitbook/assets/2026-07-21_Create_business_cloud_account.png " =575x1075")
+![](../.gitbook/assets/2026-07-21_Create_private_cloud_account.png) ![](../.gitbook/assets/2026-07-21_Create_business_cloud_account.png)
 
 ***
 

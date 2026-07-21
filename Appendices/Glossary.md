@@ -1,3 +1,9 @@
+---
+description: >-
+  Look up Unwaste EMS terms, control modes, calculations, and configuration
+  concepts.
+---
+
 # Glossary
 
 ## "Boost" mode (devices)
@@ -16,7 +22,7 @@ Represents any part of your electrical installation. A main circuit is always cr
 
 When a circuit is connected to energy usage readings from a smart meter, it can be used to visualize energy flow within the installation.
 
-In a local [Unwaste Robot,](Glossary.md#h-unwaste-robot) circuits and sub-circuits can be organized into a hierarchical structure, creating a clear energy flow diagram. The cloud [Unwaste Robot](Glossary.md#h-unwaste-robot) supports only a single main circuit.
+In a local [Unwaste Robot](Glossary.md#h-unwaste-robot), circuits and sub-circuits can be organized into a hierarchical structure, creating a clear energy flow diagram. The cloud [Unwaste Robot](Glossary.md#h-unwaste-robot) supports only a single main circuit.
 
 ***
 
@@ -36,9 +42,9 @@ Represents a physical connection to the power grid and contains the definition o
 
 ***
 
-## **Control**
+## Control
 
-see [→Device operating mode](Glossary.md#h-device-operating-mode), [→Storage control mode](Glossary.md#h-storage-control-mode).
+See [→ Device operating mode](Glossary.md#h-device-operating-mode) and [→ Storage control mode](Glossary.md#h-storage-control-mode).
 
 The ability of the Unwaste Robot to send operating mode signals to a device or energy storage.
 
@@ -104,9 +110,13 @@ The resulting mode is then applied to the device.
 
 ## Device operating mode
 
-A control signal sent by the Unwaste Robot, one of:
+A control signal sent by the Unwaste Robot. Available modes are:
 
-[→ "Unmanaged" mode ](Glossary.md#h-unmanaged-mode-devices-and-storages)[→ "Off" mode ](Glossary.md#h-off-mode-devices)[→ "Eco" mode ](Glossary.md#h-eco-mode-devices)[→ "Comfort" mode ](Glossary.md#h-comfort-mode-devices)[→ "Boost" mode](Glossary.md#h-boost-mode-devices)
+* [→ "Unmanaged" mode](Glossary.md#h-unmanaged-mode-devices-and-storages)
+* [→ "Off" mode](Glossary.md#h-off-mode-devices)
+* [→ "Eco" mode](Glossary.md#h-eco-mode-devices)
+* [→ "Comfort" mode](Glossary.md#h-comfort-mode-devices)
+* [→ "Boost" mode](Glossary.md#h-boost-mode-devices)
 
 Devices interpret these signals according to their capabilities and configuration.
 
@@ -176,7 +186,7 @@ For details, see [→Storage control algorithm](Glossary.md#h-storage-control-al
 
 ***
 
-## **Installation**
+## Installation
 
 A logical representation of a physical energy system configured in Unwaste.
 
@@ -184,7 +194,7 @@ An installation consists of one or more connections and their associated circuit
 
 ***
 
-## **Installation graph**
+## Installation graph
 
 see [→Connection](Glossary.md#h-connection), [→Circuit](Glossary.md#h-circuit), [→Device](Glossary.md#h-device), [→Production](Glossary.md#h-production), [→Storage](Glossary.md#h-storage)
 
@@ -194,7 +204,7 @@ A visual, tree-like representation of an electrical installation showing the hie
 
 ## Managed element
 
-see [→Device](Glossary.md#h-storage), [→Storage](Glossary.md#h-device), [→Control](Glossary.md#h-control)
+See [→ Device](Glossary.md#h-device), [→ Storage](Glossary.md#h-storage), and [→ Control](Glossary.md#h-control).
 
 Any device or energy storage that is configured for control and can receive operating mode signals from the Unwaste Robot. Managed elements must be correctly configured in Home Assistant and support control actions to participate in optimization.
 
@@ -363,7 +373,9 @@ If `RUs > (RPr + EAv)` and energy is cheap, "Force charge" mode is activated.
 
 Possible storage states:
 
-[→ "Unmanaged" mode ](Glossary.md#h-unmanaged-mode-devices-and-storages)[→ "Default mode" ](Glossary.md#h-default-mode-storages)[→ "Force charge"](Glossary.md#h-force-charge-mode-storages)
+* [→ "Unmanaged" mode](Glossary.md#h-unmanaged-mode-devices-and-storages)
+* [→ "Default" mode](Glossary.md#h-default-mode-storages)
+* [→ "Force charge" mode](Glossary.md#h-force-charge-mode-storages)
 
 More modes may be added in the future.
 
@@ -395,7 +407,7 @@ See [→ Unwaste Robot](Glossary.md#h-unwaste-robot)
 
 ## "Unmanaged" mode (devices and storages)
 
-One of [→ Device operating modes ](Glossary.md#h-device-operating-mode)and [→Storage operating modes](Glossary.md#h-storage-control-mode)
+One of [→ Device operating modes](Glossary.md#h-device-operating-mode) and [→ Storage operating modes](Glossary.md#h-storage-control-mode).
 
 In this mode, the device or storage is not managed by the [Unwaste Robot](Glossary.md#h-unwaste-robot) and operates according to its own rules.
 

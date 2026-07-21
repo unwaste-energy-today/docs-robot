@@ -1,6 +1,12 @@
+---
+description: Add custom readings to monitor additional energy and power measurements.
+---
+
 # Additional readings
 
-# What Are Additional Readings
+## Additional readings
+
+## What Are Additional Readings
 
 **Additional readings** let you attach extra Home Assistant sensors to a circuit, production source, storage, or device.
 
@@ -10,14 +16,13 @@ Each entry has:
 * a **Type** (determines which sensor field is shown),
 * the corresponding **Home Assistant entity**.
 
-Additional readings appear in graphs and statistics when configured. They can also have [Monitoring alerts](Monitoring%20alerts.md).
+Additional readings appear in graphs and statistics when configured. They can also have [Monitoring alerts](<Monitoring alerts.md>).
 
-Additional readings are configured inside the **Optional monitoring** section on each element form. See [Optional monitoring](Optional%20monitoring.md) for where to find this section.
+Additional readings are configured inside the **Optional monitoring** section on each element form. See [Optional monitoring](<Optional monitoring.md>) for where to find this section.
 
+***
 
----
-
-# Supported Types
+## Supported Types
 
 When you add an additional reading, you choose a type. Available types include:
 
@@ -35,12 +40,11 @@ When you add an additional reading, you choose a type. Available types include:
 
 The form shows entity selectors matching the selected type.
 
+***
 
----
+## Common Examples
 
-# Common Examples
-
-## Irradiance (solar installations)
+### Irradiance (solar installations)
 
 If you have a pyranometer or similar sensor, add an additional reading of type **Irradiance**.
 
@@ -48,21 +52,18 @@ The system can display a sunlight chart. This is for reference only and does not
 
 This replaces configuring irradiance as a separate top-level field on the inverter form.
 
-## Temperature
+### Temperature
 
 Add a reading of type **Temperature** to monitor ambient, buffer, or panel temperature alongside energy data.
 
+***
 
----
+## Monitoring Alerts
 
-# Monitoring Alerts
+Each additional reading has its own **Monitoring alerts** button. See [Monitoring alerts](<Monitoring alerts.md>).
 
-Each additional reading has its own **Monitoring alerts** button. See [Monitoring alerts](Monitoring%20alerts.md).
+***
 
+## Screenshot
 
----
-
-# Screenshot
-
- ![](../.gitbook/assets/2026-07-10_Configuration_optional_monitoring_additional_readings.png " =821x400")
-
+![](../.gitbook/assets/2026-07-10_Configuration_optional_monitoring_additional_readings.png)

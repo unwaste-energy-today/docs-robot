@@ -1,3 +1,9 @@
+---
+description: >-
+  Use the dashboard to review your installation status and key energy
+  information.
+---
+
 # Dashboard
 
 ### What the Dashboard is
@@ -12,50 +18,50 @@ Each **connection** is presented as a separate block because connections may dif
 
 For this reason, some metrics (especially percentages) are not safely "summable" across connections.
 
- ![](../.gitbook/assets/System Operation_f51c7be0-4ad2-4dda-bd4c-29422befb411_Screenshot_dashboard.png " =862x515")
+!\[]\(../.gitbook/assets/System Operation\_f51c7be0-4ad2-4dda-bd4c-29422befb411\_Screenshot\_dashboard.png " =862x515")
 
-
----
+***
 
 ### Dashboard metrics
 
 All Dashboard metrics show **today's totals** (midnight to now), but only for periods when the system was **STARTED**.
 
-**Note: STARTED vs STOPPED**\nIf the Unwaste Robot was **STOPPED** for part of today, the Dashboard totals include only the time when it was **STARTED**. Time spent STOPPED is not recorded and cannot be reconstructed later.\nSee **System operation → Starting and stopping the Unwaste Robot**.
+**Note: STARTED vs STOPPED**
 
+If the Unwaste Robot was **STOPPED** for part of today, the Dashboard totals include only the time when it was **STARTED**. Time spent STOPPED is not recorded and cannot be reconstructed later.
+
+See **System operation → Starting and stopping the Unwaste Robot**.
 
 Per connection, the Dashboard shows:
 
-* **Produced (Wh, kWh)**\nTotal electrical energy produced locally (for example, by a PV inverter) since midnight.
-* **Used (Wh, kWh)**\nShows the **total energy consumed** since midnight **by all devices in the installation**.
+* **Produced (Wh, kWh)** — Total electrical energy produced locally (for example, by a PV inverter) since midnight.
+*   **Used (Wh, kWh)** — Shows the **total energy consumed** since midnight **by all devices in the installation**.
 
-  This value represents the sum of energy used by all loads, **regardless of the energy source**. It includes energy drawn from the power grid, produced by solar panels, or supplied from an energy storage
-* **Self Sufficiency (%)**\nHow much of the consumed energy was covered by local production (directly or indirectly).\nThis uses standard industry definitions. For precise computation, see *Inner workings → Self-use calculation*.
-* **Self Use (%)**\nHow much of produced energy was used locally instead of being exported.\nThis uses standard industry definitions. For precise computation, see *Inner workings → Self-use calculation*.
-* **Energy Price (currency)**\nThe **current tariff price** for the connection.\nThe displayed currency symbol is taken from connection configuration.\n**Important:** The system does not perform currency conversion. Having tariffs in different currencies is not supported.
-* **Unwasted (currency)** — Total monetary value of savings attributed to the Unwaste Robot. See *Inner workings → Savings calculation*.
+    This value represents the sum of energy used by all loads, **regardless of the energy source**. It includes energy drawn from the power grid, produced by solar panels, or supplied from an energy storage
+* **Self Sufficiency (%)** — How much of the consumed energy was covered by local production (directly or indirectly). This uses standard industry definitions. For precise computation, see _Inner workings → Self-use calculation_.
+* **Self Use (%)** — How much of produced energy was used locally instead of being exported. This uses standard industry definitions. For precise computation, see _Inner workings → Self-use calculation_.
+* **Energy Price (currency)** — The **current tariff price** for the connection. The displayed currency symbol is taken from connection configuration. **Important:** The system does not perform currency conversion. Having tariffs in different currencies is not supported.
+* **Unwasted (currency)** — Total monetary value of savings attributed to the Unwaste Robot. See _Inner workings → Savings calculation_.
 
 ### Alerts
 
 The Dashboard includes an **Alerts panel** for abnormal situations that the user should be informed about.
 
- ![](../.gitbook/assets/System Operation_b6d9ec2a-5e4d-4388-add6-229ed3d3d601_Screenshot_dashboard_alerts.png " =837x675")
+!\[]\(../.gitbook/assets/System Operation\_b6d9ec2a-5e4d-4388-add6-229ed3d3d601\_Screenshot\_dashboard\_alerts.png " =837x675")
 
- ![](../.gitbook/assets/System Operation_ca4ef992-87b5-4061-8c98-9dbabe5e2371_Screenshot_Alert.png " =2028x240")
+!\[]\(../.gitbook/assets/System Operation\_ca4ef992-87b5-4061-8c98-9dbabe5e2371\_Screenshot\_Alert.png " =2028x240")
 
-
----
+***
 
 ### Monitoring alerts
 
 Separate from system **Alerts**, the Dashboard also shows **Monitoring Alerts** — user-configured threshold conditions on readings (for example low voltage or high temperature).
 
-Monitoring alerts are defined in configuration. See [Monitoring alerts](../Configuration/Monitoring%20alerts.md).
+Monitoring alerts are defined in configuration. See [Monitoring alerts](<../Configuration/Monitoring alerts.md>).
 
 In Design mode, all defined monitoring alerts for a connection can be reviewed from the connection tile (**MONITORING ALERTS**).
 
-
----
+***
 
 #### What alerts are
 
@@ -69,8 +75,7 @@ Alerts represent operational issues such as:
 
 Alerts are meant to be actionable: they indicate that a part of the system may not be working correctly, or that optimisation decisions may be less accurate.
 
-
----
+***
 
 #### Aggregation and muting
 
@@ -83,10 +88,9 @@ To avoid repeated spam-like notifications:
   * a muted alert does not generate a notification,
   * it can still remain visible in the list for review.
 
-**Note:**\nA future mobile application may deliver alerts as **push notifications**.
+**Note:** A future mobile application may deliver alerts as **push notifications**.
 
-
----
+***
 
 ### Details button
 

@@ -1,8 +1,14 @@
-# Device
+---
+description: Add energy-consuming devices for monitoring, control, and optimization.
+---
 
 # Device
 
-## What is a device
+## Device
+
+## Device
+
+### What is a device
 
 A **device** in Unwaste EMS is any electrical appliance that consumes energy to perform work.
 
@@ -20,7 +26,7 @@ In practice, not all devices provide built-in energy consumption readings. If mo
 
 Control is also optional and depends on both device and installation capabilities.
 
-### Which devices should be controlled
+#### Which devices should be controlled
 
 Devices best suited for control are:
 
@@ -34,10 +40,9 @@ Devices that **should not be controlled** include those that:
 
 Controlling such devices may lead to situations where the device is unavailable when urgently needed.
 
+***
 
----
-
-## Device types
+### Device types
 
 Unwaste EMS supports multiple device types. Some types belong to a dedicated **heating subtype**, which has additional configuration options.
 
@@ -59,8 +64,7 @@ All devices share the same control logic. Differences between types relate mainl
 
 Choosing an incorrect device type does not damage the system, but may limit optimization or disable subtype-specific features.
 
-
-## Optional entities
+### Optional entities
 
 Many devices have only optional entities. Leaving optional sections empty is safe. The device will still appear in the system and can be monitored or controlled later.
 
@@ -70,8 +74,8 @@ Especially, monitoring and control of the devices are independent of each other.
 * you can configure only monitoring options (all or some), but not control - the Unwaste Robot will monitor configured parameters on the device, but will not control it
 * you can configure both of these - and it will be both controlled and monitored
 
-Optional monitoring and additional readings are described in [Optional monitoring](Optional%20monitoring.md) and [Additional readings](Additional%20readings.md).
+Optional monitoring and additional readings are described in [Optional monitoring](<Optional monitoring.md>) and [Additional readings](<Additional readings.md>).
 
-## Screenshot (device type selection)
+### Screenshot (device type selection)
 
- ![](../.gitbook/assets/2026-07-10_Configuration_adding_new_device_select_type.png " =821x400")
+![](../.gitbook/assets/2026-07-10_Configuration_adding_new_device_select_type.png)

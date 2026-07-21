@@ -1,14 +1,18 @@
+---
+description: >-
+  Install the Unwaste Robot application in your local Home Assistant
+  environment.
+---
+
 # Local installation
 
-**Instrukcja Instalacji**
-
-This page describes installing the Unwaste add-on in Home Assistant.
+This page describes installing the Unwaste application (add-on) in Home Assistant.
 
 ***
 
 ## Add the Unwaste repository
 
-1. Open Home Assistant → **Settings** → **Add-ons** → **Add-on Store**.
+1. Open Home Assistant → **Settings** → **Apps** → **Install app**.
 2. Open the menu (top left) → **Repositories**.
 3. Add the Unwaste repository URL and click **Add**:
 
@@ -19,14 +23,14 @@ This page describes installing the Unwaste add-on in Home Assistant.
 
 ***
 
-## Install the add-on
+## Install the application (add-on)
 
 1. Find **Unwaste** on the add-on list and open it.
 2. Click **Install** and wait for installation to finish.
 
 ***
 
-## Configure the add-on
+## Configure the application
 
 On the add-on **Configuration** tab:
 

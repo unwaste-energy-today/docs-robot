@@ -1,3 +1,9 @@
+---
+description: >-
+  Complete the first-run setup for your Unwaste Robot and electrical
+  installation.
+---
+
 # Initial configuration
 
 ## Initial configuration

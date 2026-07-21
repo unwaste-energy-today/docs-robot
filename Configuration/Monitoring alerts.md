@@ -1,6 +1,12 @@
+---
+description: Configure alerts for monitored readings and installation conditions.
+---
+
 # Monitoring alerts
 
-# What Are Monitoring Alerts
+## Monitoring alerts
+
+## What Are Monitoring Alerts
 
 **Monitoring alerts** let you define conditions that generate user-visible alerts when a reading crosses a threshold.
 
@@ -8,14 +14,13 @@ Alerts can be configured on:
 
 * main reading blocks (Energy Import, Energy Production, Energy Consumed, and similar),
 * optional monitoring blocks (Voltage, Current, Power Flow, and similar),
-* each entry in [Additional readings](Additional%20readings.md).
+* each entry in [Additional readings](<Additional readings.md>).
 
 Alerts are for **monitoring and notification**. They do not change how the Unwaste Robot controls devices or storage.
 
+***
 
----
-
-# Configuring an Alert
+## Configuring an Alert
 
 Open **Monitoring alerts** on the reading block you want to watch. For each alert, configure:
 
@@ -28,10 +33,9 @@ Open **Monitoring alerts** on the reading block you want to watch. For each aler
 
 You can add multiple alerts on the same reading block.
 
+***
 
----
-
-# Viewing Alerts
+## Viewing Alerts
 
 Configured alerts appear in two places:
 
@@ -40,33 +44,28 @@ Configured alerts appear in two places:
 
 System alerts (for example missing dynamic prices) are shown separately from monitoring alerts configured by the user.
 
+***
 
----
-
-# Examples
+## Examples
 
 * **Freeze alert** — Temperature less than 5 °C with message "Freeze alert!"
 * **Low voltage** — Voltage L1 less than 207 V with message "Voltage too low!"
 * **High voltage** — Voltage L1 greater than 253 V with message "Voltage too high!"
 
+***
 
----
+## Screenshot (alert form)
 
-# Screenshot (alert form)
+![](../.gitbook/assets/2026-07-10_Configuration_optional_monitoring_adding_alert.png)
 
- ![](../.gitbook/assets/2026-07-10_Configuration_optional_monitoring_adding_alert.png " =821x500")
+***
 
+## Screenshot (voltage alerts)
 
----
+![](../.gitbook/assets/2026-07-10_Configuration_optional_monitoring_adding_alert2.png)
 
-# Screenshot (voltage alerts)
+***
 
- ![](../.gitbook/assets/2026-07-10_Configuration_optional_monitoring_adding_alert2.png " =821x600")
+## Screenshot (alert list in Design mode)
 
-
----
-
-# Screenshot (alert list in Design mode)
-
- ![](../.gitbook/assets/2026-07-10_Design_defined_alerts_list.png " =821x200")
-
+![](../.gitbook/assets/2026-07-10_Design_defined_alerts_list.png)

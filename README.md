@@ -1,30 +1,30 @@
+---
+description: Start here to install, configure, and operate Unwaste EMS.
+---
+
 # Welcome
 
 Welcome to the Unwaste EMS documentation.
 
-Unwaste is an energy management system that helps you optimize energy consumption, production, and storage in your electrical installation.
+Unwaste is an energy management system for optimizing consumption, production, and storage.
 
-## Quick Start
+## Start here
 
-1. [Getting started](/broken/pages/UqHcRNaCbE2HcHJNWGpl) - System requirements and prerequisites
-2. [Installation](installation-for-home-assistant/installation.md) - Installation guide
-3. [Configuration](Configuration.md) - Configure your electrical installation
-4. [System Operation](<System Operation.md>) - Using the system
+1. Review [Getting started](<Getting started/Introduction.md>) and choose your installation method.
+2. Install [Unwaste Robot for Home Assistant](installation-for-home-assistant/installation.md) or [Unwaste Robot for Unwaste OS](installation-for-unwaste-os/installation.md).
+3. Model your electrical installation in [Configuration basics](Configuration.md).
+4. Use and monitor the system through [System Operation](<System Operation.md>).
 
-## Documentation Structure
+## Explore the documentation
 
-This documentation is organized into the following sections:
+Start with [Unwaste EMS](<Introduction/About Unwaste EMS.md>) to understand the system.
 
-* **Introduction** - Overview of Unwaste EMS
-* **Getting started** - Requirements and setup
-* **Installation** - Installation procedures
-* **Configuration** - Setting up your electrical installation
-* **Profiles, schedules and overrides** - Control mechanisms
-* **System Operation** - Using the system interface
-* **Inner Workings** - Technical details and calculations
-* **Cloud Account** - Cloud features and account management
-* **Appendices** - Glossary and reference materials
+Then use these sections when needed:
 
-## Need Help?
+* [Configuration](Configuration.md) — model connections, circuits, production, storage, and devices.
+* [Profiles, schedules and overrides](<Profiles, schedules and overrides.md>) — control device behavior.
+* [Unwaste Cloud](unwaste-cloud/benefits-of-cloud-account.md) — use cloud services and remote access.
 
-For detailed information, browse the documentation sections using the navigation menu on the left.
+### Reference
+
+Use the [Glossary](Appendices/Glossary.md) for definitions of product and energy-management terms.

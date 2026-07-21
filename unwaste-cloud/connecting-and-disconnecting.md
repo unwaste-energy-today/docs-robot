@@ -1,8 +1,12 @@
-# Connecting / disconnecting
+---
+description: Connect a local Unwaste Robot to Unwaste Cloud or remove cloud access.
+---
 
-# Connecting the Unwaste Robot to Cloud
+# Connecting and disconnecting Unwaste Robot
 
-## Overview
+## Connecting the Unwaste Robot to Cloud
+
+### Overview
 
 This section explains how to connect and disconnect a **local Unwaste Robot** to an **existing Unwaste Cloud account**.
 
@@ -10,10 +14,9 @@ Connecting the Unwaste Robot to the cloud links a locally running system with th
 
 This document focuses only on the **connection and disconnection process** and their technical consequences. Information about cloud accounts, their benefits, or account creation is covered in other sections of the documentation.
 
+***
 
----
-
-## Prerequisites
+### Prerequisites
 
 Before connecting the Unwaste Robot to the cloud:
 
@@ -23,30 +26,27 @@ Before connecting the Unwaste Robot to the cloud:
 
 Note: The Unwaste Robot is designed to operate locally even without a cloud connection. Cloud connectivity is required only for cloud‑based features and remote access.
 
+***
 
----
-
-## Where this action is performed
+### Where this action is performed
 
 Connecting and disconnecting the Unwaste Robot from the cloud is always performed from the **local Unwaste Robot interface**.
 
 This action cannot be initiated from the Unwaste Cloud interface.
 
+***
 
----
-
-## Connecting the Unwaste Robot to Cloud
+### Connecting the Unwaste Robot to Cloud
 
 To connect the Unwaste Robot to your Unwaste Cloud account:
-
 
 1. Open the **local Unwaste Robot interface** in your browser.
 2. Locate the cloud connection section.
 3. Click **Connect to Cloud**.
 
-![](../.gitbook/assets/Cloud Account_23d2599b-6e6f-40cb-b1b6-a9842e453f91_Screenshot_connect_cloud.png " =140x39")
+!\[]\(../.gitbook/assets/Cloud Account\_23d2599b-6e6f-40cb-b1b6-a9842e453f91\_Screenshot\_connect\_cloud.png " =140x39")
 
-### Device name
+#### Device name
 
 During the connection process, you will be asked to provide a **device name**.
 
@@ -61,7 +61,7 @@ Name constraints:
 
 The device name can be changed later in the cloud interface without affecting operation or history.
 
-### Authentication
+#### Authentication
 
 After providing the device name, you will be asked to log in to your **existing Unwaste Cloud account**.
 
@@ -72,9 +72,9 @@ Important:
 * Logging in **does not create a new cloud account**.
 * Authentication is used only to associate this Unwaste Robot with your existing account.
 
- ![](../.gitbook/assets/Cloud Account_95efefec-b944-454e-96f0-9328c1588dbd_Screenshot_connect_cloud3.png " =393x452")
+!\[]\(../.gitbook/assets/Cloud Account\_95efefec-b944-454e-96f0-9328c1588dbd\_Screenshot\_connect\_cloud3.png " =393x452")
 
-### Successful connection
+#### Successful connection
 
 After successful authentication:
 
@@ -85,10 +85,9 @@ After successful authentication:
 
 The Unwaste Robot authenticates **once** during this process. The connection remains valid until it is explicitly disconnected by the user.
 
+***
 
----
-
-## What changes after connection
+### What changes after connection
 
 After connecting to the cloud:
 
@@ -102,20 +101,18 @@ If the internet connection is temporarily lost:
 * It automatically attempts to reconnect when connectivity returns.
 * The robot is shown as **offline** in the cloud interface while disconnected.
 
+***
 
----
-
-# Disconnecting the Unwaste Robot from Cloud
+## Disconnecting the Unwaste Robot from Cloud
 
 To manually disconnect the Unwaste Robot from the cloud:
-
 
 1. Open the **local Unwaste Robot interface**.
 2. Locate the cloud connection section.
 3. Click **Disconnect from Cloud**.
 4. Confirm the action in the confirmation dialog.
 
- ![](../.gitbook/assets/Cloud Account_2b88b45a-d1cb-456d-8820-b06c80a0a6cb_Screenshot_disconnect_cloud.png " =175x46")
+!\[]\(../.gitbook/assets/Cloud Account\_2b88b45a-d1cb-456d-8820-b06c80a0a6cb\_Screenshot\_disconnect\_cloud.png " =175x46")
 
 After manual disconnection:
 
@@ -125,14 +122,13 @@ After manual disconnection:
 
 Manual disconnection is a **persistent state**. The Unwaste Robot will not reconnect automatically. To restore cloud access, the user must explicitly connect again.
 
+***
 
----
-
-## Manual disconnect vs temporary connection loss
+### Manual disconnect vs temporary connection loss
 
 It is important to distinguish between these two situations:
 
-### Manual disconnect
+#### Manual disconnect
 
 * Initiated explicitly by the user.
 * Requires confirmation.
@@ -140,19 +136,18 @@ It is important to distinguish between these two situations:
 * The robot disappears from the cloud interface.
 * Reconnection requires user action.
 
-### Temporary connection loss
+#### Temporary connection loss
 
 * Caused by internet outage or network issues.
 * The robot remains linked to the cloud account.
 * The robot is shown as **offline** in the cloud interface.
 * The Unwaste Robot automatically reconnects when internet access returns.
 
+***
 
----
+### Impact on tariffs and external data
 
-## Impact on tariffs and external data
-
-### Static tariffs
+#### Static tariffs
 
 If static tariffs are used:
 
@@ -160,7 +155,7 @@ If static tariffs are used:
 * When the Unwaste Robot is connected to the cloud, static tariffs are periodically checked for updates (for example annual price updates).
 * If the cloud connection is lost or manually disconnected, **no tariff updates are received**, and the Unwaste Robot continues operating with the **last known values**.
 
-### Dynamic tariffs
+#### Dynamic tariffs
 
 Dynamic tariffs are obtained from the cloud in **daily batches**, typically between 22:00 and 23:00.
 
@@ -174,10 +169,9 @@ An alert is generated when this switch occurs.
 
 Important: If you plan to disconnect the Unwaste Robot from the cloud for a longer period and use dynamic tariffs, it is strongly recommended to switch to a **CUSTOM tariff** beforehand.
 
+***
 
----
-
-## Alerts and visibility
+### Alerts and visibility
 
 Cloud‑related events generate alerts:
 
@@ -185,10 +179,9 @@ Cloud‑related events generate alerts:
 * When cloud connectivity is restored, the robot status is updated in the cloud interface.
 * Alerts generated locally are synchronized to the cloud after reconnection, unless they were already cleared locally.
 
+***
 
----
-
-## Notes / Important
+### Notes / Important
 
 * Cloud connectivity is required for **remote access and mobile app control**.
 * Loss of cloud connection does not stop local operation.

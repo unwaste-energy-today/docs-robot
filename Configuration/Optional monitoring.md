@@ -1,44 +1,48 @@
+---
+description: Add optional readings and alerts for more detailed installation monitoring.
+---
+
 # Optional monitoring
 
-# What Is Optional Monitoring
+## Optional monitoring
+
+## What Is Optional Monitoring
 
 **Optional monitoring** is a collapsible section available on circuits, production sources, energy storage, and devices.
 
-It lets you configure additional electrical readings beyond the main energy fields on each form. These readings are used for **graphs, statistics, and monitoring alerts**. They do not affect device or storage control unless you configure [Monitoring alerts](Monitoring%20alerts.md) on them.
+It lets you configure additional electrical readings beyond the main energy fields on each form. These readings are used for **graphs, statistics, and monitoring alerts**. They do not affect device or storage control unless you configure [Monitoring alerts](<Monitoring alerts.md>) on them.
 
 Optional monitoring is described once here. Individual element pages (Circuit, Production, Storage, Device) link to this section instead of repeating the same details.
 
+***
 
----
+## Where It Is Available
 
-# Where It Is Available
+| Element               | Optional monitoring        |
+| --------------------- | -------------------------- |
+| Circuit               | Yes (full set — see below) |
+| Production (inverter) | Yes                        |
+| Energy storage        | Yes                        |
+| Device                | Yes                        |
+| Connection            | No                         |
 
-| Element | Optional monitoring |
-|---------|---------------------|
-| Circuit | Yes (full set — see below) |
-| Production (inverter) | Yes |
-| Energy storage | Yes |
-| Device | Yes |
-| Connection | No |
+***
 
-
----
-
-# Common Readings
+## Common Readings
 
 The following blocks appear on circuits, production sources, storage, and devices (where applicable).
 
-Each block has a **Monitoring alerts** button. Alert configuration is described in [Monitoring alerts](Monitoring%20alerts.md).
+Each block has a **Monitoring alerts** button. Alert configuration is described in [Monitoring alerts](<Monitoring alerts.md>).
 
-## Voltage
+### Voltage
 
 Optional Home Assistant sensors for voltage on **L1**, **L2**, and **L3**.
 
-## Current
+### Current
 
 Optional Home Assistant sensors for current on **L1**, **L2**, and **L3**.
 
-## Power Flow
+### Power Flow
 
 Optional Home Assistant sensors for instantaneous power.
 
@@ -49,10 +53,9 @@ For three-phase elements, you can provide:
 
 **Separate return** — when enabled, you can configure separate sensors for power flowing in and power flowing out.
 
+***
 
----
-
-# Readings Available Only on Circuits
+## Readings Available Only on Circuits
 
 Circuits include additional optional blocks not shown on other element types:
 
@@ -65,19 +68,17 @@ Circuits include additional optional blocks not shown on other element types:
 
 For three-phase circuits, each block follows the same L1 / L2 / L3 rules as energy import.
 
+***
 
----
-
-# Additional Readings
+## Additional Readings
 
 At the bottom of Optional monitoring, **Additional readings** lets you add a custom list of extra sensors (temperature, irradiance, and others).
 
-This is a separate mechanism from the fixed blocks above. See [Additional readings](Additional%20readings.md) for details.
+This is a separate mechanism from the fixed blocks above. See [Additional readings](<Additional readings.md>) for details.
 
+***
 
----
-
-# Phase Rules
+## Phase Rules
 
 The same phase rules apply as for main energy readings:
 
@@ -87,17 +88,14 @@ The same phase rules apply as for main energy readings:
 
 See [Circuit](Circuit.md) for more on phase consistency.
 
+***
 
----
+## Screenshot (standard)
 
-# Screenshot (standard)
+![](../.gitbook/assets/2026-07-10_Configuration_optional_monitoring.png)
 
- ![](../.gitbook/assets/2026-07-10_Configuration_optional_monitoring.png " =821x516")
+***
 
+## Screenshot (circuit — extended set)
 
----
-
-# Screenshot (circuit — extended set)
-
- ![](../.gitbook/assets/2026-07-10_Configuration_optional_monitoring_circuit.png " =821x900")
-
+![](../.gitbook/assets/2026-07-10_Configuration_optional_monitoring_circuit.png)

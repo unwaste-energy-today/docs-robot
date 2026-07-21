@@ -1,4 +1,10 @@
-# Benefits of Cloud Account
+---
+description: >-
+  Learn which features require Unwaste Cloud, including tariffs and remote
+  access.
+---
+
+# Benefits
 
 ### Overview
 
@@ -9,7 +15,7 @@ However, a Cloud Account is required for:
 * using **static tariffs with automatic updates**,
 * using **dynamic tariffs**,
 * accessing the system remotely,
-* using the mobile app (when released),
+* using the mobile app,
 * managing multiple Unwaste Robots from one place,
 * sharing access with installers or other users.
 

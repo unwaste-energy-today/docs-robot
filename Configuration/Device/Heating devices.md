@@ -1,12 +1,18 @@
+---
+description: Configure heating devices for energy monitoring and intelligent control.
+---
+
 # Heating devices
 
-# What is a heating device
+## Heating devices
+
+## What is a heating device
 
 Heating devices are a subtype of devices whose primary function is to generate heat. This category includes heat pumps, electric heaters (including pool water heaters), and domestic hot water (DHW) heaters.
 
 Heating devices are one of the most power-hungry appliances often found in homes, as generating heat consumes a lot of energy. As such, they are a good target for energy optimization.
 
-# How smart-grid ready heating devices operate
+## How smart-grid ready heating devices operate
 
 Many heating devices are already smart-grid ready, especially heat pumps and some DHW heaters.
 
@@ -31,7 +37,7 @@ Some heating devices also support additional modes:
 * Off (with freeze protection) – the device operates only to protect itself from freezing or damage. It may still consume a small amount of energy.
 * Boost – the device intentionally heats beyond the normal Comfort level to store additional heat (for example in a buffer tank or DHW cylinder).
 
-## Important safety note
+### Important safety note
 
 Boost mode may be used **only if both the device and the heating installation support thermal energy storage**.
 
@@ -41,15 +47,13 @@ Without a mixing valve, excessively hot water may reach taps and pose a **risk o
 
 If these conditions are not met, Boost mode must be disabled.
 
+***
 
----
-
-# Heating circuits
+## Heating circuits
 
 A heating device may contain one or more **heating circuits**.
 
 A heating circuit represents one functional heating loop inside the device (for example space heating or DHW). It is not an electrical circuit and does not correspond to circuits defined elsewhere in the system.
-
 
 Examples:
 
@@ -57,47 +61,41 @@ Examples:
 * A pool heater typically has a single heating circuit.
 * Electric space heaters (electric radiators, infrared heaters etc.) also have a single heating circuit.
 
+***
 
----
-
-## Configuration
+### Configuration
 
 At the device level, configure **Energy consumed** and optional **Energy return** like other devices.
 
 Heating-specific readings are configured per **DHW circuit** and **Heating circuit** on the form.
 
+***
 
----
-
-### Energy consumed / Energy return (device level)
+#### Energy consumed / Energy return (device level)
 
 Optional. Total electrical energy for the whole device (L1 / L2 / L3 as for other devices).
 
+***
 
----
-
-### DHW circuit / Heating circuit
+#### DHW circuit / Heating circuit
 
 Each circuit section includes:
 
 * **Energy reading** — electrical energy used by that circuit
 * **Heat produced** — optional thermal energy produced (useful for COP analysis)
 
-**Power flow** for the device is configured under **Optional monitoring**. See [Optional monitoring](../Optional%20monitoring.md).
+**Power flow** for the device is configured under **Optional monitoring**. See [Optional monitoring](<../Optional monitoring.md>).
 
+***
 
----
-
-## Control
+### Control
 
 Heating devices use the same control mechanism as other devices.
 
-See [Device control](Device%20control.md) for details.
+See [Device control](<Device control.md>) for details.
 
+***
 
----
+## Screenshot of a heat pump configuration
 
-# Screenshot of a heat pump configuration
-
- ![](../../.gitbook/assets/2026-07-10_Configuration_device_heat_pump.png " =821x991")
-
+![](../../.gitbook/assets/2026-07-10_Configuration_device_heat_pump.png)

@@ -1,29 +1,34 @@
+---
+description: >-
+  Configure grid connections, tariffs, forecasts, and connection-level energy
+  settings.
+---
+
 # Connection
 
-# What Is a Connection
+## Connection
+
+## What Is a Connection
 
 A connection represents a single physical connection to the power grid.
 
 Most homes and businesses have only one such connection.
 
+***
 
----
-
-# Configuration
+## Configuration
 
 This section defines the technical and pricing parameters of your grid connection.
 
+***
 
----
-
-## Name and Description
+### Name and Description
 
 **Name** is required. **Description** is optional.
 
+***
 
----
-
-## Grid Maximum Power
+### Grid Maximum Power
 
 The **Grid Maximum Power** defines the highest electrical power that can be drawn from, or fed into, the power grid through this connection.
 
@@ -36,24 +41,22 @@ In practice, the usable maximum power of the connection is always constrained by
 
 **Important:** If you are unsure which value applies, consult your installation documentation or an electrician. Setting this value higher than the actual contractual or physical limit does not increase the available power. In real installations, exceeding these limits **may lead to tripping protective devices, damage to the electrical installation, or penalties imposed by the energy provider**.
 
+***
 
----
-
-## Phase Count
+### Phase Count
 
 Specifies whether the connection uses:
 
 * **1 phase**, or
 * **3 phases**
 
+***
 
----
-
-## Surplus Mode
+### Surplus Mode
 
 **Surplus mode** lets the Unwaste Robot react to local photovoltaic surplus (energy exported to the grid) by requesting **Surplus** operating mode on managed devices. Surplus sits between Comfort and Boost in terms of energy use — devices consume more when there is excess solar production.
 
-### Enabling Surplus mode
+#### Enabling Surplus mode
 
 Turn **Surplus mode** on in the connection configuration.
 
@@ -62,7 +65,7 @@ When enabled, you must also set:
 * **Surplus on threshold** — average export power (W) over the previous 15 minutes above which the system considers surplus conditions active
 * **Surplus off threshold** — average import power (W) in the current 15 minutes above which surplus conditions end
 
-### Requirements
+#### Requirements
 
 Surplus mode requires:
 
@@ -71,30 +74,28 @@ Surplus mode requires:
 
 Without these, the connection configuration cannot be validated while Surplus mode is on.
 
-### Behaviour
+#### Behaviour
 
 * Surplus is applied automatically based on **grid import and export measurements** on the main circuit and the thresholds you configure. It does **not** depend on electricity prices.
 * Price-based control runs **in parallel**. When both surplus conditions and a **Boost** price period apply, **Boost** is used instead of Surplus.
 * Surplus is **not** available in schedules or overrides.
-* When Surplus mode is active on a device, the dashboard may show **Surplus** as the mode source (see [Determining what controls a device](../Profiles,%20schedules%20and%20overrides/Determining%20what%20controls%20a%20device.md)).
+* When Surplus mode is active on a device, the dashboard may show **Surplus** as the mode source (see [Determining what controls a device](<../Profiles, schedules and overrides/Determining what controls a device.md>)).
 
-For how the system decides when to enter and leave Surplus mode, see [Surplus mode](../Inner%20Workings/Surplus%20mode.md).
+For how the system decides when to enter and leave Surplus mode, see [Surplus mode](<../Inner Workings/Surplus mode.md>).
 
 Surplus mode is optional. Use it when you have on-site PV generation and controllable loads that can use excess production.
 
+***
 
----
-
-## Location (Latitude and Longitude)
+### Location (Latitude and Longitude)
 
 The geographical location of the connection, provided as latitude and longitude in decimal format.
 
 It is used as a base location for weather and solar forecasts.
 
+***
 
----
-
-## Energy Usage Forecast Method
+### Energy Usage Forecast Method
 
 This forecast is **required** if the system manages an energy storage (for example, a battery). Otherwise, it is optional (you can set it to None).
 
@@ -106,10 +107,9 @@ Available methods:
 * **Daily** – averages energy usage from the last 14 days
 * **Weekly** – averages energy usage for the same weekday over the last 4 weeks
 
+***
 
----
-
-## Tariffs
+### Tariffs
 
 Tariffs define how much electricity costs.
 
@@ -117,20 +117,18 @@ This is one of the most important inputs for the Unwaste Robot, as it directly a
 
 Tariffs are configured per connection, because each connection may have different prices.
 
+***
 
----
-
-## Price Components
+### Price Components
 
 Each connection can define up to three price components, which are configured independently.
 
 * Each component has its own type selector.
 * Each price component can use a tariff from a different country. For example, energy prices may come from a foreign provider, while distribution prices come from a local operator.
 
+***
 
----
-
-### Energy Prices
+#### Energy Prices
 
 **Required.**
 
@@ -138,10 +136,9 @@ Defines the cost of electricity when it is purchased from the grid and how this 
 
 In some regions, energy tariffs already include distribution costs. In such cases, the Distribution price component should be set to 'None'.
 
+***
 
----
-
-### Distribution Prices
+#### Distribution Prices
 
 **Optional.**
 
@@ -151,10 +148,9 @@ Most commonly used together with dynamic energy prices.
 
 Selecting "None" means that this price is included in energy price.
 
+***
 
----
-
-### Return Prices
+#### Return Prices
 
 **Optional**.
 
@@ -166,17 +162,15 @@ This typically applies to installations with on-site generation, such as solar p
 
 Selecting "None" means this component is ignored by the Unwaste Robot.
 
+***
 
----
-
-## Tariff Types
+### Tariff Types
 
 There are three supported tariff types for each price component:
 
+***
 
----
-
-### Dynamic Tariffs
+#### Dynamic Tariffs
 
 Prices are based on energy market indexes.
 
@@ -190,7 +184,6 @@ Selecting a country updates available providers list to show those from this cou
 
 **Note:** This type of tariffs requires the Unwaste Robot to be connected to cloud to download prices for the upcoming day.
 
-
 **Important: when dynamic prices are unavailable**
 
 * Dynamic prices are downloaded daily. If the Unwaste Robot cannot download new prices (for example due to connectivity issues), it generates an **alert** for the user.
@@ -199,10 +192,9 @@ Selecting a country updates available providers list to show those from this cou
   * In Unmanaged mode, the Unwaste Robot does not send Eco / Comfort / Boost / Off control signals based on dynamic pricing.
   * Monitoring and views may still work if measurements are available.
 
+***
 
----
-
-### Static Tariffs
+#### Static Tariffs
 
 Prices are mostly fixed and usually vary only by time of day. They may also include weekend or seasonal variations.
 
@@ -214,10 +206,9 @@ Selecting a country updates available providers list to show those from this cou
 
 **Important!** This type of tariffs requires the Unwaste Robot to be connected to cloud to check for tariff updates.
 
+***
 
----
-
-### Custom Tariffs
+#### Custom Tariffs
 
 Custom tariffs work like static tariffs but are defined manually instead of being selected from a list.
 
@@ -230,10 +221,9 @@ You must provide:
 
 **Custom tariffs are the only tariff type that can be used without connecting the** Unwaste Robot **to the cloud.**
 
+***
 
----
-
-## Example tariff configuration
+### Example tariff configuration
 
 The most common configuration of tariffs would consist of:
 
@@ -241,17 +231,14 @@ The most common configuration of tariffs would consist of:
 * no distribution price (as it is usually included in energy price in such scenario)
 * a static return price (needed when you have solar panels)
 
+***
 
----
-
-## Important note
+### Important note
 
 Incorrect tariff configuration may lead to suboptimal or misleading optimization results.
 
+***
 
----
+## Screenshot
 
-# Screenshot
-
- ![](../.gitbook/assets/2026-07-10_Configuration_connection.png " =821x798")
-
+![](../.gitbook/assets/2026-07-10_Configuration_connection.png)

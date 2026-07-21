@@ -1,3 +1,7 @@
+---
+description: Understand how Unwaste calculates savings from direct solar energy use.
+---
+
 # Self-use calculation
 
 ### Why daily totals are misleading

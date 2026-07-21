@@ -1,3 +1,7 @@
+---
+description: Explore the financial, environmental, and operational benefits of Unwaste EMS.
+---
+
 # Benefits for the user
 
 Unwaste EMS delivers tangible benefits that improve your daily life while contributing to a sustainable future. Here's what you gain by using the Unwaste Robot:
@@ -80,6 +84,6 @@ Start small and expand your system over time. Add new solar panels, battery stor
 
 The Unwaste Robot is designed to work with a wide range of devices and systems. No need to replace your current infrastructure - simply connect and optimize what you already have.
 
----
+***
 
 With Unwaste EMS, you're not just installing an energy management system - you're investing in lower costs, environmental responsibility, and complete control over your energy future.

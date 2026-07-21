@@ -1,3 +1,7 @@
+---
+description: Understand the data limits and assumptions that affect Robot decisions.
+---
+
 # What the Unwaste Robot does not know
 
 Some values are inherently limited by what the installation measures.

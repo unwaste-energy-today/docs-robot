@@ -1,13 +1,18 @@
+---
+description: Configure EV chargers for energy-aware charging and automated control.
+---
+
 # EV Chargers
 
-## Configuration
+## EV Chargers
+
+### Configuration
 
 EV chargers are relatively easy to configure.
 
+***
 
----
-
-### Energy consumed
+#### Energy consumed
 
 Optional. Select one to three Home Assistant entities representing total energy consumption.
 
@@ -18,26 +23,23 @@ For a three-phase device, you can provide:
 
 For a single-phase device in a three-phase installation, only one field is used. It should correspond to the phase of the circuit the device is connected to.
 
+***
 
----
-
-### Energy return
+#### Energy return
 
 Optional. Select one to three Home Assistant entities representing energy exported from the charger (if applicable).
 
+***
 
----
+#### Power flow
 
-### Power flow
+Optional. Instantaneous power is configured in **Optional monitoring**. See [Optional monitoring](<../Optional monitoring.md>).
 
-Optional. Instantaneous power is configured in **Optional monitoring**. See [Optional monitoring](../Optional%20monitoring.md).
+***
 
+#### Control
 
----
-
-### Control
-
-Control configuration is identical to other devices. See [Device control](Device%20control.md).
+Control configuration is identical to other devices. See [Device control](<Device control.md>).
 
 Important:
 
@@ -49,10 +51,8 @@ The Unwaste Robot does not guarantee vehicle charge completion by a specific tim
 
 The best scenario is to connect vehicle just after returning and leave it connected for whole night.
 
+***
 
----
+## Screenshot
 
-# Screenshot
-
- ![](../../.gitbook/assets/2026-07-10_Configuration_device_ev_charger.png " =811x655")
-
+![](../../.gitbook/assets/2026-07-10_Configuration_device_ev_charger.png)

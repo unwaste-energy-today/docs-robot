@@ -1,12 +1,20 @@
+---
+description: >-
+  Review energy consumption and usage patterns across your electrical
+  installation.
+---
+
 # Energy Usage view
 
 ### What the Energy Usage view shows
 
 The **Energy Usage** view shows accumulated energy flows for **today** (midnight to now), for the periods when the system was **STARTED**.
 
+**Note: STOPPED periods**
 
-**Note: STOPPED periods**\nIf the Unwaste Robot was **STOPPED** during the day, the Energy Usage view reflects only the periods when it was **STARTED**. Missing time is not recorded.\nSee **System operation → Starting and stopping the Unwaste Robot**.
+If the Unwaste Robot was **STOPPED** during the day, the Energy Usage view reflects only the periods when it was **STARTED**. Missing time is not recorded.
 
+See **System operation → Starting and stopping the Unwaste Robot**.
 
 It is a "daily picture" of how energy moved through the installation:
 
@@ -15,10 +23,9 @@ It is a "daily picture" of how energy moved through the installation:
 * into and out of storage,
 * and any residual (unmetered) usage.
 
- ![](../.gitbook/assets/System Operation_7a1ec9d3-3a85-46d3-a115-c6d336aba2a1_Screenshot_energy_snapshot.png " =2063x992")
+!\[]\(../.gitbook/assets/System Operation\_7a1ec9d3-3a85-46d3-a115-c6d336aba2a1\_Screenshot\_energy\_snapshot.png " =2063x992")
 
-
----
+***
 
 ### Energy flow diagram
 
@@ -35,7 +42,7 @@ The diagram shows components (nodes) and net energy transfer (lines):
 * **Red** indicates net flow in the "normal consumption direction" (typically from root towards loads).
 * **Green** indicates net flow in the opposite direction (typically production flowing back into the installation).
 
-**Important: net flow concept**\nFor bidirectional elements, the view shows *net* results, not both directions simultaneously.
+**Important: net flow concept** For bidirectional elements, the view shows _net_ results, not both directions simultaneously.
 
 Example:
 
@@ -47,8 +54,7 @@ Some elements have fixed direction by design:
 * Production sources (e.g., PV inverter) only produce energy → arrow always points away from the inverter.
 * Devices only consume energy → arrow always points towards the device.
 
-
----
+***
 
 ### Unmetered usage
 
@@ -61,10 +67,9 @@ This typically indicates energy usage in that circuit that is not represented by
 
 **Important limitation**
 
-* If the residual would be negative (for example due to an unmetered production source), it is not shown.\nNegative "unmetered usage" would be confusing and would suggest that "usage" can produce energy.
+* If the residual would be negative (for example due to an unmetered production source), it is not shown. Negative "unmetered usage" would be confusing and would suggest that "usage" can produce energy.
 
-
----
+***
 
 ### Savings panel
 
@@ -76,11 +81,10 @@ The view shows three savings values:
 
 These are always shown, even if currently zero, to keep the view consistent across installations.
 
-For how these savings are computed and what is estimated vs measured, see *Inner workings → Savings calculation*.
+For how these savings are computed and what is estimated vs measured, see _Inner workings → Savings calculation_.
 
-
----
+***
 
 ### Per-device panels
 
-Devices are always listed in the right panel, even if a device used 0 Wh today.\nThis makes it easier to confirm that a device exists in the installation and is part of the model.
+Devices are always listed in the right panel, even if a device used 0 Wh today. This makes it easier to confirm that a device exists in the installation and is part of the model.

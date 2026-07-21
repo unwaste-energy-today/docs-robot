@@ -1,3 +1,9 @@
+---
+description: >-
+  Review supported hardware and recommended specifications for Home Assistant
+  deployments.
+---
+
 # Hardware requirements
 
 ## Overview
@@ -17,6 +23,7 @@ The **reComputer R1125-10** is tested and validated in our laboratory with Unwas
 {% endhint %}
 
 **Why choose reComputer R1125-10:**
+
 * Tested and validated with Unwaste EMS in our lab
 * Industrial-grade reliability with metal case and efficient cooling
 * Built-in eMMC or NVMe storage (no microSD card issues)
@@ -53,10 +60,12 @@ For optimal performance and long-term reliability, we recommend:
 If using your own hardware (Option 2), we recommend:
 
 **Primary Recommendations:**
+
 * **Raspberry Pi 4** (4GB RAM model) or **Raspberry Pi 5**
 * Devices based on **Compute Module 4 (CM4)** or **Compute Module 5 (CM5)**
 
 **Alternative Options:**
+
 * **Mini PC** - Intel NUC, Dell Wyse 5070, or similar
 * **Processor** - Intel Celeron, i3, or i5
 * **RAM** - 4GB minimum, 8GB preferred
@@ -88,6 +97,7 @@ If using your own hardware (Option 2), we recommend:
 ### Power Consumption
 
 For 24/7 operation, consider systems with:
+
 * **Idle power consumption:** Less than 15W
 * **Raspberry Pi 4/5:** Excellent choice for low power consumption (typically 5-8W under normal load)
 

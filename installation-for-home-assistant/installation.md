@@ -1,25 +1,24 @@
+---
+description: >-
+  Install Unwaste Robot as a Home Assistant application for Free and Plus
+  licenses.
+---
+
 # Installation
 
-## Option 1 (Part of Home Assistant)
+Unwaste Robot can run within Home Assistant as an application (previously called an add-on).
 
-This document describes installation of the **Unwaste EMS Home Assistant application (add-on)**.
+{% hint style="info" %}
+This installation method is available only for Free and Plus license users. Pro and Enterprise license users cannot use this method.
+{% endhint %}
 
-Unwaste OS and other deployment options are not covered here.
-
-#### System Requirements
-
-* Home Assistant with Supervisor (Home Assistant OS or supervised installation)
-* aarch64 or x86\_64 architecture
-* Minimum 2 GB RAM recommended
-* Network connectivity
-
-See [Hardware requirements](hardware-requirements.md) for details.
+Please make sure your system meets [Hardware requirements](hardware-requirements.md) and [Software requirements](software-requirements.md).
 
 ***
 
 ### Installation Steps
 
-1. **Install the add-on** — Follow [Local installation](local-installation.md).
+1. **Install the Home Assistant Unwaste application** — Follow [Local installation](local-installation.md).
 2. **Initial configuration** — Complete onboarding and [Robot settings](<../Configuration/Robot settings.md>). See [Initial configuration](initial-configuration.md).
 3. **Connect devices in Home Assistant** — Integrate meters and controllable devices before configuring Unwaste. See [Connecting devices](connecting-devices.md).
 4. **Configure the installation** — Use Design mode to build your installation graph. See [Configuration](../Configuration.md).
@@ -36,10 +35,10 @@ After the add-on is running:
 
 See [System Operation](<../System Operation.md>) for starting and stopping the robot.
 
-## Option 2 for Pro users (Part of Unwaste OS)
+## Alternative installation method
 
 This option installs Unwaste Robot on a dedicated Unwaste OS system.
 
-Unwaste OS is prepared specifically to run Unwaste Robot. It provides a more secure and reliable deployment than a general-purpose operating system.
+Unwaste OS is prepared specifically to run Unwaste Robot. It provides a more reliable and secure deployment than a general-purpose operating system.
 
-This installation method is intended for professional users.
+Any user may use this method of installation. Please refer to [Installation for Unwaste OS](https://app.gitbook.com/s/Wf3M0a04WuhvfEbAgXFl/installation-for-unwaste-os) for more information.

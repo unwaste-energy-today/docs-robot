@@ -1,6 +1,14 @@
+---
+description: >-
+  Configure energy storage systems for monitoring and optional automated
+  control.
+---
+
 # Storage
 
-# What Is an Energy Storage?
+## Storage
+
+## What Is an Energy Storage?
 
 An energy storage is any device designed to store electrical energy.
 
@@ -8,24 +16,21 @@ The main role of a storage is to improve overall system efficiency by storing su
 
 Both standalone storage systems and storages integrated with hybrid inverters are supported, provided the Unwaste Robot can read their data and control their operating modes.
 
+***
 
----
-
-# Configuration
+## Configuration
 
 Configuring an energy storage requires mapping Home Assistant sensors to capacity, energy counters, and optional control entities. The form is the same for all supported battery types.
 
+***
 
----
-
-## Name and Description
+### Name and Description
 
 **Name** is required. **Description** is optional.
 
+***
 
----
-
-## Capacity Total
+### Capacity Total
 
 **Mandatory.** Defines the total capacity of the energy storage.
 
@@ -34,12 +39,11 @@ Available options:
 * **Constant Energy** – enter a fixed capacity value in kWh
 * **Reading Energy** – select a Home Assistant entity from which the total capacity is read, for batteries that have dynamic or configurable capacity.
 
+***
 
----
+### Capacity Reserved
 
-## Capacity Reserved
-
-**Mandatory.** Defines the portion of capacity that must always remain unused to protect the storage from degradation (see *Storage energy levels* in Notes).
+**Mandatory.** Defines the portion of capacity that must always remain unused to protect the storage from degradation (see _Storage energy levels_ in Notes).
 
 Available options:
 
@@ -50,10 +54,9 @@ Available options:
 
 **Important:** Incorrect configuration may prevent charging or discharging.
 
+***
 
----
-
-## Energy Stored
+### Energy Stored
 
 **Mandatory.** Defines one or three Home Assistant entities (depending on storage type) used to read how much energy has been stored.
 
@@ -68,12 +71,11 @@ It is not the same as charge level. Energy stored represents the total amount of
 
 Charge level is current value of energy stored in storage.
 
-Each reading block has a **Monitoring alerts** button. See [Monitoring alerts](Monitoring%20alerts.md).
+Each reading block has a **Monitoring alerts** button. See [Monitoring alerts](<Monitoring alerts.md>).
 
+***
 
----
-
-## Energy Retrieved
+### Energy Retrieved
 
 **Mandatory.** Defines one or three Home Assistant entities (depending on storage type) used to read how much energy has been retrieved from the storage.
 
@@ -86,10 +88,9 @@ For a single-phase storage in a three-phase installation, only one field is used
 
 Energy retrieved represents the total amount of energy retrieved from the storage over a longer period of time (across multiple discharging cycles).
 
+***
 
----
-
-## Power Charge
+### Power Charge
 
 **Optional.** Defines one to three entities used to read the current charging power.
 
@@ -100,10 +101,9 @@ For a three-phase storage, you can provide:
 
 For a single-phase storage in a three-phase installation, only one field is used. It should correspond to the phase of the circuit the storage is connected to.
 
+***
 
----
-
-## Power Discharge
+### Power Discharge
 
 **Optional.** Defines one to three entities used to read the current discharging power.
 
@@ -114,10 +114,9 @@ For a three-phase storage, you can provide:
 
 For a single-phase storage in a three-phase installation, only one field is used. It should correspond to the phase of the circuit the storage is connected to.
 
+***
 
----
-
-## Charge Level
+### Charge Level
 
 Defines the entity used to read the current charge level of the storage.
 
@@ -127,21 +126,19 @@ The charge level can be provided as:
 * "Energy" - an **energy value** (kWh), or
 * "Percent" - a **percentage value**
 
-See *Storage energy levels* in Notes for details.
+See _Storage energy levels_ in Notes for details.
 
 Charge level is optional, but it is needed to properly control a storage when the Unwaste Robot manages charging from the grid.
 
 It is not always equal to total energy stored minus total energy retrieved, as all storages experience some energy loss.
 
+***
 
----
+### Control
 
-## Control
+***
 
-
----
-
-## Enabling Control
+### Enabling Control
 
 To allow the Unwaste Robot to control a storage, control must first be enabled.
 
@@ -154,40 +151,35 @@ Next, you need to select type of control:
 
 The selected control type determines whether the **States Map** section is available for configuration.
 
-
 Note: "None" and "Disabled" are separate concepts and serve different purposes.
 
 "None" means that there is no control available at all.
 
 "Disabled" allows to temporarily disable control, without losing all the configuration stored in "State" form.
 
+***
 
----
-
-## Selecting Entities
+### Selecting Entities
 
 The first step is selecting which Home Assistant entities are used to control the storage.
 
 Supported control entity types include **Switch**, **Select**, and **Number** entities.
 
+***
 
----
-
-### Switch Entities
+#### Switch Entities
 
 Switch entities accept a simple on/off (true/false) value, similar to a light switch.
 
+***
 
----
-
-### Select Entities
+#### Select Entities
 
 Select entities allows choosing one value from a predefined list, for example selecting an operating mode supported by the device.
 
+***
 
----
-
-## Storage Control Modes
+### Storage Control Modes
 
 A storage can operate in one of the following modes:
 
@@ -201,10 +193,9 @@ A storage can operate in one of the following modes:
 
 Enable only the modes your storage hardware supports. For modes you do not use, leave them disabled in the States Map.
 
+***
 
----
-
-## Selecting Values for Each Mode
+### Selecting Values for Each Mode
 
 Each control mode can be configured independently. For each mode we are setting a "state" - that is a collection of values for each control entity. When a mode becomes active, all enabled control entities for that mode are set simultaneously.
 
@@ -217,22 +208,19 @@ Note: Each state must have at least one entity enabled.
 
 Note 2: (important) If a storage doesn't support selected mode, it applies **Default mode** instead.
 
+***
 
----
+### Optional Monitoring
 
-## Optional Monitoring
+Optional voltage, current, power, and additional sensors are configured in the **Optional monitoring** section. See [Optional monitoring](<Optional monitoring.md>) and [Additional readings](<Additional readings.md>).
 
-Optional voltage, current, power, and additional sensors are configured in the **Optional monitoring** section. See [Optional monitoring](Optional%20monitoring.md) and [Additional readings](Additional%20readings.md).
+***
 
+## Important Notes
 
----
+***
 
-# Important Notes
-
-
----
-
-## Storage Energy Levels
+### Storage Energy Levels
 
 Each storage defines two capacity values:
 
@@ -246,13 +234,13 @@ Based on these values, the system distinguishes:
 
 Important: If a storage device already subtracts the reserved capacity internally, configure the total capacity accordingly and set reserved capacity to zero.
 
-## Power flow
+### Power flow
 
-### Typical case
+#### Typical case
 
 Separate power charge and power discharge parameters are the most common way in storages to determine total power flow, as these are intuitive to configure and unambiguous. The system uses the difference between them to present total power flow of a storage on a graph.
 
-### Ambiguous devices
+#### Ambiguous devices
 
 But there are storages that supply only one value, and what is even worse, it does not always follow the same convention of direction of power flow.
 
@@ -260,11 +248,10 @@ In such cases, total power flow should be entered into one of these fields (leav
 
 Single phase readings for these parameters shouldn't be mixed with three phase readings.
 
-# Screenshot (main form)
+## Screenshot (main form)
 
- ![](../.gitbook/assets/2026-07-10_Configuration_storage.png " =821x800")
+![](../.gitbook/assets/2026-07-10_Configuration_storage.png)
 
-# Screenshot (control / States Map)
+## Screenshot (control / States Map)
 
- ![](../.gitbook/assets/2026-07-10_Configuration_storage_control.png " =770x900")
-
+![](../.gitbook/assets/2026-07-10_Configuration_storage_control.png)

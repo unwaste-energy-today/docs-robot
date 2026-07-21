@@ -1,3 +1,7 @@
+---
+description: Learn how Unwaste handles time, data intervals, and historical data storage.
+---
+
 # Time model and data storage
 
 ### Raw readings

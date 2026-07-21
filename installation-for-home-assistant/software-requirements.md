@@ -1,3 +1,9 @@
+---
+description: >-
+  Review Home Assistant, integration, network, and browser requirements for
+  Unwaste EMS.
+---
+
 # Software requirements
 
 ## Overview
@@ -11,9 +17,11 @@ Unwaste EMS runs as an add-on within Home Assistant. Before installing Unwaste E
 **Minimum Version:** Home Assistant 2024.1 or newer
 
 **Recommended Installation Method:**
+
 * **Home Assistant Operating System (HAOS)** - Provides the easiest setup, automatic updates, and most reliable experience
 
 **Alternative Installation Methods:**
+
 * Home Assistant Container (Docker)
 * Home Assistant Core (Python virtual environment)
 * Home Assistant Supervised
@@ -63,10 +71,11 @@ Unwaste EMS requires certain Home Assistant integrations to function:
 
 {% hint style="info" %}
 **Internet connection is required** for:
-- Downloading Unwaste EMS updates
-- Accessing dynamic energy price data
-- Solar and weather forecasting
-- Remote access (if Cloud Account is used)
+
+* Downloading Unwaste EMS updates
+* Accessing dynamic energy price data
+* Solar and weather forecasting
+* Remote access (if Cloud Account is used)
 {% endhint %}
 
 Local operation continues even if internet connection is temporarily lost, but features requiring real-time data (price updates, forecasts) will be unavailable during outages.
@@ -82,9 +91,9 @@ For accessing the Home Assistant and Unwaste EMS web interface:
 ## Updates and Maintenance
 
 * **Home Assistant updates:** Follow Home Assistant's update schedule
-* **Unwaste EMS updates:** Delivered through Home Assistant's add-on system
+* **Unwaste EMS updates:** Delivered through Home Assistant's application system
 * **Backup strategy:** Regular backups recommended (Home Assistant includes built-in backup features)
 
----
+***
 
-With proper software configuration, Unwaste EMS seamlessly integrates with your Home Assistant installation to provide intelligent energy management capabilities.
+With proper software configuration, Unwaste Robot seamlessly integrates with your Home Assistant installation to provide intelligent energy management capabilities.

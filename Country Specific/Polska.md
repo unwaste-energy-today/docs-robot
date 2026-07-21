@@ -1,4 +1,7 @@
 ---
+description: >-
+  Review Poland-specific metering, tariffs, PV, storage, and grid connection
+  requirements.
 icon: flag
 ---
 

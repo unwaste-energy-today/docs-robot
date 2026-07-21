@@ -1,11 +1,14 @@
+---
+description: Understand how energy prices influence automated device operating modes.
+---
+
 # Price-based device control
 
 This page explains how the Unwaste Robot chooses **Off**, **Eco**, **Comfort**, and **Boost** operating modes from electricity prices.
 
-How these modes are sent to devices, and how they interact with schedules, overrides, and Surplus mode, is described in [Device control](../Configuration/Device/Device%20control.md) and [Profiles, schedules and overrides](../Profiles,%20schedules%20and%20overrides.md).
+How these modes are sent to devices, and how they interact with schedules, overrides, and Surplus mode, is described in [Device control](<../Configuration/Device/Device control.md>) and [Profiles, schedules and overrides](<../Profiles, schedules and overrides.md>).
 
-
----
+***
 
 ## Control interval
 
@@ -13,8 +16,7 @@ The Unwaste Robot re-evaluates price-based modes every **15 minutes** — at the
 
 For that period it decides whether energy is cheap or expensive and which operating mode to use as the default for managed devices (unless a schedule or override applies).
 
-
----
+***
 
 ## Static tariffs
 
@@ -25,8 +27,7 @@ For **static tariffs** (fixed time-of-day zones, for example day/night rates), m
 
 Off and Boost are typically not used with simple two-zone static tariffs.
 
-
----
+***
 
 ## Dynamic tariffs
 
@@ -45,8 +46,7 @@ The goal is to:
 * use **Eco** or **Off** when energy is relatively expensive, and
 * spread **Comfort** periods across the day rather than concentrating them at a single time.
 
-
----
+***
 
 ## When prices are unavailable
 
@@ -56,11 +56,10 @@ The system does **not** reuse yesterday's prices as a fallback.
 
 See [Connection — Dynamic Tariffs](../Configuration/Connection.md) for details and alerts.
 
-
----
+***
 
 ## Relation to Surplus mode
 
 Price-based control and Surplus mode are evaluated **independently**. Surplus depends on grid export/import, not on tariffs.
 
-When both apply, **Boost** from price-based control takes precedence over **Surplus**. See [Surplus mode](Surplus%20mode.md).
+When both apply, **Boost** from price-based control takes precedence over **Surplus**. See [Surplus mode](<Surplus mode.md>).

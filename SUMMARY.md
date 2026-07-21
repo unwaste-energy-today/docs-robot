@@ -12,6 +12,7 @@
 
 * [Introduction](<Getting started/Introduction.md>)
 * [System editions and licensing models](<Getting started/System editions and licensing models.md>)
+* [Installation options](getting-started/installation-options.md)
 
 ## Installation for Home Assistant
 
@@ -27,9 +28,6 @@
 * [Installation](installation-for-unwaste-os/installation.md)
 * [Hardware requirements](installation-for-unwaste-os/hardware-requirements.md)
 * [Software requirements](installation-for-unwaste-os/software-requirements.md)
-* [Local installation](installation-for-unwaste-os/local-installation.md)
-* [Initial configuration](installation-for-unwaste-os/initial-configuration.md)
-* [Connecting devices](installation-for-unwaste-os/connecting-devices.md)
 
 ## Configuration
 
@@ -49,12 +47,12 @@
   * [Additional readings](<Configuration/Additional readings.md>)
   * [Monitoring alerts](<Configuration/Monitoring alerts.md>)
 
-## Cloud Account
+## Unwaste Cloud
 
-* [Benefits of Cloud Account](<Cloud Account/Benefits of Cloud Account.md>)
-* [Creating account in Unwaste Cloud](<Cloud Account/Creating account in Unwaste Cloud.md>)
-* [Connecting and disconnecting](<Cloud Account/Connecting and disconnecting.md>)
-* [Sharing an Unwaste Robot](<Cloud Account/Sharing an Unwaste Robot.md>)
+* [Benefits](unwaste-cloud/benefits-of-cloud-account.md)
+* [Creating account](unwaste-cloud/creating-account-in-unwaste-cloud.md)
+* [Connecting and disconnecting Unwaste Robot](unwaste-cloud/connecting-and-disconnecting.md)
+* [Sharing an Unwaste Robot](unwaste-cloud/sharing-an-unwaste-robot.md)
 
 ## Profiles, schedules and overrides
 

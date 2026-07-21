@@ -1,3 +1,7 @@
+---
+description: Start, stop, and monitor the Unwaste Robot during everyday operation.
+---
+
 # System Operation
 
 ## Starting and stopping the Unwaste Robot
@@ -17,13 +21,11 @@ The system state affects three areas:
 
 A typical workflow is:
 
-
 1. Stop the system to adjust configuration.
 2. Start the system to collect data and apply control.
 3. Keep the system started during normal operation so that history and savings calculations remain complete.
 
-
----
+***
 
 ### STOPPED state (configuration mode)
 
@@ -45,11 +47,9 @@ Only configuration screens are accessible in this state. This prevents partial o
 * This missing time cannot be reconstructed later.
 * If you stop the system during the day, daily totals will only reflect the periods when it was started.
 
+![](.gitbook/assets/ad56b254-73b0-4937-8f83-243a0315c6e9_Screenshot_need_to_start_system.png)(Shown when trying to access operational views while STOPPED.)
 
- ![](../.gitbook/assets/ad56b254-73b0-4937-8f83-243a0315c6e9_Screenshot_need_to_start_system.png " =498x214")(Shown when trying to access operational views while STOPPED.)
-
-
----
+***
 
 ### STARTED state (operational mode)
 

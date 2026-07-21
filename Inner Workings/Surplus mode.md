@@ -1,11 +1,16 @@
+---
+description: >-
+  Use surplus mode to increase consumption when excess solar production is
+  available.
+---
+
 # Surplus mode
 
 This page explains how the Unwaste Robot decides when to request **Surplus** operating mode on managed devices.
 
-Configuration (thresholds, required readings, States Map) is described in [Connection](../Configuration/Connection.md#surplus-mode) and [Device control](../Configuration/Device/Device%20control.md).
+Configuration (thresholds, required readings, States Map) is described in [Connection](../Configuration/Connection.md#surplus-mode) and [Device control](<../Configuration/Device/Device control.md>).
 
-
----
+***
 
 ## Purpose
 
@@ -13,21 +18,19 @@ Surplus mode increases local use of photovoltaic production when the installatio
 
 Surplus is a separate control signal from price-based modes. You map what Surplus means for each device in the States Map, just like Eco or Comfort.
 
-
----
+***
 
 ## Where Surplus sits among operating modes
 
 For devices, operating modes form a scale from lower to higher energy use:
 
-```text
+```
 Off < Eco < Comfort < Surplus < Boost
 ```
 
 Surplus sits between Comfort and Boost. It encourages more consumption than Comfort, but it is not the same as Boost — Boost is driven by favourable **electricity prices**, while Surplus is driven by **export to the grid**.
 
-
----
+***
 
 ## Independent from electricity prices
 
@@ -42,8 +45,7 @@ If surplus conditions are met and the price-based mode is Off, Eco, or Comfort, 
 
 If surplus conditions are met but the price-based mode is **Boost**, **Boost wins**. Boost can increase consumption beyond Surplus and may draw energy from the grid; the system treats that as the economically preferred choice when prices justify it.
 
-
----
+***
 
 ## When the system enters Surplus mode
 
@@ -53,8 +55,7 @@ The system looks at **average export power** over the **previous** completed 15-
 
 This means entry is not instantaneous — the robot waits for a full 15-minute window of sustained export before reacting.
 
-
----
+***
 
 ## When the system leaves Surplus mode
 
@@ -64,8 +65,7 @@ The system tracks **import energy** in the **current** 15-minute period. If impo
 
 So entry is evaluated every 15 minutes, but exit can happen within seconds when import rises.
 
-
----
+***
 
 ## Anti-oscillation
 
@@ -75,8 +75,7 @@ This reduces rapid switching when export and import alternate quickly — for ex
 
 Re-entry is only considered after the next full 15-minute evaluation cycle, and only if export conditions are met again.
 
-
----
+***
 
 ## Energy storage and export
 
@@ -90,11 +89,10 @@ Typical order of use for PV production:
 
 Surplus mode targets loads when step 3 would otherwise occur — that is, when there is a measurable export despite local consumption and storage.
 
-
----
+***
 
 ## What Surplus does not do
 
 * Surplus is **not** available in schedules or overrides — only through the default control mechanism when Surplus mode is enabled on the connection.
 * Surplus does **not** replace manufacturer safety logic or guarantee that a device will absorb a specific amount of energy.
-* Surplus does **not** control battery charging directly; storage follows its own rules (see [Storage control](Storage%20control.md)).
+* Surplus does **not** control battery charging directly; storage follows its own rules (see [Storage control](<Storage control.md>)).
