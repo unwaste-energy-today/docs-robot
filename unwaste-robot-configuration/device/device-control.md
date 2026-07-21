@@ -14,7 +14,7 @@ It operates like this:
 
 * Every 15 minutes, the Unwaste Robot analyzes prices and determines if electricity is cheap or expensive at the moment.
   * For static tariffs (which are usually two-tiered) it simply sets Eco for higher price tier and Comfort for lower price tier; Off and Boost modes are unused
-  * For dynamic prices (which vary greatly) it assigns Off, Eco, Comfort, or Boost based on how cheap or expensive the current period is compared to other periods that day and to recent price history (see [Price-based device control](../../unwaste-robot-operation/price-based-device-control.md))
+  * For dynamic prices (which vary greatly) it assigns Off, Eco, Comfort, or Boost based on how cheap or expensive the current period is compared to other periods that day and to recent price history (see [Price-based device control](../../unwaste-robot-operation/technical-details/price-based-device-control.md))
 * When [Surplus mode](../connection.md#surplus-mode) is enabled on the connection and export/import conditions are met, the Unwaste Robot may request **Surplus** mode instead of the current price-based mode (Off, Eco, or Comfort). If the price-based mode is **Boost**, Boost takes precedence over Surplus. Surplus is not used in schedules or overrides.
 * The Unwaste Robot then decides which mode to request to each device, taking into account:
   * electricity price (price-based mode)

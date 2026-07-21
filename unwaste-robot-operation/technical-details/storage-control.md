@@ -8,7 +8,9 @@ description: Learn how Unwaste decides when to request battery charging from the
 
 **Storage control** describes how the **Unwaste Robot** decides _when to request charging an energy storage from the grid_.
 
-The Unwaste Robot does **not** control whether surplus energy from local production (for example photovoltaic panels) is stored.\n**Any surplus production that is not consumed immediately is always stored**, regardless of settings or prices.
+The Unwaste Robot does **not** control whether surplus energy from local production (for example photovoltaic panels) is stored.&#x20;
+
+**Any surplus production that is not consumed immediately is always stored**, regardless of settings or prices.
 
 What the Unwaste Robot controls is the **Force Charge mode**, which is effectively a signal meaning:
 
@@ -22,9 +24,9 @@ The purpose of storage control is to request grid charging only when it is econo
 
 The Unwaste Robot evaluates three main factors:
 
-* **Energy usage forecast**\nAn estimate of how much energy the household is likely to consume.
-* **Energy production forecast**\nAn estimate of expected local production (for example from solar PV).
-* **Energy price**\nInformation about whether grid energy is currently cheap or expensive.
+* **Energy usage forecast** An estimate of how much energy the household is likely to consume.
+* **Energy production forecast** An estimate of expected local production (for example from solar PV).
+* **Energy price** Information about whether grid energy is currently cheap or expensive.
 
 Based on these inputs, the Unwaste Robot decides **whether or not to activate Force Charge**.
 
@@ -94,4 +96,4 @@ the Unwaste Robot may enable **Force Charge** to prepare for next-day consumptio
 
 ## Surplus mode for devices (separate topic)
 
-**Device Surplus mode** (when enabled on the connection) increases load during PV export. It is unrelated to storage Force Charge and is described in [Connection](../unwaste-robot-configuration/connection.md#surplus-mode) and [Device control](../unwaste-robot-configuration/device/device-control.md).
+**Device Surplus mode** (when enabled on the connection) increases load during PV export. It is unrelated to storage Force Charge and is described in [Connection](../../unwaste-robot-configuration/connection.md#surplus-mode) and [Device control](../../unwaste-robot-configuration/device/device-control.md).

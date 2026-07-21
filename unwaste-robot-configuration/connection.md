@@ -81,7 +81,7 @@ Without these, the connection configuration cannot be validated while Surplus mo
 * Surplus is **not** available in schedules or overrides.
 * When Surplus mode is active on a device, the dashboard may show **Surplus** as the mode source (see [Determining what controls a device](profiles-schedules-and-overrides/determining-what-controls-a-device.md)).
 
-For how the system decides when to enter and leave Surplus mode, see [Surplus mode](../unwaste-robot-operation/surplus-mode.md).
+For how the system decides when to enter and leave Surplus mode, see [Surplus mode](../unwaste-robot-operation/technical-details/surplus-mode.md).
 
 Surplus mode is optional. Use it when you have on-site PV generation and controllable loads that can use excess production.
 

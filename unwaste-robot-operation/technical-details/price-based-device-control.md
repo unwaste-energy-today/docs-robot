@@ -6,7 +6,7 @@ description: Understand how energy prices influence automated device operating m
 
 This page explains how the Unwaste Robot chooses **Off**, **Eco**, **Comfort**, and **Boost** operating modes from electricity prices.
 
-How these modes are sent to devices, and how they interact with schedules, overrides, and Surplus mode, is described in [Device control](../unwaste-robot-configuration/device/device-control.md) and [Profiles, schedules and overrides](../unwaste-robot-configuration/profiles-schedules-and-overrides/profiles-schedules-and-overrides.md).
+How these modes are sent to devices, and how they interact with schedules, overrides, and Surplus mode, is described in [Device control](../../unwaste-robot-configuration/device/device-control.md) and [Profiles, schedules and overrides](../../unwaste-robot-configuration/profiles-schedules-and-overrides/profiles-schedules-and-overrides.md).
 
 ***
 
@@ -54,7 +54,7 @@ Dynamic tariffs require the Unwaste Robot to download prices from Unwaste Cloud.
 
 The system does **not** reuse yesterday's prices as a fallback.
 
-See [Connection — Dynamic Tariffs](../unwaste-robot-configuration/connection.md) for details and alerts.
+See [Connection — Dynamic Tariffs](../../unwaste-robot-configuration/connection.md) for details and alerts.
 
 ***
 

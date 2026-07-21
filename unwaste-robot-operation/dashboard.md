@@ -30,7 +30,7 @@ All Dashboard metrics show **today's totals** (midnight to now), but only for pe
 
 If the Unwaste Robot was **STOPPED** for part of today, the Dashboard totals include only the time when it was **STARTED**. Time spent STOPPED is not recorded and cannot be reconstructed later.
 
-See **System operation → Starting and stopping the Unwaste Robot**.
+See [**Unwaste Robot Operation → Starting and stopping the Unwaste Robot**](system-operation.md#starting-and-stopping-the-unwaste-robot).
 
 Per connection, the Dashboard shows:
 

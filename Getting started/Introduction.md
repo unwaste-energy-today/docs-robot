@@ -8,8 +8,6 @@ Unwaste EMS is built around a unique architecture designed to combine local reli
 
 The **Unwaste Robot** is the on-site controller for your energy infrastructure. It monitors and controls devices directly on your local network. Deploy it at a home, business, or facility using supported [hardware](../unwaste-for-home-assistant/hardware-requirements.md) running [Home Assistant](../unwaste-for-home-assistant/software-requirements.md) or using Unwaste OS.
 
-The **Unwaste Robot** is the core controller of Unwaste EMS. It runs locally, close to your energy infrastructure. It monitors and controls devices directly.
-
 The Local Robot operates on-site at your home, business, or facility. It runs within Home Assistant or on Unwaste OS. See [Installation options](../getting-started/installation-options.md) for details.
 
 The Local Robot is available through your local LAN. Connect it to [Unwaste Cloud](https://app.gitbook.com/s/Wf3M0a04WuhvfEbAgXFl/unwaste-cloud) to manage multiple Unwaste Robots from anywhere. Use the [web portal](https://cloud.unwaste.energy/) or mobile app.

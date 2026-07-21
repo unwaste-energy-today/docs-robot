@@ -135,7 +135,7 @@ Important clarification:
 
 ### Step 3: Total energy consumption for a circuit (`energyUsedTotal`)
 
-![](<../.gitbook/assets/Inner Workings_9d18a379-deff-4f9c-849c-9060c5912e2c_węzeł.png>)
+![](<../../.gitbook/assets/Inner Workings_9d18a379-deff-4f9c-849c-9060c5912e2c_węzeł.png>)
 
 Based on the **law of conservation of energy**, the total energy flowing **into** a circuit (from import, local production, and storage discharge) must equal the total energy flowing **out of** that circuit (to export/return, storage charging) plus the energy **consumed** within the circuit and its subtree—so the circuit energy balance can be written as an 'inflows − outflows = consumption' equation.
 
@@ -158,7 +158,7 @@ For a **metered circuit**:
 
 `energyUsedThisLevel = energyUsedTotal - energyUsedChildren`
 
-![](<../.gitbook/assets/Inner Workings_2947b528-b993-4138-a023-4bb51941d03a_węzeł2.png>)
+![](<../../.gitbook/assets/Inner Workings_2947b528-b993-4138-a023-4bb51941d03a_węzeł2.png>)
 
 Explanation (diagram):
 

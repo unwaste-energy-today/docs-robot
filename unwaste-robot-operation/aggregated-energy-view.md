@@ -53,7 +53,7 @@ Definitions:
 
 These values are computed using the **same self-use logic as daily views**, but applied across the entire selected range.
 
-**Important:** Self-used energy is calculated per 15-minute interval and then summed. This avoids misleading conclusions that can happen if production and consumption occur at different times of day. See _Inner workings → Self-use calculation_ for details.
+**Important:** Self-used energy is calculated per 15-minute interval and then summed. This avoids misleading conclusions that can happen if production and consumption occur at different times of day. See Unwaste Robot Operation _→ Technical details  → Self-use calculation_ for details.
 
 ***
 

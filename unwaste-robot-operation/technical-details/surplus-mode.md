@@ -8,7 +8,7 @@ description: >-
 
 This page explains how the Unwaste Robot decides when to request **Surplus** operating mode on managed devices.
 
-Configuration (thresholds, required readings, States Map) is described in [Connection](../unwaste-robot-configuration/connection.md#surplus-mode) and [Device control](../unwaste-robot-configuration/device/device-control.md).
+Configuration (thresholds, required readings, States Map) is described in [Connection](../../unwaste-robot-configuration/connection.md#surplus-mode) and [Device control](../../unwaste-robot-configuration/device/device-control.md).
 
 ***
 
