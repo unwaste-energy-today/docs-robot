@@ -56,6 +56,6 @@ To begin using Unwaste EMS:
 3. Review software and hardware requirements
 4. Follow the installation guide
 5. Complete [Configuration](../unwaste-robot-configuration/designing-your-electrical-installation.md) of your electrical installation
-6. Optionally, connect to [Unwaste Cloud](../unwaste-cloud/creating-account-in-unwaste-cloud.md) for enhanced features
+6. Optionally, connect to [Unwaste Cloud](../unwaste-cloud/web-interface/creating-account-in-unwaste-cloud.md) for enhanced features
 
 The modular design means you can start with basic local operation and expand capabilities as your needs grow.

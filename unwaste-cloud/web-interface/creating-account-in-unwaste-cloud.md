@@ -24,7 +24,7 @@ During registration, you can choose between:
 * **Personal account**
 * **Business account**
 
-![](../.gitbook/assets/2026-07-21_Create_private_cloud_account.png) ![](../.gitbook/assets/2026-07-21_Create_business_cloud_account.png)
+![](../../.gitbook/assets/2026-07-21_Create_private_cloud_account.png) ![](../../.gitbook/assets/2026-07-21_Create_business_cloud_account.png)
 
 ***
 

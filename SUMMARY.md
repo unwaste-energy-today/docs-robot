@@ -76,10 +76,11 @@
 ## Unwaste Cloud
 
 * [Benefits](unwaste-cloud/benefits-of-cloud-account.md)
-* [Creating account](unwaste-cloud/creating-account-in-unwaste-cloud.md)
-* [Connecting and disconnecting Unwaste Robot](unwaste-cloud/connecting-and-disconnecting.md)
-* [Sharing an Unwaste Robot](unwaste-cloud/sharing-an-unwaste-robot.md)
-* [Web interface](unwaste-cloud/web-interface.md)
+* [Web interface](unwaste-cloud/web-interface/README.md)
+  * [Creating account](unwaste-cloud/web-interface/creating-account-in-unwaste-cloud.md)
+  * [Connecting and disconnecting Unwaste Robot](unwaste-cloud/web-interface/connecting-and-disconnecting.md)
+  * [Sharing an Unwaste Robot](unwaste-cloud/web-interface/sharing-an-unwaste-robot.md)
+* [Mobile application](unwaste-cloud/mobile-application.md)
 
 ## Country specific Documentation
 

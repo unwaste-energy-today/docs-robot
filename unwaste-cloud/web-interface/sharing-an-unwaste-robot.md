@@ -56,7 +56,7 @@ Sharing is performed from the **Cloud** tab of the Unwaste Robot settings.
 4. Enter the email address of the user.
 5. Click **Create**.
 
-<figure><img src="../.gitbook/assets/Screenshot_sharing_robot.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot_sharing_robot.png" alt=""><figcaption></figcaption></figure>
 
 #### Email requirements
 
