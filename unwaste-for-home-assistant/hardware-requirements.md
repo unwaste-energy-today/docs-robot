@@ -10,19 +10,36 @@ description: >-
 
 Unwaste EMS operates as an add-on to Home Assistant, leveraging its robust platform for device integration and automation. The hardware requirements below ensure reliable, 24/7 operation of both Home Assistant and the Unwaste Robot.
 
+## European compliance — reComputer R1025-10
+
+**reComputer R1025-10** (SKU **113991274**) meets applicable European requirements, as confirmed by the manufacturer's European Declaration of Conformity.
+
+The European Declaration of Conformity covers:
+
+* **RED 2014/53/EU** for radio equipment
+* **RoHS 2011/65/EU** for restricted hazardous substances
+
+The declaration references applicable harmonized standards for safety, electromagnetic compatibility, radio performance, human exposure, and technical documentation.
+
+{% hint style="info" %}
+This declaration applies only to reComputer R1025-10, SKU 113991274. Verify the device label before relying on it. Check any separately supplied power adapter for its own CE documentation.
+{% endhint %}
+
 ## Hardware Options
 
 You have two options for running Unwaste EMS:
 
-### Option 1: Our Tested and Recommended Hardware - reComputer R1125-10
+### Option 1: Our Tested and Recommended Hardware - reComputer R1025-10
 
-**reComputer R1125-10** - Our officially recommended and tested platform
+**reComputer R1025-10** - Our officially recommended and tested platform
 
 {% hint style="success" %}
-The **reComputer R1125-10** is tested and validated in our laboratory with Unwaste EMS software. This device is based on Raspberry Pi Compute Module 4 (CM4) and provides a reliable, production-ready solution.
+The **reComputer R1025-10** is tested and validated in our laboratory with Unwaste EMS software. This device is based on Raspberry Pi Compute Module 4 (CM4) and provides a reliable, production-ready solution.
 {% endhint %}
 
-**Why choose reComputer R1125-10:**
+<figure><img src="../.gitbook/assets/01.png" alt=""><figcaption></figcaption></figure>
+
+**Why choose reComputer R1025-10:**
 
 * Tested and validated with Unwaste EMS in our lab
 * Industrial-grade reliability with metal case and efficient cooling
@@ -31,7 +48,9 @@ The **reComputer R1125-10** is tested and validated in our laboratory with Unwas
 * Expandable with additional I/O interfaces
 * Production-ready out of the box
 
-If you want a hassle-free setup with hardware we know works perfectly with our software, the reComputer R1125-10 is the best choice.
+If you want a hassle-free setup with hardware we know works perfectly with our software, the reComputer R1025-10 is the best choice.
+
+{% file src="../.gitbook/assets/113991274-EUDOC.pdf" %}
 
 ### Option 2: Use Your Own Hardware
 
