@@ -6,7 +6,7 @@ Unwaste EMS is built around a unique architecture designed to combine local reli
 
 ### The Local Robot Concept
 
-At the heart of Unwaste EMS is the **Unwaste Local Robot** - a controller that runs close to your energy infrastructure, directly monitoring and controlling your devices. The Local Robot operates on-site (at your home, business, or facility) using hardware that meets our [hardware requirements](Installation/Hardware%20requirements.md) and runs on [Home Assistant](Installation/Software%20requirements.md).
+At the heart of Unwaste EMS is the **Unwaste Local Robot** - a controller that runs close to your energy infrastructure, directly monitoring and controlling your devices. The Local Robot operates on-site (at your home, business, or facility) using hardware that meets our [hardware requirements](../Installation/Hardware%20requirements.md) and runs on [Home Assistant](../Installation/Software%20requirements.md).
 
 **Key advantages of local operation:**
 

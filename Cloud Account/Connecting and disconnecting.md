@@ -44,7 +44,9 @@ To connect the Unwaste Robot to your Unwaste Cloud account:
 2. Locate the cloud connection section.
 3. Click **Connect to Cloud**.
 
- ![](../.gitbook/assets/Cloud Account_23d2599b-6e6f-40cb-b1b6-a9842e453f91_Screenshot_connect_cloud.png " =140x39")Device name
+![](../.gitbook/assets/Cloud Account_23d2599b-6e6f-40cb-b1b6-a9842e453f91_Screenshot_connect_cloud.png " =140x39")
+
+### Device name
 
 During the connection process, you will be asked to provide a **device name**.
 

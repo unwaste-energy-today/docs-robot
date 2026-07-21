@@ -2,7 +2,7 @@
 
 **Instrukcja Instalacji**
 
-This page describes installing the Unwaste add-on in Home Assistant. For the Polish version of the same steps, see [Instrukcja Instalacji](../Instrukcja%20Instalacji.md).
+This page describes installing the Unwaste add-on in Home Assistant.
 
 
 ---

@@ -20,11 +20,8 @@ During registration, you can choose between:
 * **Personal account**
 * **Business account**
 
-\[Insert screenshot: Personal account registration screen]
-
-\[Insert screenshot: Business account registration screen]
-
-At present, both account types provide the same functionality. The difference lies only in the registration form fields.
+![](../.gitbook/assets/2026-07-21_Create_private_cloud_account.png " =580x937")
+![](../.gitbook/assets/2026-07-21_Create_business_cloud_account.png " =575x1075")
 
 ***
 
