@@ -24,7 +24,7 @@
 
 ## Configuration
 
-* [Configuration](Configuration.md)
+* [Configuration basics](Configuration.md)
 * [Robot settings](<Configuration/Robot settings.md>)
 * [Designing your electrical installation](<Configuration/Designing your electrical installation.md>)
 * [Connection](Configuration/Connection.md)
