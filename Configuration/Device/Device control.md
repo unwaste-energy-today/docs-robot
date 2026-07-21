@@ -1,7 +1,3 @@
----
-description: Learn how Unwaste Robot selects and sends operating modes to devices.
----
-
 # Device control
 
 ## "What device control means"
@@ -136,3 +132,4 @@ A device can operate in one of the following modes:
 ## Screenshot
 
 ![](../../.gitbook/assets/2026-07-10_Configuration_device_control.png)
+
