@@ -18,7 +18,7 @@ Power Flow is an operational view. It is available when the Unwaste Robot is **S
 
 See **System operation → Starting and stopping the Unwaste Robot**.
 
-![](../.gitbook/assets/System Operation_1549d010-da23-41a5-93bc-12ee51d6e79a_Screenshot_power_snapshot.png " =2057x926")
+![](../.gitbook/assets/Screenshot_power_snapshot.png)
 
 ***
 

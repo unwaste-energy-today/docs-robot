@@ -23,7 +23,7 @@ It is a "daily picture" of how energy moved through the installation:
 * into and out of storage,
 * and any residual (unmetered) usage.
 
-![](../.gitbook/assets/System Operation_7a1ec9d3-3a85-46d3-a115-c6d336aba2a1_Screenshot_energy_snapshot.png " =2063x992")
+![](../.gitbook/assets/Screenshot_energy_snapshot.png)
 
 ***
 

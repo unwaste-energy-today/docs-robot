@@ -48,7 +48,7 @@ Surplus is not available in schedules or overrides — it applies only through t
 
 It can look like in these examples of the same device:
 
-![](../.gitbook/assets/Profiles, schedules and overrides_2bea1b35-535b-4922-a269-7e69a30af326_Screenshot_tryby.png " =853x127")
+![](../../.gitbook/assets/Screenshot_tryby.png)
 
 ## Storages
 

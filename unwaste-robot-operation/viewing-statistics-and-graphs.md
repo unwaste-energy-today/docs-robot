@@ -8,7 +8,7 @@ description: Explore historical statistics, graphs, and energy performance data.
 
 Graphs are opened using the **Statistics** button available on most components.
 
-![](../.gitbook/assets/System Operation_bd89b27c-16e5-4ba4-ab56-8e8d444c417e_Screenshot_stats_button.png " =200x195")
+![](../.gitbook/assets/Screenshot_stats_button.png)
 
 **Important:** Statistics are available for all components except **connections**, because a connection does not have its own direct readings. Readings are taken from the **main circuit**.
 
@@ -66,7 +66,7 @@ In Aggregated Energy statistics:
 * the user can change the grouping interval:
   * 1 hour, 2 hours, 4 hours, 6 hours, 12 hours, 1 day.
 
-![](../.gitbook/assets/System Operation_7ada579a-de8f-41ce-a4ac-ba259d8b257e_Screenshot_graphs_for_aggregated.png " =1240x608")
+![](../.gitbook/assets/Screenshot_graphs_for_aggregated.png)
 
 ***
 

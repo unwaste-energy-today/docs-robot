@@ -58,7 +58,7 @@ Override rules that are designated in the future, start to be applied in planned
 
 Like schedules, overrides can be found on Schedules and Overrides tab accessible from a little panel under the box representing device.
 
-![](../.gitbook/assets/Profiles, schedules and overrides_681a395b-7b97-46bc-a781-44c7cc3dc567_Screenshot_how_to_find_schedules.png " =208x174")
+![](../../.gitbook/assets/Screenshot_how_to_find_schedules.png)
 
 ## Setting overrides
 
@@ -82,4 +82,4 @@ You can think of it like the further up the list the rule is positioned, the mor
 
 #### Example
 
-![](../.gitbook/assets/Profiles, schedules and overrides_7888b8e1-4a60-4e0c-9f59-db6315445573_Screenshot_device_schedule_and_override.png " =1235x459")
+![](../../.gitbook/assets/Screenshot_device_schedule_and_override.png)

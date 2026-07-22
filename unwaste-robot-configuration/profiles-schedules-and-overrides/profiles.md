@@ -16,7 +16,7 @@ You can think about profiles as a way to change many schedules at once.
 
 Profiles are accessible through settings link in UI, they have a separate tab.
 
-![](../.gitbook/assets/Profiles, schedules and overrides_d077d93e-9add-4299-8db5-98a85b6f6bd6_Screenshot_lista_profili.png " =758x319")
+![](../../.gitbook/assets/Screenshot_lista_profili.png)
 
 ## Managing profiles
 
