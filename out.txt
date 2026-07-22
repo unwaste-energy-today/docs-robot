@@ -1,2 +1,29 @@
-./Cloud Account/Creating account in Unwaste Cloud.md:\[Insert screenshot: Personal account registration screen]
-./Cloud Account/Creating account in Unwaste Cloud.md:\[Insert screenshot: Business account registration screen]
+./unwaste-robot-operation/technical-details/electrical-network-calculations.md:* `energyImported` \[Wh] — energy entering this circuit from its parent circuit
+./unwaste-robot-operation/technical-details/electrical-network-calculations.md:* `energyReturned` \[Wh] — energy flowing from this circuit back to its parent circuit
+./unwaste-robot-operation/technical-details/electrical-network-calculations.md:* `energyProduced` \[Wh] — total energy generated
+./unwaste-robot-operation/technical-details/electrical-network-calculations.md:* `energyStored` \[Wh] — energy charged into storage
+./unwaste-robot-operation/technical-details/electrical-network-calculations.md:* `energyRetrieved` \[Wh] — energy discharged from storage
+./unwaste-robot-operation/technical-details/electrical-network-calculations.md:* `chargeLevel` \[%] — state of charge
+./unwaste-robot-operation/technical-details/electrical-network-calculations.md:* `freeStorage` \[Wh] — remaining "free space", calculated from `chargeLevel` and configured storage capacity
+./unwaste-robot-operation/technical-details/electrical-network-calculations.md:* `energyConsumption` \[Wh] — device energy use
+./unwaste-robot-operation/power-flow-view.md:!\[]\(../.gitbook/assets/System Operation\_1549d010-da23-41a5-93bc-12ee51d6e79a\_Screenshot\_power\_snapshot.png " =2057x926")
+./unwaste-robot-operation/aggregated-energy-view.md:!\[]\(../.gitbook/assets/System Operation\_edd8ae4c-4ead-470a-9308-5515cc40b931\_Screenshot\_energy\_aggregated\_select\_timespan.png " =2063x924")
+./unwaste-robot-operation/aggregated-energy-view.md:!\[]\(../.gitbook/assets/System Operation\_b49a1c7b-11c8-4eaa-82c2-4076f19c0fcf\_Screenshot\_aggregated-date\_range.png " =581x315")
+./unwaste-robot-operation/aggregated-energy-view.md:!\[]\(../.gitbook/assets/System Operation\_ccd6c45e-562b-42b5-b433-e5171a153bf9\_Screenshot\_energy\_aggregated.png " =2058x925")
+./unwaste-robot-operation/energy-usage-view.md:!\[]\(../.gitbook/assets/System Operation\_7a1ec9d3-3a85-46d3-a115-c6d336aba2a1\_Screenshot\_energy\_snapshot.png " =2063x992")
+./unwaste-robot-operation/viewing-statistics-and-graphs.md:!\[]\(../.gitbook/assets/System Operation\_bd89b27c-16e5-4ba4-ab56-8e8d444c417e\_Screenshot\_stats\_button.png " =200x195")
+./unwaste-robot-operation/dashboard.md:!\[]\(../.gitbook/assets/System Operation\_b6d9ec2a-5e4d-4388-add6-229ed3d3d601\_Screenshot\_dashboard\_alerts.png " =837x675")
+./unwaste-robot-operation/dashboard.md:!\[]\(../.gitbook/assets/System Operation\_ca4ef992-87b5-4061-8c98-9dbabe5e2371\_Screenshot\_Alert.png " =2028x240")
+./unwaste-robot-configuration/profiles-schedules-and-overrides/profiles.md:!\[]\(../.gitbook/assets/Profiles, schedules and overrides\_d077d93e-9add-4299-8db5-98a85b6f6bd6\_Screenshot\_lista\_profili.png " =758x319")
+./unwaste-robot-configuration/profiles-schedules-and-overrides/determining-what-controls-a-device.md:!\[]\(../.gitbook/assets/Profiles, schedules and overrides\_2bea1b35-535b-4922-a269-7e69a30af326\_Screenshot\_tryby.png " =853x127")
+./unwaste-robot-configuration/profiles-schedules-and-overrides/overrides.md:!\[]\(../.gitbook/assets/Profiles, schedules and overrides\_681a395b-7b97-46bc-a781-44c7cc3dc567\_Screenshot\_how\_to\_find\_schedules.png " =208x174")
+./unwaste-robot-configuration/profiles-schedules-and-overrides/overrides.md:!\[]\(../.gitbook/assets/Profiles, schedules and overrides\_7888b8e1-4a60-4e0c-9f59-db6315445573\_Screenshot\_device\_schedule\_and\_override.png " =1235x459")
+./unwaste-robot-configuration/profiles-schedules-and-overrides/schedules.md:!\[]\(../.gitbook/assets/Profiles, schedules and overrides\_31d77307-919d-45f9-a2d4-3c782f01b358\_Screenshot\_schedule\_list.png " =762x197")
+./unwaste-robot-configuration/profiles-schedules-and-overrides/schedules.md:!\[]\(../.gitbook/assets/Profiles, schedules and overrides\_d684927f-aff8-4082-ba65-e610dc4840d0\_Screenshot\_schedule\_example\_1.png " =823x379")
+./unwaste-robot-configuration/profiles-schedules-and-overrides/schedules.md:!\[]\(../.gitbook/assets/Profiles, schedules and overrides\_8ac6d64f-0969-4ac4-80d7-f842da949495\_Screenshot\_schedule\_example\_2.png " =821x293")
+./unwaste-robot-configuration/profiles-schedules-and-overrides/schedules.md:!\[]\(../.gitbook/assets/Profiles, schedules and overrides\_681a395b-7b97-46bc-a781-44c7cc3dc567\_Screenshot\_how\_to\_find\_schedules.png " =208x174")
+./unwaste-robot-configuration/profiles-schedules-and-overrides/schedules.md:!\[]\(../.gitbook/assets/Profiles, schedules and overrides\_7888b8e1-4a60-4e0c-9f59-db6315445573\_Screenshot\_device\_schedule\_and\_override.png " =1235x459")
+./unwaste-cloud/web-interface/connecting-and-disconnecting.md:!\[]\(../.gitbook/assets/Cloud Account\_23d2599b-6e6f-40cb-b1b6-a9842e453f91\_Screenshot\_connect\_cloud.png " =140x39")
+./unwaste-cloud/web-interface/connecting-and-disconnecting.md:!\[]\(../.gitbook/assets/Cloud Account\_95efefec-b944-454e-96f0-9328c1588dbd\_Screenshot\_connect\_cloud3.png " =393x452")
+./unwaste-cloud/web-interface/connecting-and-disconnecting.md:!\[]\(../.gitbook/assets/Cloud Account\_2b88b45a-d1cb-456d-8820-b06c80a0a6cb\_Screenshot\_disconnect\_cloud.png " =175x46")
+./country-specific-documentation/polska.md:> „Zegary sterujące w układach pomiarowo-rozliczeniowych \[...] ustawia się według czasu zimowego i nie zmienia się w okresie obowiązywania czasu letniego. Powyższa zasada może nie być stosowana w przypadku, gdy urządzenia sterujące automatycznie umożliwiają utrzymanie godzin stref czasowych w okresie obowiązywania czasu letniego i zimowego.”

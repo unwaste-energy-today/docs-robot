@@ -10,7 +10,7 @@ The **Aggregated Energy** view allows the user to review historical energy total
 
 It answers: "What were the totals over this period?"
 
-!\[]\(../.gitbook/assets/System Operation\_edd8ae4c-4ead-470a-9308-5515cc40b931\_Screenshot\_energy\_aggregated\_select\_timespan.png " =2063x924")
+![](../.gitbook/assets/System Operation_edd8ae4c-4ead-470a-9308-5515cc40b931_Screenshot_energy_aggregated_select_timespan.png " =2063x924")
 
 ***
 
@@ -20,7 +20,7 @@ It answers: "What were the totals over this period?"
 * Start and end dates are **inclusive**.
 * Presets are available (Today, Last 7 days, This month, etc.).
 
-!\[]\(../.gitbook/assets/System Operation\_b49a1c7b-11c8-4eaa-82c2-4076f19c0fcf\_Screenshot\_aggregated-date\_range.png " =581x315")
+![](../.gitbook/assets/System Operation_b49a1c7b-11c8-4eaa-82c2-4076f19c0fcf_Screenshot_aggregated-date_range.png " =581x315")
 
 **Important:** If the system was STOPPED during part of the selected period, those missing intervals are excluded from totals.
 
@@ -32,7 +32,7 @@ See **System operation → Starting and stopping the Unwaste Robot** for details
 
 All values shown are **sums over the selected time range**.
 
-!\[]\(../.gitbook/assets/System Operation\_ccd6c45e-562b-42b5-b433-e5171a153bf9\_Screenshot\_energy\_aggregated.png " =2058x925")
+![](../.gitbook/assets/System Operation_ccd6c45e-562b-42b5-b433-e5171a153bf9_Screenshot_energy_aggregated.png " =2058x925")
 
 ***
 

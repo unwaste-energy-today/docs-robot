@@ -18,7 +18,7 @@ Each **connection** is presented as a separate block because connections may dif
 
 For this reason, some metrics (especially percentages) are not safely "summable" across connections.
 
-!\[]\(../.gitbook/assets/System Operation\_f51c7be0-4ad2-4dda-bd4c-29422befb411\_Screenshot\_dashboard.png " =862x515")
+![](../.gitbook/assets/System Operation_f51c7be0-4ad2-4dda-bd4c-29422befb411_Screenshot_dashboard.png " =862x515")
 
 ***
 
@@ -47,9 +47,9 @@ Per connection, the Dashboard shows:
 
 The Dashboard includes an **Alerts panel** for abnormal situations that the user should be informed about.
 
-!\[]\(../.gitbook/assets/System Operation\_b6d9ec2a-5e4d-4388-add6-229ed3d3d601\_Screenshot\_dashboard\_alerts.png " =837x675")
+![](../.gitbook/assets/System Operation_b6d9ec2a-5e4d-4388-add6-229ed3d3d601_Screenshot_dashboard_alerts.png " =837x675")
 
-!\[]\(../.gitbook/assets/System Operation\_ca4ef992-87b5-4061-8c98-9dbabe5e2371\_Screenshot\_Alert.png " =2028x240")
+![](../.gitbook/assets/System Operation_ca4ef992-87b5-4061-8c98-9dbabe5e2371_Screenshot_Alert.png " =2028x240")
 
 ***
 

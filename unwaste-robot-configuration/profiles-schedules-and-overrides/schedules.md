@@ -68,7 +68,7 @@ Example: Switching from "Home" to "Vacation" profile immediately changes which s
 
 Schedules have their own link in main menu.
 
-!\[]\(../.gitbook/assets/Profiles, schedules and overrides\_31d77307-919d-45f9-a2d4-3c782f01b358\_Screenshot\_schedule\_list.png " =762x197")
+![](../.gitbook/assets/Profiles, schedules and overrides_31d77307-919d-45f9-a2d4-3c782f01b358_Screenshot_schedule_list.png " =762x197")
 
 ## Configuring schedules
 
@@ -101,11 +101,11 @@ You can think of it like the further up the list the rule is positioned, the mor
 
 ### Example 1 - schedule for air conditioning
 
-!\[]\(../.gitbook/assets/Profiles, schedules and overrides\_d684927f-aff8-4082-ba65-e610dc4840d0\_Screenshot\_schedule\_example\_1.png " =823x379")
+![](../.gitbook/assets/Profiles, schedules and overrides_d684927f-aff8-4082-ba65-e610dc4840d0_Screenshot_schedule_example_1.png " =823x379")
 
 ### Example 2 - schedule for vacation
 
-!\[]\(../.gitbook/assets/Profiles, schedules and overrides\_8ac6d64f-0969-4ac4-80d7-f842da949495\_Screenshot\_schedule\_example\_2.png " =821x293")
+![](../.gitbook/assets/Profiles, schedules and overrides_8ac6d64f-0969-4ac4-80d7-f842da949495_Screenshot_schedule_example_2.png " =821x293")
 
 ## Attaching schedules to devices
 
@@ -113,7 +113,7 @@ You can think of it like the further up the list the rule is positioned, the mor
 
 To attach schedule to a device, you need to use schedule icon in device details. When you move mouse pointer over a device (in a design mode or in dashboard mode), a small panel with icons will show. One of these icon allows you to enter Schedules and Overrides tab for this device
 
-!\[]\(../.gitbook/assets/Profiles, schedules and overrides\_681a395b-7b97-46bc-a781-44c7cc3dc567\_Screenshot\_how\_to\_find\_schedules.png " =208x174")
+![](../.gitbook/assets/Profiles, schedules and overrides_681a395b-7b97-46bc-a781-44c7cc3dc567_Screenshot_how_to_find_schedules.png " =208x174")
 
 ### Attaching schedules
 
@@ -131,4 +131,4 @@ Also, you can have a different but similar profiles, where you would reuse the s
 
 This example covers setting two schedules defined previously to an air conditioner, using two appropriate profiles. (also it shows overrides, but it will be covered in the next section).
 
-!\[]\(../.gitbook/assets/Profiles, schedules and overrides\_7888b8e1-4a60-4e0c-9f59-db6315445573\_Screenshot\_device\_schedule\_and\_override.png " =1235x459")
+![](../.gitbook/assets/Profiles, schedules and overrides_7888b8e1-4a60-4e0c-9f59-db6315445573_Screenshot_device_schedule_and_override.png " =1235x459")

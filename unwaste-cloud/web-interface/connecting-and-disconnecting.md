@@ -44,7 +44,7 @@ To connect the Unwaste Robot to your Unwaste Cloud account:
 2. Locate the cloud connection section.
 3. Click **Connect to Cloud**.
 
-!\[]\(../.gitbook/assets/Cloud Account\_23d2599b-6e6f-40cb-b1b6-a9842e453f91\_Screenshot\_connect\_cloud.png " =140x39")
+![](../.gitbook/assets/Cloud Account_23d2599b-6e6f-40cb-b1b6-a9842e453f91_Screenshot_connect_cloud.png " =140x39")
 
 #### Device name
 
@@ -72,7 +72,7 @@ Important:
 * Logging in **does not create a new cloud account**.
 * Authentication is used only to associate this Unwaste Robot with your existing account.
 
-!\[]\(../.gitbook/assets/Cloud Account\_95efefec-b944-454e-96f0-9328c1588dbd\_Screenshot\_connect\_cloud3.png " =393x452")
+![](../.gitbook/assets/Cloud Account_95efefec-b944-454e-96f0-9328c1588dbd_Screenshot_connect_cloud3.png " =393x452")
 
 #### Successful connection
 
@@ -112,7 +112,7 @@ To manually disconnect the Unwaste Robot from the cloud:
 3. Click **Disconnect from Cloud**.
 4. Confirm the action in the confirmation dialog.
 
-!\[]\(../.gitbook/assets/Cloud Account\_2b88b45a-d1cb-456d-8820-b06c80a0a6cb\_Screenshot\_disconnect\_cloud.png " =175x46")
+![](../.gitbook/assets/Cloud Account_2b88b45a-d1cb-456d-8820-b06c80a0a6cb_Screenshot_disconnect_cloud.png " =175x46")
 
 After manual disconnection:
 
