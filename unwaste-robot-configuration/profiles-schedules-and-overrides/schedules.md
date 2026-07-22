@@ -101,11 +101,11 @@ You can think of it like the further up the list the rule is positioned, the mor
 
 ### Example 1 - schedule for air conditioning
 
-!\[]\(../../.gitbook/assets/Screenshot\_schedule\_example\_1.png " =823x379")
+![](../../.gitbook/assets/Screenshot_schedule_example_1.png " =823x379")
 
 ### Example 2 - schedule for vacation
 
-!\[]\(../../.gitbook/assets/Screenshot\_schedule\_example\_2.png " =821x293")
+![](../../.gitbook/assets/Screenshot_schedule_example_2.png " =821x293")
 
 ## Attaching schedules to devices
 
@@ -113,7 +113,7 @@ You can think of it like the further up the list the rule is positioned, the mor
 
 To attach schedule to a device, you need to use schedule icon in device details. When you move mouse pointer over a device (in a design mode or in dashboard mode), a small panel with icons will show. One of these icon allows you to enter Schedules and Overrides tab for this device
 
-!\[]\(../../.gitbook/assets/Screenshot\_how\_to\_find\_schedules.png " =208x174")
+![](../../.gitbook/assets/Screenshot_how_to_find_schedules.png " =208x174")
 
 ### Attaching schedules
 
@@ -131,4 +131,4 @@ Also, you can have a different but similar profiles, where you would reuse the s
 
 This example covers setting two schedules defined previously to an air conditioner, using two appropriate profiles. (also it shows overrides, but it will be covered in the next section).
 
-!\[]\(../../.gitbook/assets/Screenshot\_device\_schedule\_and\_override.png " =1235x459")
+![](../../.gitbook/assets/Screenshot_device_schedule_and_override.png " =1235x459")
