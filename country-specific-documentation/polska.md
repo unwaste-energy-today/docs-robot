@@ -31,7 +31,7 @@ Rodzaj licznika może wpływać na to, w jakich godzinach energia jest rozliczan
 
 W taryfach wszystkich dużych sprzedawców energii znajdują się zapisy podobne do poniższego (przykład z cennika Energa Obrót):
 
-> „Zegary sterujące w układach pomiarowo-rozliczeniowych \[...] ustawia się według czasu zimowego i nie zmienia się w okresie obowiązywania czasu letniego. Powyższa zasada może nie być stosowana w przypadku, gdy urządzenia sterujące automatycznie umożliwiają utrzymanie godzin stref czasowych w okresie obowiązywania czasu letniego i zimowego.”
+> „Zegary sterujące w układach pomiarowo-rozliczeniowych [...] ustawia się według czasu zimowego i nie zmienia się w okresie obowiązywania czasu letniego. Powyższa zasada może nie być stosowana w przypadku, gdy urządzenia sterujące automatycznie umożliwiają utrzymanie godzin stref czasowych w okresie obowiązywania czasu letniego i zimowego.”
 
 Zapis ten wynika z przepisów Prawa energetycznego. Operatorzy systemów dystrybucyjnych mają obowiązek wymiany liczników na nowoczesne liczniki zdalnego odczytu do 4 lipca 2031 roku. Do tego czasu mogą stosować starsze urządzenia pomiarowe.
 

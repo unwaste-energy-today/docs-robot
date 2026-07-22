@@ -27,8 +27,8 @@ A circuit is the structural element of the tree. A circuit can have **child circ
 
 A **metered circuit** provides two energy readings (as shown in the diagram):
 
-* `energyImported` \[Wh] — energy entering this circuit from its parent circuit
-* `energyReturned` \[Wh] — energy flowing from this circuit back to its parent circuit
+* `energyImported` [Wh] — energy entering this circuit from its parent circuit
+* `energyReturned` [Wh] — energy flowing from this circuit back to its parent circuit
 
 These two values are read **directly from this circuit's own meter**.
 
@@ -53,7 +53,7 @@ Production is an element connected under a circuit (a leaf element). It represen
 
 Production provides:
 
-* `energyProduced` \[Wh] — total energy generated
+* `energyProduced` [Wh] — total energy generated
 
 (Use `energyProduced` consistently; avoid `energyProduction`.)
 
@@ -65,10 +65,10 @@ Storage is an element connected under a circuit (a leaf element). It represents 
 
 Storage provides:
 
-* `energyStored` \[Wh] — energy charged into storage
-* `energyRetrieved` \[Wh] — energy discharged from storage
-* `chargeLevel` \[%] — state of charge
-* `freeStorage` \[Wh] — remaining "free space", calculated from `chargeLevel` and configured storage capacity
+* `energyStored` [Wh] — energy charged into storage
+* `energyRetrieved` [Wh] — energy discharged from storage
+* `chargeLevel` [%] — state of charge
+* `freeStorage` [Wh] — remaining "free space", calculated from `chargeLevel` and configured storage capacity
 
 ***
 
@@ -78,7 +78,7 @@ Devices are elements connected under a circuit (leaf elements). They represent c
 
 A device may provide:
 
-* `energyConsumption` \[Wh] — device energy use
+* `energyConsumption` [Wh] — device energy use
 
 ***
 
